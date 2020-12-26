@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="前言  C语言之虚拟大厦不要以常规的思维来理解，类似于 钢铁侠 中的 Jarvis，即：虚拟人工智能大厦，类似于科幻片。 正文 写C语言程序就像在虚拟世界中建造一座人工智能的大厦，但是由于大厦的智能水平有限，需要人为赋予它功能，因此，这个大厦只可以用来解决某一特定的功能，如：计算、预测等。 在这座大厦中肯定会有无数个房间，每个房间会有门牌号，如： 0101等等。当然，既然是科幻的，每个房间的大小">
+<meta property="og:type" content="article">
+<meta property="og:title" content="90. C&#x2F;C++之虚拟大厦">
+<meta property="og:url" content="http://example.com/2020/12/26/2020-2-13-90/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="前言  C语言之虚拟大厦不要以常规的思维来理解，类似于 钢铁侠 中的 Jarvis，即：虚拟人工智能大厦，类似于科幻片。 正文 写C语言程序就像在虚拟世界中建造一座人工智能的大厦，但是由于大厦的智能水平有限，需要人为赋予它功能，因此，这个大厦只可以用来解决某一特定的功能，如：计算、预测等。 在这座大厦中肯定会有无数个房间，每个房间会有门牌号，如： 0101等等。当然，既然是科幻的，每个房间的大小">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-26T13:52:34.498Z">
+<meta property="article:modified_time" content="2020-12-26T13:58:11.340Z">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="C&#x2F;C++">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2020/12/26/2020-2-13-90/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>90. C/C++之虚拟大厦 | QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-2-13-90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          90. C/C++之虚拟大厦
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <ul>
+<li><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1>  C语言之虚拟大厦不要以常规的思维来理解，类似于 <code>钢铁侠</code> 中的 <code>Jarvis</code>，即：虚拟人工智能大厦，类似于科幻片。</li>
+<li><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><ol>
+<li>写C语言程序就像在虚拟世界中建造一座人工智能的大厦，但是由于大厦的智能水平有限，需要人为赋予它功能，因此，这个大厦只可以用来解决某一特定的功能，如：计算、预测等。</li>
+<li>在这座大厦中肯定会有无数个房间，每个房间会有门牌号，如： <code>0101</code>等等。当然，既然是科幻的，每个房间的大小也可以随意设置规格呗，但是呢，由于规格的个数有限，所以每个房间的大小都需要在已有的规格之中。在这里的规格即为：<code>数据类型</code>，所以这个规格是用来规定房间的大小的。 <code>数据类型</code>包括：<code>char, int, float, double</code>，而这些房间就是所谓的 <code>变量</code>，即：<code>变量就是内存空间也就类似于一个个的房间</code>。众所周知，房间可以用来放东西，可以放苹果、橘子、橙子等，但是需要保证可以放得进去，还得保证得是一个品种，总不能放苹果的房间放个橘子，这个就不合适了，毕竟每个房间有每个房间的作用，这样乱放容易打架啊，就像血液一样，A型的血不能给O型的，有人会说O型的血可以输给A型的啊（在这里先买个关子，预知后事如何请继续向下看）；刚才说了放苹果的房间不能放橘子，然后还得有啥呢？假设有一个房间只能放一个普通苹果的大小，你给找来了一个变态大的苹果，肯定放不进去啊，你要硬放进去，肯定会弄下来一块肉，也就面目全非了啊，所以这个房间只能放在它能承受范围内的东西。所以，变量也是用来放东西的，但这个东西有一个殊荣，给了它一个名字叫： <code>值</code> ，这些值可以是：<code>字符、整数、小数</code>，看你需要啥了，你就想这个房间里天空飘着一堆数字或者字符。 对这些变量进行的操作，即对变量存放的值进行操作。比如：你说我想吃苹果，他就给你拿苹果给你，总不能把房间拿来给你吃啊，虽然里面有苹果，但是房间你也吃不了啊。</li>
+<li>刚开始编写C语言就行建造了一个大厦，里面还没有任何装修，每定义一个变量，就相当于给这个大厦装修了一个房间，这个房间可大可小，已经突破了传统物理学（哈哈哈），但是已经装修了，就不能再变大变小了。而且：这个房间是人工智能自己装修的，不是你说在哪就在哪，你只能告诉他这个房间叫啥名，地方你不能选，其中：这个房间的名字叫做：<code>变量名</code>。</li>
+<li>有一天，来了一个有钱人，带着他的七大姑八大姨来住房，他说了我要10个房间，还得是连着的，第一个房间住甲，第二个房间住乙，…，第十个房间住癸。这个连续的房间叫做：<code>数组</code>。 当然了，世界上也有钱办不到的事情啊，在这里他就不能指定这10个房间在哪，只能给这10个房间命名，这个名字就叫做：<code>数组名</code>，而且你既然已经订了这10间房就这10间房，你可以空着，但是却不能说：我又来了一个二表姐，再添一个挨着的房间，明确的告诉你：<code>不可能</code>。你和机器也发不了脾气，只能默默忍受，想要11个连着的房间只能重新订房，房钱可不会退的，你也就有了21间房即：<code>数组不能销除</code>。你会说两人挤一间房不得了，不可以的呦，一个房间只能容纳一个人，第二个人可容不下了，毕竟无奸不商，要把所有的能用的地方用来赚钱，能省一点是一点。</li>
+<li>客人肯定有很多的需求，有的要苹果汁，有的要西瓜汁，流程是一样的，为什么不另盖一座大厦专门用来完成这个需求呢，这个另一座大厦叫做：<code>函数</code>。你可以给这个大厦命名，这个名字叫做： <code>函数名</code>，但是你不能说这个大厦盖到哪里，他就算盖到北极你也管不了哦（因为这是任性的人工智能），反正给你你要的结果就可以了，毕竟可以瞬间传输。有人会问了，怎么知道是要西瓜汁还是苹果汁呢，这里就需要一个参数咯，这个参数叫做：<code>形式参数（简称形参）</code>，这个形参是大厦盖好，就自动装修的房间，用来存储传来的信息的（即参数值）。当然了这个参数值和原来的肯定不一样咯，你想想你传来的值，就相当于把原来的值复制了，然后拷贝到形参房间里存储，这俩就没关系了，改变任意一个对另一个肯定没有任何影响啊，这个传递方式叫做：<code>值传递</code>。</li>
+<li>俗话说：林子大了什么鸟都有。有的人就比较任性他就吃夏威夷的苹果，他自己带来了，放到他买的房间了（这个房间不是那个人买的用来住的，是单独买的，用来放水果的），这可咋办呢，你想想你的身份证，是不是有具体的位置呢，这个肯定有啊，比如叫： <code>北极001号楼0101号房</code>，类似于 <code>北极001号楼0101号房</code>这个叫做：<code>地址</code>，这个0101号房可不是你取得名字，是人工智能用来区分给默认设置的。这时候你只需要把这个房间的地址，传递给那个加工果汁的大厦，他就可以对那个客户带的苹果进行加工了，这个传递叫做：<code>地址传递</code>。当然了，这个地址传递也是值传递，只不过这个更高级了，可以跨楼处理了，而且这个地址传递用的多，因此才给他一个殊荣叫：<code>地址传递</code>。这个大厦可以根据传来的地址，对其他的大厦的房间里面的东西进行操作，有人会问，为啥不能根据起的名字进行操作呢？首先，这个大厦只能操作这个大厦里面是这个名字的房间，否则不就逾矩了，管好自己的一亩三分地就可以了，比如：你想吃苹果，你不能拿别人家的一样啊。其次呢，你起名字叫 <code>天字一号房</code>，别人也可以这么取名啊，人工智能虽然叫智能，实际上还是一个傻子，这么多的 <code>天字一号房</code>，他也不知道具体是哪个啊，这样他就会犯迷糊了，一犯迷糊不就不干了。</li>
+<li>比如这个函数里调用了另一个函数，这另一个函数又调用了另另一个函数，那么就多次传递呗，反正也没损失。</li>
+</ol>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>QeuroIzo
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2020/12/26/2020-2-13-90/" title="90. C&#x2F;C++之虚拟大厦">http://example.com/2020/12/26/2020-2-13-90/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C-C/" rel="tag"># C/C++</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2020-1-30-89/" rel="prev" title="89. 高数中开闭区间情况">
+      <i class="fa fa-chevron-left"></i> 89. 高数中开闭区间情况
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2020-2-23-91/" rel="next" title="91. C/C++ 链表指针">
+      91. C/C++ 链表指针 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AD%A3%E6%96%87"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

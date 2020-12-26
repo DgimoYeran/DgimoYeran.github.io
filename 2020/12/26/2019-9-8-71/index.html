@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="sql server在安装时，一般都会选择默认实例服务器以Window身份认证，以电脑账户为名称无密码形式存在，后期我们开发项目时，用到的数据库服务器都是以IP为名称，单独设立密码的，此时我们默认安装的服务器引擎怎么修改成项目通用形式呢。    步骤   打开数据库，使用默认账户登录（电脑默认账户，无密码）。 右击”服务器引擎”，选择“属性”表中的“安全性”，“服务器身份验证” 选择 “SQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="71. C#连接数据库">
+<meta property="og:url" content="http://example.com/2020/12/26/2019-9-8-71/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="sql server在安装时，一般都会选择默认实例服务器以Window身份认证，以电脑账户为名称无密码形式存在，后期我们开发项目时，用到的数据库服务器都是以IP为名称，单独设立密码的，此时我们默认安装的服务器引擎怎么修改成项目通用形式呢。    步骤   打开数据库，使用默认账户登录（电脑默认账户，无密码）。 右击”服务器引擎”，选择“属性”表中的“安全性”，“服务器身份验证” 选择 “SQL">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/1.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/2.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/3.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/4.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/5.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/6.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/7.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/8.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/9.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/10.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/11.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/12.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/13.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/14.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/15.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/csharp_connect_database/16.png">
+<meta property="article:published_time" content="2020-12-26T13:52:34.454Z">
+<meta property="article:modified_time" content="2020-12-26T14:35:39.229Z">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="数据库 C#">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/source/imagess/posts/csharp_connect_database/1.png">
+
+<link rel="canonical" href="http://example.com/2020/12/26/2019-9-8-71/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>71. C#连接数据库 | QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-9-8-71/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          71. C#连接数据库
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p>sql server在安装时，一般都会选择默认实例服务器以Window身份认证，以电脑账户为名称无密码形式存在，后期我们开发项目时，用到的数据库服务器都是以IP为名称，单独设立密码的，此时我们默认安装的服务器引擎怎么修改成项目通用形式呢。</p>
+</blockquote>
+<hr>
+<ul>
+<li><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1></li>
+</ul>
+<ol>
+<li>打开数据库，使用默认账户登录（电脑默认账户，无密码）。<br><img src="/source/imagess/posts/csharp_connect_database/1.png"></li>
+<li>右击”服务器引擎”，选择“属性”表中的“安全性”，“服务器身份验证” 选择 “SQL Server”和“Windows身份验证模式”，这一步在下面好像可以再选，具体本人没试过。<br><img src="/source/imagess/posts/csharp_connect_database/2.png">   </li>
+<li>找到数据库 “安全性” –&gt;“登录名” –&gt;“sa” 右击属性，可以修改“登录名”，以SQL Server身份验证，填写密码(密码可能会需要复杂度，字母数字组合，修改失败注意下)。<br><img src="/source/imagess/posts/csharp_connect_database/3.png">   </li>
+<li>依旧是上面截图这里，看“状态栏”内容，有人忘了设置这里，去用”sa”账户登录，得到错误，此账户禁止使用，原因就在这里，在这里我们要设置“登录”选项为“启用”。<br><img src="/source/imagess/posts/csharp_connect_database/4.png">   </li>
+<li>上面说了怎么修改服务器的名称和密码，可以用下面方式登录数据库。<br><img src="/source/imagess/posts/csharp_connect_database/5.png">      </li>
+<li>但是我们的最终目标是以IP为登录名来登录数据库，打开Sql Server配置管理器（Sql Server Configuration Manager）,找到“SQL Server网络配置”，进入“SQLEXPRESS的协议” ，“TCP/IP”右击属性 “协议” 中“已启用”修改为“是”<br><img src="/source/imagess/posts/csharp_connect_database/6.png">   </li>
+<li>继续操作第6步，“TCP/IP”右击属性 “IP 地址” 中 修改 “IP2”中的 IP地址 为自己的电脑IP，这里必须是自己电脑的IP，不是你自己随便给的IP。<br><img src="/source/imagess/posts/csharp_connect_database/7.png">   </li>
+<li>在Sql Server配置管理器（Sql Server Configuration Manager）中重启数据库服务。<br><img src="/source/imagess/posts/csharp_connect_database/8.png">   </li>
+<li>以IP为名称登录，结束。<br><img src="/source/imagess/posts/csharp_connect_database/9.png"> </li>
+</ol>
+<ul>
+<li><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1></li>
+</ul>
+<ol>
+<li>出现<code>SQL Server2014“用户&#39;sa&#39;登录失败，错误18456”问题</code><br><img src="/source/imagess/posts/csharp_connect_database/10.png"><ol>
+<li>使用Windows身份验证登录数据库。<br><img src="/source/imagess/posts/csharp_connect_database/11.png"></li>
+<li>右键数据库服务器名，选择【属性】。<br><img src="/source/imagess/posts/csharp_connect_database/12.png"></li>
+<li>打开“服务器属性”窗口，选择【安全性】，更改“服务器身份验证”，如下图所示。<br><img src="/source/imagess/posts/csharp_connect_database/13.png"></li>
+<li>展开数据库服务器名—“安全性”—“登录名”， 右键“sa”用户，选择【属性】。<br><img src="/source/imagess/posts/csharp_connect_database/14.png"></li>
+<li>打开“登录属性”窗口，选择【常规】，设置密码。<br><img src="/source/imagess/posts/csharp_connect_database/15.png"></li>
+<li>仍然在“登录属性”窗口，选择【状态】，选择“登录”下面的【已启用】，如下图所示。<br><img src="/source/imagess/posts/csharp_connect_database/16.png"></li>
+<li>右键数据库服务器名，选择【重新启动】。</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">SqlConnectionStringBuilder scsb = <span class="keyword">new</span> SqlConnectionStringBuilder();</span><br><span class="line">scsb.DataSource = <span class="string">&quot;127.0.0.1&quot;</span>;</span><br><span class="line">scsb.UserID = <span class="string">&quot;sa&quot;</span>;</span><br><span class="line">scsb.Password = <span class="string">&quot;password&quot;</span>;</span><br><span class="line">scsb.InitialCatalog = <span class="string">&quot;demo&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//MessageBox.Show(scsb.ToString());</span></span><br><span class="line">SqlConnection conn = <span class="keyword">new</span> SqlConnection(scsb.ToString());</span><br><span class="line"><span class="keyword">if</span> (conn.State == System.Data.ConnectionState.Closed) conn.Open();</span><br><span class="line"><span class="built_in">string</span> str_sql = <span class="string">&quot;select * from customer&quot;</span>;</span><br><span class="line"><span class="comment">//SqlCommand comm = new SqlCommand(str_sql, conn);    // 查询单行</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 查询数据表</span></span><br><span class="line">SqlDataAdapter da = <span class="keyword">new</span> SqlDataAdapter(str_sql, conn);</span><br><span class="line">DataSet ds = <span class="keyword">new</span> DataSet();</span><br><span class="line">da.Fill(ds, <span class="string">&quot;test&quot;</span>); <span class="comment">// 参数1：dataset对象； 参数2：表名，自定义的名字，不需要和查询的表名相同</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 绑定数据到datagridview */</span></span><br><span class="line"><span class="comment">/* 方法一 */</span></span><br><span class="line"><span class="comment">// show_dataGridView.DataSource = ds;</span></span><br><span class="line"><span class="comment">// show_dataGridView.DataMember = &quot;test&quot;;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 方法二 */</span></span><br><span class="line"><span class="comment">//prod_dataGridView.DataSource = ds.Tables[&quot;product&quot;];</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 方法三 */</span></span><br><span class="line">DataTable dt = ds.Tables[<span class="string">&quot;test&quot;</span>];</span><br><span class="line">prod_dataGridView.DataSource = dt.DefaultView;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>QeuroIzo
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2020/12/26/2019-9-8-71/" title="71. C#连接数据库">http://example.com/2020/12/26/2019-9-8-71/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93-C/" rel="tag"># 数据库 C#</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2019-8-27-70/" rel="prev" title="70. C/C++ 知识点">
+      <i class="fa fa-chevron-left"></i> 70. C/C++ 知识点
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2019-9-20-72/" rel="next" title="72. CTF">
+      72. CTF <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

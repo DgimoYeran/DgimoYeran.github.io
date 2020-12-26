@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="程序设计返回结果  Accepted: 通过 Wrong Answer: 答案错误 Runtime Error: 表示程序因为非法访问或未处理异常而结束。 Memory Limit Exceeded: 表示程序因为使用的内存超过规定的内存限制。 Presentation Error: 表示虽然程序输出的答案是对的，但是换行或空格等不符合输出格式要求 Time Limit Exceed: 超时 O">
+<meta property="og:type" content="article">
+<meta property="og:title" content="112. 程序设计">
+<meta property="og:url" content="http://example.com/2020/12/26/2020-10-30-112/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="程序设计返回结果  Accepted: 通过 Wrong Answer: 答案错误 Runtime Error: 表示程序因为非法访问或未处理异常而结束。 Memory Limit Exceeded: 表示程序因为使用的内存超过规定的内存限制。 Presentation Error: 表示虽然程序输出的答案是对的，但是换行或空格等不符合输出格式要求 Time Limit Exceed: 超时 O">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-26T13:52:34.548Z">
+<meta property="article:modified_time" content="2020-12-26T13:58:11.339Z">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="程序设计">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2020/12/26/2020-10-30-112/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>112. 程序设计 | QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-10-30-112/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          112. 程序设计
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <ol>
+<li><p>程序设计返回结果</p>
+<ol>
+<li><code>Accepted</code>: 通过</li>
+<li><code>Wrong Answer</code>: 答案错误</li>
+<li><code>Runtime Error</code>: 表示程序因为非法访问或未处理异常而结束。</li>
+<li><code>Memory Limit Exceeded</code>: 表示程序因为使用的内存超过规定的内存限制。</li>
+<li><code>Presentation Error</code>: 表示虽然程序输出的答案是对的，但是换行或空格等不符合输出格式要求</li>
+<li><code>Time Limit Exceed</code>: 超时</li>
+<li><code>Output Limit Exceeded</code>: 表示程序输出了过多的内容。</li>
+<li><code>Compile Error</code>: 表示所提交的源代码没能通过编译，不符合语法规定。</li>
+<li><code>System Error, Validator Error</code>: 表示系统发生错误无法正常判题。</li>
+<li><code>Segmentation Fault</code>: 段错误：访问的内存超过了系统所给这个程序的内存空间</li>
+</ol>
+</li>
+<li><p>状态</p>
+<blockquote>
+<p>例子：找最短路径的问题中，状态仅仅是目前所在位置的坐标。 <br/><br>当状态更加复杂是，就需要封装成一个类来表示转态了。</p>
+</blockquote>
+</li>
+<li><p>状态转移、转移的方式</p>
+<blockquote>
+<p>例子：同1中的例子，转移的方式为4个方向移动 <br/><br>又如：八连通（$P_{32}$），8个方向共对应了8种状态转移。</p>
+</blockquote>
+</li>
+<li><p><code>next_permutation</code> 函数使用</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a[<span class="number">4</span>] = &#123;<span class="number">1</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>&#125;, i;</span><br><span class="line">    sort(a, a + <span class="number">4</span>); <span class="comment">//在使用全排列函数之前，一定要先将数组中的数排序哦(不排序好像也可以)</span></span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) <span class="built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">while</span> (next_permutation(a, a + <span class="number">3</span>));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) <span class="built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用 <code>next_permutation</code> 后，原数组的不变。</p>
+</li>
+<li><p>贪心算法</p>
+<blockquote>
+<p>贪心算法就是遵循某种规则，不断贪心地选取当期那最优策略的算法设计方法。 <br><br>如果我们不慎重地选择一个正确的规则，就会得到错误的算法。<br><br>如果问题能够用贪心算法来求解的话，那么它通常是非常高效的。</p>
+</blockquote>
+<ol>
+<li>区间问题：在可选工作中，每次都选择结束时间最早的工作。</li>
+<li>字典序比较类型的问题经常用得上贪心法</li>
+</ol>
+</li>
+<li><p>动态规划</p>
+<ol>
+<li>记忆化搜索<blockquote>
+<p>在需要剪枝的情况下，可能会把各种参数都写在函数上，但是这种情况下会让记忆化搜索难以实现，需要注意</p>
+</blockquote>
+</li>
+<li>def<blockquote>
+<p>一步步按顺序求出问题的解的方法。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="7">
+<li><p><code>memset</code> 初始化数组</p>
+<blockquote>
+<p>语法： <code>memset(&lt;数组名&gt;, &lt;初始化的值&gt;, &lt;数组的大小&gt;)</code> <br/><br>虽然 <code>memset</code> 按照1字节为单位对内存进行填充，-1的每一位二进制位都为1，所以不可以像0一样用 <code>memset</code> 进行初始化。通过使用 <code>Memset</code> 可以快速地对高维数组等进行初始化，但是需要注意无法初始化成1之类的数值。</p>
+</blockquote>
+</li>
+<li><p>移位运算</p>
+<ol>
+<li>$1 &lt;&lt; n = 2^n$</li>
+<li>$n &lt;&lt; 1 = 2n$</li>
+<li>$n &gt;&gt; 1 = \lfloor{\frac{n}{2.0}}\rfloor$</li>
+</ol>
+</li>
+<li><p>$a^b算法$</p>
+<blockquote>
+<p>求a的b次方对p取模的值，其中 $1 \leq a, b, p \leq 10^9$</p>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">power</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">int</span> ans = <span class="number">1</span> % p;</span><br><span class="line">   <span class="keyword">for</span> (; b; b &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span> (b &amp; <span class="number">1</span>) ans = <span class="number">1ll</span> *ans * a % p;</span><br><span class="line">      a = <span class="number">1ll</span> * a * a % p;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>$a * b % p$</p>
+<blockquote>
+<p>求a乘b对p取模的值，其中  $1 \leq a, b, p \leq 10^{18}$</p>
+</blockquote>
+<ol>
+<li>方法一<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">mul</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a, <span class="keyword">long</span> <span class="keyword">long</span> b, <span class="keyword">long</span> <span class="keyword">long</span> p)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">long</span> <span class="keyword">long</span> ans = <span class="number">0</span>;</span><br><span class="line">   <span class="keyword">for</span> (; b; b &gt;&gt;= <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span> (b &amp; <span class="number">1</span>) ans = (ans + a) % p;</span><br><span class="line">      a = a * <span class="number">2</span> % p;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>方法二 ($P_6$)<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">mul</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a, <span class="keyword">long</span> <span class="keyword">long</span> b, <span class="keyword">long</span> <span class="keyword">long</span> p)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><p>二进制状态压缩</p>
+<table>
+<thead>
+<tr>
+<th align="center">操作</th>
+<th align="center">运算</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">取出整数n在二进制表示下的第k位</td>
+<td align="center">(n &gt;&gt; k) &amp; 1</td>
+</tr>
+<tr>
+<td align="center">取出整数n在二进制表示下的第0 ~ k - 1位（后k位）</td>
+<td align="center">n &amp; ((1 &lt;&lt; k) - 1)</td>
+</tr>
+<tr>
+<td align="center">把整数n在二进制表示下的第k位取反</td>
+<td align="center">n xor (1 &lt;&lt; k)</td>
+</tr>
+<tr>
+<td align="center">对整数n在二进制表示下的第k位赋值为1</td>
+<td align="center">n | (1&lt;&lt;k)</td>
+</tr>
+<tr>
+<td align="center">对整数n在二进制表示下的第k为赋值为0</td>
+<td align="center">n &amp; (~(1 &lt;&lt; k))</td>
+</tr>
+</tbody></table>
+</li>
+<li></li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>QeuroIzo
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2020/12/26/2020-10-30-112/" title="112. 程序设计">http://example.com/2020/12/26/2020-10-30-112/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 程序设计</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2020-10-29-111/" rel="prev" title="111. vscode设置代码模板：自动生成文件名、作者、创建日期等信息">
+      <i class="fa fa-chevron-left"></i> 111. vscode设置代码模板：自动生成文件名、作者、创建日期等信息
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2020-11-7-113/" rel="next" title="113. 程序设计中的术语">
+      113. 程序设计中的术语 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

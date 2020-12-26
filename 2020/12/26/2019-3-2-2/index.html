@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="管理篇   学会圆滑、八面玲珑 对下属要求严格，对下属宽松会给你带来无尽的麻烦，不要给任何的仁慈，不言你就压不住人，不找仇恨你压不住别人，他会给你惹事，平时可以好商量，你一旦心软了，其他人你怎么办，不要让手下人和你讲理，你说的就是规矩 你要负责的是你办的事，而不是你手下的人，你对他们的负责就是不让他们出现危险，其他的事你都要严格，私事可以适当商量 管理要做到是要做到事要做好，对人要严，但是平时还">
+<meta property="og:type" content="article">
+<meta property="og:title" content="None">
+<meta property="og:url" content="http://example.com/2020/12/26/2019-3-2-2/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="管理篇   学会圆滑、八面玲珑 对下属要求严格，对下属宽松会给你带来无尽的麻烦，不要给任何的仁慈，不言你就压不住人，不找仇恨你压不住别人，他会给你惹事，平时可以好商量，你一旦心软了，其他人你怎么办，不要让手下人和你讲理，你说的就是规矩 你要负责的是你办的事，而不是你手下的人，你对他们的负责就是不让他们出现危险，其他的事你都要严格，私事可以适当商量 管理要做到是要做到事要做好，对人要严，但是平时还">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/source/imagess/posts/none/1.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/none/2.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/none/3.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/none/4.jpg">
+<meta property="article:published_time" content="2020-12-26T13:52:34.387Z">
+<meta property="article:modified_time" content="2020-12-26T14:35:39.229Z">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="Python, Rust, C++, Go, 爬虫, 深度学习, 服务研发, 对象存储">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/source/imagess/posts/none/1.jpg">
+
+<link rel="canonical" href="http://example.com/2020/12/26/2019-3-2-2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>None | QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-3-2-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          None
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <ul>
+<li><h1 id="管理篇"><a href="#管理篇" class="headerlink" title="管理篇"></a>管理篇</h1></li>
+</ul>
+<ol>
+<li>学会圆滑、八面玲珑</li>
+<li>对下属要求严格，对下属宽松会给你带来无尽的麻烦，不要给任何的仁慈，不言你就压不住人，不找仇恨你压不住别人，他会给你惹事，平时可以好商量，你一旦心软了，其他人你怎么办，不要让手下人和你讲理，你说的就是规矩</li>
+<li>你要负责的是你办的事，而不是你手下的人，你对他们的负责就是不让他们出现危险，其他的事你都要严格，私事可以适当商量</li>
+<li>管理要做到是要做到事要做好，对人要严，但是平时还要能玩到一起，这就是你要权衡的</li>
+<li>权衡利弊，有时候不能说自己心狠，有的人就是蹬鼻子上脸</li>
+<li>你不能因为一个人伤害一群人的利益，会牺牲这些人，做错事就要去承担，但可以适当宽松，但是责任该是谁负还是谁</li>
+<li>有的人的确有困难，私底下适当的帮着解决，我不允许任何人破坏我的计划</li>
+<li>公私分明，但是也要学会体恤，除了工作他们什么要求都可以提，能满足的尽量给他们争取，这就是对得起他们<h3 id="9-听人劝吃饱饭"><a href="#9-听人劝吃饱饭" class="headerlink" title="9. 听人劝吃饱饭"></a>9. 听人劝吃饱饭</h3></li>
+<li>不愿意干自有别人干，没人求着他干，不是工作时间就随意一点</li>
+<li>该闹就闹，工作时间不允许闹</li>
+<li>选一两个值得信任的人，能力不用多出重，其实都差不多，能有多厉害，选一两个能给予大事的</li>
+<li>御人有道，用人无疑</li>
+<li>你要分清哪些人是值得你驾驭的，能够对你有帮助的人供你驾驭，你做事会更加顺手，那些麻烦的，实在没用的，硬去驾驭只会让你精力分散的太厉害，事没做好，精力全分散在他们身上了，这是御人有道</li>
+<li>用人无疑：既然选择了，就不要担心后果，既然这件事交给他就放心去让他做，用猜疑的时间不如去想想如果事情出现意外怎么办，事情还没做就开始猜疑，他就做好就用，不能做好就不用。</li>
+</ol>
+<ul>
+<li><h1 id="运营篇"><a href="#运营篇" class="headerlink" title="运营篇"></a>运营篇</h1></li>
+</ul>
+<ol>
+<li>光会管理还不够，还要懂运营</li>
+<li>运营管理本就是一体的</li>
+<li>不懂运营怎么管理他们去让公司盈利</li>
+<li>运营就是通过数据来运营产品，通过数据化的统筹来判断盈利的方式，不同行业的运营不一样，但都是为了盈利</li>
+<li>你要通过运营和管理来让你手下的人去帮助公司盈利</li>
+<li>不管你做的多好管理的多好，如果盈利数据没有上浮那还是你的责任</li>
+<li>运营就是通过数据来判断以你与否和盈利的方式</li>
+<li>让你管理好他们的目的是什么？你管理他们的是盈利的基础和根本，不管是底层还是技术人员，他们都是盈利的根本。如果盈利毫无任何盈利的上浮，你觉得会不会是说你无能，确实有运营部，但是你也脱不了，所以运营你也要会一点，光靠别人远远不如靠自己</li>
+</ol>
+<ul>
+<li><h1 id="疯狂篇"><a href="#疯狂篇" class="headerlink" title="疯狂篇"></a>疯狂篇</h1></li>
+</ul>
+<ol>
+<li>歌名：疯狂</li>
+<li>不想要普通人生就去疯狂吧</li>
+<li>成功的人诶个人都很疯狂</li>
+<li>行踪就要和别人不一样</li>
+<li>活在这个世界就要活得不一样，但是这个不一样不代表你要固执己见，也要去多听取别人的建议，哪怕是废话，也要听一听，人生很奇妙，也许这句废话就会变成你最后的稻草，奇迹不存在，但是偶然存在。</li>
+<li>愿意跟上你的就带他们走，不愿意的就远远的抛下，没人求他们和你走，不愿意相信你可以留下。</li>
+<li>扶不起就不扶，他们都不为自己可惜</li>
+<li>可能是你说话的方式还没有那么周全</li>
+<li>人生会放弃很多人，整个世界的财富只在百分之二十的手里，全世界多少人，大部分的财富又只在百分之二十的人手里，你就该知道生活会放弃百分之八十</li>
+<li>你又不欠他们的，能做多少做多少吧</li>
+<li>都是第一次活，凭什么委屈自己，别说的好像我们是活了两次一样的感觉，帮是出于仁义，不是出于亏欠</li>
+<li>人生之大唯黑已存</li>
+</ol>
+<ul>
+<li><h1 id="情绪篇"><a href="#情绪篇" class="headerlink" title="情绪篇"></a>情绪篇</h1></li>
+</ul>
+<ol>
+<li>学会静心，生气又能怎么样，生气只是一种情绪而已，不去做情绪的奴隶，要学会掌控自己的情绪，生气只是一个负面情绪之一</li>
+<li>当你做事的时候换一个做事的情绪，把情绪分开，一个处理事的一个生活的。</li>
+<li>想想这件事的重要性，想想这件事如果因为情绪破坏了的后果。</li>
+<li>作为一个男人不能因为情绪而让自己的生活乱七八糟</li>
+<li>生气就让那个情绪去生气</li>
+<li>养成一个习惯，做什么事的时候听什么音乐，不开心生气听什么音乐（满天星斗的罗娜河、花季的巴旦杏、真心对你好的人不多，一个也别弄丢、若素的电台）</li>
+<li>当你迷茫的时候不如把所有事情都暂时忘记</li>
+<li>通过音乐控制心情：最快的方法就是单曲循环，可以很快的养成切换的目的</li>
+<li>不知道怎么做的时候就放下所有事做点自己喜欢做的事从头考虑一下自己的目的</li>
+<li>你已经过度透支了精力了，语气在哪废着做一些没有意义的事，不如用这时间好好休息一下，这个时候的你一旦躺到床上放松身心，你就会感觉无比疲倦，不是你废着不想干，而是你身心俱疲，需要的不是该做什么去调整而是睡觉</li>
+<li>睡觉的时候努力去想这件事的预想的过程，让梦里的你继续你的预想</li>
+</ol>
+<ul>
+<li><h1 id="投资"><a href="#投资" class="headerlink" title="投资"></a>投资</h1></li>
+</ul>
+<ol>
+<li>投资考验眼光，看人看项目看运气，其实就看项目就可以了，看人没什么用，敢做这件事的人傻子很少，做事很疯狂的人傻子真的很少。</li>
+<li>看项目：看他的升值空间和消费人群</li>
+<li>升值空间代表了它的浮动、消费人群代表了它的利润</li>
+<li>消费人群是高端的比较好</li>
+<li>薄利多销需要耐心，一个新品牌怎么从零做到有在做到无数，这是一个漫长的过程</li>
+<li>项目也许有前途但是他不是第一个，而且他没有任何信誉和名声基础，别人的起步是1，他的起步是-1</li>
+<li>开始第一步都是从-1走到0，这才算是企业的开始</li>
+<li>没有企业的开始就是一开门就有大把的钱赚的，没有人指导你们公司，你们每时每刻都在赔钱，一开门的基础就是-1。只有走到0你们才是进入初步的正规，所以大部分都选用收购替名的方式，也许预算会多一点，但是收购一个有一点名气的起步为2，比从-1走到2容易很多，这就是决策。收购不代表继续他的运营，你只是需要他的外壳</li>
+<li>数据分析与决策：有一部分人不教如任何公司，他们是一个决策团队，负责收集所有企业的数据信息，有人来收购他们的决策方案，他们会把详细的决策合同方案给对方，但是他们不为任何公司工作，他们只提供方案，只需要把详细的方案给对方</li>
+<li>获取公司的资料的渠道：内部收集渠道</li>
+<li>每一个上市公司都需要去评估他们的价值潜力</li>
+<li>服务过的公司信息详细到比他们自己人还清楚，这些决策团队是鱼钩，决策团队的任务就是做好鱼钩、放好鱼饵</li>
+<li>类似于下期（战棋），你必须清楚的知道你的棋子的移动位置、从一开始就要想好抛弃的棋子</li>
+<li>下棋里面赢了就是没有任何损失，钓鱼损失的就是鱼饵</li>
+<li>损失知识为了更轻松的取胜。</li>
+<li>思考怎么样去选择的时候考虑不到每一个人的得失，即便考虑的再多也不能面面俱到，一个公司多少人，不能因为考虑几个人耽误几千人的整体布局</li>
+<li>你该想的不是他们几个人被抛弃了怎么办，而是真个公司除了问题的后果</li>
+<li>不是你放弃他们，他们就会死的年代了，这不是战争，如果他们有能力能撑到事情结束，人的潜力时无限的，想要活下去的人不会简单的死了，你么不想认输的人不会那么简单</li>
+<li>你不是奥特曼，哪怕是奥特曼也会放弃一些人选择打完怪兽再去救，那这期间就要去相信他们能撑到结束</li>
+<li>生路是一直在的，你不能没都告诉他们在哪，总有一天他们得自己去找，与其你花时间考虑他们怎么办还不如抓紧时间解决跟前的事</li>
+<li>你要记住一件事：你出的越慢牺牲的棋子越多</li>
+<li>太仁慈当不了决策者，决策者决定的是这条路，而不是这条路会牺牲多少人，你要做的是：你只有一个选择，找到最优解或者更优先的位置</li>
+<li>出现灾情之后的第一件事是什么？是救人吗？不是。是抓紧时间稳固灾情，救得再快，有天灾杀得快吗？所以你想的那些先放一放，只会拖累你</li>
+<li>没事，多看看吧，读书、出来走走，男人需要的就是眼界</li>
+<li>看书：心理学、法律犯罪学、曾国藩传这种</li>
+<li>什么书都可以提高眼界，需要看的很多，金融也瞅瞅，决策者也看看，不用会，懂就行，也可以听听一些出名的国际策划案、发布决策的发布会</li>
+<li>可以看看一些大公司的信息：他们的官网、招聘信息还有一些新闻，或者直接从他们内部询问，所有的所有的都能做出来一个评价，所有的信息都需要筛选，空穴不来风。</li>
+<li>要了解一个大公司需要一到三个月。几周连人家几家分公司都弄不清楚，但是可以做大概评估：资产评估、能力评估。</li>
+</ol>
+<p><img src="/source/imagess/posts/none/1.jpg"><br><img src="/source/imagess/posts/none/2.jpg"><br><img src="/source/imagess/posts/none/3.jpg"><br><img src="/source/imagess/posts/none/4.jpg"></p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>QeuroIzo
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2020/12/26/2019-3-2-2/" title="None">http://example.com/2020/12/26/2019-3-2-2/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2019-2-24-43/" rel="prev" title="43. jekyll添加搜索模块">
+      <i class="fa fa-chevron-left"></i> 43. jekyll添加搜索模块
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2019-3-21-44/" rel="next" title="44. Java快速入门">
+      44. Java快速入门 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%A1%E7%90%86%E7%AF%87"><span class="nav-number">1.</span> <span class="nav-text">管理篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E5%90%AC%E4%BA%BA%E5%8A%9D%E5%90%83%E9%A5%B1%E9%A5%AD"><span class="nav-number">1.0.1.</span> <span class="nav-text">9. 听人劝吃饱饭</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%90%E8%90%A5%E7%AF%87"><span class="nav-number">2.</span> <span class="nav-text">运营篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%96%AF%E7%8B%82%E7%AF%87"><span class="nav-number">3.</span> <span class="nav-text">疯狂篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%83%85%E7%BB%AA%E7%AF%87"><span class="nav-number">4.</span> <span class="nav-text">情绪篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%95%E8%B5%84"><span class="nav-number">5.</span> <span class="nav-text">投资</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

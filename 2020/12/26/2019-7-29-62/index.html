@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="说明：以 Dell 游匣为例 设置BIOS   进入BIOS，每台机型都不同，这里以戴尔为例，按住 F2  将 Setting-System Configuration-SATA Operation设置为 AHCI  Secure Boot-Secure Boot Enable 设置为Disabled  Apply - Exit    安装 win10   下载 微PE （由于微PE比较干净，不会">
+<meta property="og:type" content="article">
+<meta property="og:title" content="62. 双系统安装：win10 + ubuntu 18.04">
+<meta property="og:url" content="http://example.com/2020/12/26/2019-7-29-62/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="说明：以 Dell 游匣为例 设置BIOS   进入BIOS，每台机型都不同，这里以戴尔为例，按住 F2  将 Setting-System Configuration-SATA Operation设置为 AHCI  Secure Boot-Secure Boot Enable 设置为Disabled  Apply - Exit    安装 win10   下载 微PE （由于微PE比较干净，不会">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/1.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/2.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/3.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/computer/8.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/7.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/4.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/5.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/6.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/8.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/9.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/10.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/11.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/12.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/13.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/16.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/15.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/17.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/14.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/18.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/19.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/20.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/21.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/22.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/23.png">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/24.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/27.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/25.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/ubuntu/install/26.jpg">
+<meta property="og:image" content="http://example.com/source/imagess/posts/computer/9.png">
+<meta property="article:published_time" content="2020-12-26T13:52:34.434Z">
+<meta property="article:modified_time" content="2020-12-26T14:35:39.229Z">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="Computer OS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/source/imagess/posts/ubuntu/install/1.jpg">
+
+<link rel="canonical" href="http://example.com/2020/12/26/2019-7-29-62/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>62. 双系统安装：win10 + ubuntu 18.04 | QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-7-29-62/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          62. 双系统安装：win10 + ubuntu 18.04
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="说明：以-Dell-游匣为例"><a href="#说明：以-Dell-游匣为例" class="headerlink" title="说明：以 Dell 游匣为例"></a>说明：以 <code>Dell 游匣</code>为例</h1><ul>
+<li><h1 id="设置BIOS"><a href="#设置BIOS" class="headerlink" title="设置BIOS"></a>设置BIOS</h1></li>
+</ul>
+<ol>
+<li><p>进入BIOS，每台机型都不同，这里以戴尔为例，按住 <code>F2</code><br><img src="/source/imagess/posts/ubuntu/install/1.jpg"></p>
+</li>
+<li><p>将 <code>Setting-System Configuration-SATA Operation</code>设置为 <code>AHCI</code><br><img src="/source/imagess/posts/ubuntu/install/2.jpg"></p>
+</li>
+<li><p><code>Secure Boot-Secure Boot Enable</code> 设置为<code>Disabled</code><br><img src="/source/imagess/posts/ubuntu/install/3.jpg"></p>
+</li>
+<li><p><code>Apply - Exit</code></p>
+</li>
+</ol>
+<ul>
+<li><h1 id="安装-win10"><a href="#安装-win10" class="headerlink" title="安装 win10"></a>安装 <code>win10</code></h1></li>
+</ul>
+<ol>
+<li>下载 <code>微PE</code> （由于微PE比较干净，不会强制安装软件，且版本为win10PE，由于低版本的会出现很多问题，如：硬盘识别不出来；U盘识别不出来……）,<a target="_blank" rel="noopener" href="http://down-ww3.newasp.net/pcdown/soft/soft1/wepe_64.exe">点击这里下载微PE</a></li>
+<li>使用键盘快捷键，进入PE</li>
+<li>将系统盘（或者全部的盘（想删除干净的话）） 删除分区，提交</li>
+<li>快速建立分区（一定要用这个，否则没有引导）<br/><blockquote>
+<p>【注意】：如果要是安装双系统，并且在固态上安装ubuntu系统，那么，要分成两个区，删除其中的一个，不要弄成一个区，然后，<code>压缩卷</code>，这样的话，系统就会出现bug：安装完ubuntu之后，win10就坏了</p>
+</blockquote>
+</li>
+<li>还原win10镜像系统</li>
+</ol>
+<ul>
+<li><h1 id="安装-Ubuntu-18-04"><a href="#安装-Ubuntu-18-04" class="headerlink" title="安装 Ubuntu 18.04"></a>安装 <code>Ubuntu 18.04</code></h1></li>
+</ul>
+<ol>
+<li><p>首先，在官网下载镜像，<a target="_blank" rel="noopener" href="http://cn.ubuntu.com/">点击这里下载</a>;</p>
+</li>
+<li><p>使用 <code>UltraISO</code> 制作系统盘（或者使用 <code>rufus</code> 制作，具体百度吧）：<br><img src="/source/imagess/posts/computer/8.png"></p>
+</li>
+<li><p>开始装系统：</p>
+<ol>
+<li><p>按住 <code>F12</code>，选择 <code>UEFI</code><br><img src="/source/imagess/posts/ubuntu/install/7.jpg"></p>
+</li>
+<li><p>选择： <code>Install Ubuntu</code><br><img src="/source/imagess/posts/ubuntu/install/4.jpg"></p>
+</li>
+<li><p>选择中文简体-继续<br><img src="/source/imagess/posts/ubuntu/install/5.jpg"></p>
+</li>
+<li><p>键盘布局默认选择-继续<br><img src="/source/imagess/posts/ubuntu/install/6.jpg"></p>
+</li>
+<li><p>不联网-继续<br><img src="/source/imagess/posts/ubuntu/install/8.jpg"></p>
+</li>
+<li><p>更新和其他软件-默认-继续<br><img src="/source/imagess/posts/ubuntu/install/9.jpg"></p>
+</li>
+<li><p>安装类型-其它选项-继续<br><img src="/source/imagess/posts/ubuntu/install/10.jpg"></p>
+</li>
+<li><p> 分区：</p>
+</li>
+<li><p>以系统安装在固态为例</p>
+<ol>
+<li>单击 <code>固态的空闲内存</code>（此处为51636），点 <code>+</code>， 挂载点选 <code>/</code>，ok<br><img src="/source/imagess/posts/ubuntu/install/11.jpg"></li>
+<li>单击 <code>机械硬盘的空闲内存</code>（此处为216372），点 <code>+</code>，输入200000（大约以这个比例输入），挂载点选 <code>/home</code>，ok<br><img src="/source/imagess/posts/ubuntu/install/12.jpg"></li>
+<li>单击<code>剩余的空闲内存</code>（此处为16372），点 <code>+</code>，设置为用于<code>交换空间</code>，点<code>现在安装</code>，继续；<br><img src="/source/imagess/posts/ubuntu/install/13.jpg"></li>
+</ol>
+</li>
+<li><p>都安装在机械硬盘：</p>
+<ol>
+<li>类似于上面，更加简单而已，<code>大小</code>类比于<code>安装Ubuntu 18.04 - 3.8.1</code>。</li>
+</ol>
+</li>
+<li><p>继续安装<br><img src="/source/imagess/posts/ubuntu/install/16.jpg"></p>
+</li>
+<li><p>位置-默认<br><img src="/source/imagess/posts/ubuntu/install/15.jpg"></p>
+</li>
+<li><p>设置用户名和密码，密码一定要记住<br><img src="/source/imagess/posts/ubuntu/install/17.jpg"></p>
+</li>
+<li><p>重启<br><img src="/source/imagess/posts/ubuntu/install/14.jpg"></p>
+</li>
+<li><p>重启，如果卡住了，就直接用电源强心关机，然后再开机，这个没关系的，放心弄就行<br><img src="/source/imagess/posts/ubuntu/install/18.jpg"></p>
+</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><h1 id="配置-Ubuntu-（非常重要）"><a href="#配置-Ubuntu-（非常重要）" class="headerlink" title="配置 Ubuntu （非常重要）"></a>配置 <code>Ubuntu</code> （非常重要）</h1></li>
+</ul>
+<ol>
+<li><p>进入 <code>Ubuntu高级设置</code><br><img src="/source/imagess/posts/ubuntu/install/19.jpg"></p>
+</li>
+<li><p>进入 <code>Ubuntu,with Linux 4.10.0-15-generis (recovery mode)</code> （第二个）<br><img src="/source/imagess/posts/ubuntu/install/20.jpg"></p>
+</li>
+<li><p>进入 <code>resume resume normal boot</code><br><img src="/source/imagess/posts/ubuntu/install/21.jpg"></p>
+</li>
+<li><p>回车，继续进入此时，已经进入了Ubuntu了<br><img src="/source/imagess/posts/ubuntu/install/22.jpg"></p>
+</li>
+<li><p>运行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install -f</span><br></pre></td></tr></table></figure>
+<p> <img src="/source/imagess/posts/ubuntu/install/23.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo su</span><br><span class="line">sudo gedit &#x2F;etc&#x2F;defaul&#x2F;grub</span><br></pre></td></tr></table></figure>
+<p> <img src="/source/imagess/posts/ubuntu/install/24.jpg"><br>得到下图：<br> <img src="/source/imagess/posts/ubuntu/install/27.jpg"><br>【补】：全部命令<br> <img src="/source/imagess/posts/ubuntu/install/25.jpg"><br> <img src="/source/imagess/posts/ubuntu/install/26.jpg"></p>
+</li>
+<li><p>找到 <code>GRUB_CMDLINE_LINUX_DEFAULT</code>这一行，在 <code>quiet splash </code>后面添加 <code>nouveau.modeset=0</code></p>
+</li>
+<li><p>下面是我的电脑的grub配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"># If you change this file, run &#39;update-grub&#39; afterwards to update</span><br><span class="line"># &#x2F;boot&#x2F;grub&#x2F;grub.cfg.</span><br><span class="line"># For full documentation of the options in this file, see:</span><br><span class="line">#   info -f grub -n &#39;Simple configuration&#39;</span><br><span class="line"></span><br><span class="line">GRUB_DEFAULT&#x3D;0</span><br><span class="line">GRUB_TIMEOUT_STYLE&#x3D;hidden</span><br><span class="line">GRUB_TIMEOUT&#x3D;10</span><br><span class="line">GRUB_DISTRIBUTOR&#x3D;&#96;lsb_release -i -s 2&gt; &#x2F;dev&#x2F;null || echo Debian&#96;</span><br><span class="line">GRUB_CMDLINE_LINUX_DEFAULT&#x3D;&quot;quiet splash nouveau.modeset&#x3D;0&quot;</span><br><span class="line">GRUB_CMDLINE_LINUX&#x3D;&quot;&quot;</span><br><span class="line"></span><br><span class="line"># Uncomment to enable BadRAM filtering, modify to suit your needs</span><br><span class="line"># This works with Linux (no patch required) and with any kernel that obtains</span><br><span class="line"># the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)</span><br><span class="line">#GRUB_BADRAM&#x3D;&quot;0x01234567,0xfefefefe,0x89abcdef,0xefefefef&quot;</span><br><span class="line"></span><br><span class="line"># Uncomment to disable graphical terminal (grub-pc only)</span><br><span class="line">#GRUB_TERMINAL&#x3D;console</span><br><span class="line"></span><br><span class="line"># The resolution used on graphical terminal</span><br><span class="line"># note that you can use only modes which your graphic card supports via VBE</span><br><span class="line"># you can see them in real GRUB with the command &#96;vbeinfo&#39;</span><br><span class="line">#GRUB_GFXMODE&#x3D;640x480</span><br><span class="line"></span><br><span class="line"># Uncomment if you don&#39;t want GRUB to pass &quot;root&#x3D;UUID&#x3D;xxx&quot; parameter to Linux</span><br><span class="line">#GRUB_DISABLE_LINUX_UUID&#x3D;true</span><br><span class="line"></span><br><span class="line"># Uncomment to disable generation of recovery mode menu entries</span><br><span class="line">#GRUB_DISABLE_RECOVERY&#x3D;&quot;true&quot;</span><br><span class="line"></span><br><span class="line"># Uncomment to get a beep at grub start</span><br><span class="line">#GRUB_INIT_TUNE&#x3D;&quot;480 440 1&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p>更新grub</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-grub</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li><h1 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h1><ol>
+<li><img src="/source/imagess/posts/computer/9.png"><br><br/><a href="/files/62-1.pdf">点击这里下载教程</a></li>
+<li>包在<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1U_F1R65JpLinOQ8u-LALcA">这里下载</a> 提取码: 3knb</li>
+<li>附：其他美化视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av26156974?from=search&seid=9708955829816132659">点击这里</a></li>
+</ol>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>QeuroIzo
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2020/12/26/2019-7-29-62/" title="62. 双系统安装：win10 + ubuntu 18.04">http://example.com/2020/12/26/2019-7-29-62/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Computer-OS/" rel="tag"># Computer OS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2019-7-27-61/" rel="prev" title="61. 明朝那些事儿">
+      <i class="fa fa-chevron-left"></i> 61. 明朝那些事儿
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/26/2019-8-5-63/" rel="next" title="63. Excel常用函数">
+      63. Excel常用函数 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E%EF%BC%9A%E4%BB%A5-Dell-%E6%B8%B8%E5%8C%A3%E4%B8%BA%E4%BE%8B"><span class="nav-number">1.</span> <span class="nav-text">说明：以 Dell 游匣为例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AEBIOS"><span class="nav-number">2.</span> <span class="nav-text">设置BIOS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-win10"><span class="nav-number">3.</span> <span class="nav-text">安装 win10</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Ubuntu-18-04"><span class="nav-number">4.</span> <span class="nav-text">安装 Ubuntu 18.04</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-Ubuntu-%EF%BC%88%E9%9D%9E%E5%B8%B8%E9%87%8D%E8%A6%81%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">配置 Ubuntu （非常重要）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BE%8E%E5%8C%96"><span class="nav-number">6.</span> <span class="nav-text">美化</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

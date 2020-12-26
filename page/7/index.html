@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="你有灵魂吗">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QeuroIzoのBlog">
+<meta property="og:url" content="http://example.com/page/7/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="你有灵魂吗">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="Python, Rust, C++, Go, 爬虫, 深度学习, 服务研发, 对象存储">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/page/7/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-22-55/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-22-55/" class="post-title-link" itemprop="url">55. 搭建网址</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="root命令"><a href="#root命令" class="headerlink" title="root命令"></a>root命令</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"> 1  apt update</span><br><span class="line"> 2  apt upgrade</span><br><span class="line"> 3  adduser lqr</span><br><span class="line"> 4  usermod -aG sudo lqr</span><br><span class="line"> 5  adduser test</span><br><span class="line"> 6  usermod -aG root test</span><br><span class="line"> 7  su test</span><br><span class="line"> 8  ls</span><br><span class="line"> 9  sudo rm -r nmap.tar.gz </span><br><span class="line">10  ls</span><br><span class="line">11  sudo rm -r python-nmap-0.1.4.tar.gz </span><br><span class="line">12  ls</span><br><span class="line">13  history</span><br><span class="line">14  userdel -r test</span><br><span class="line">15  ls</span><br><span class="line">16  cd ..</span><br><span class="line">17  cd ~</span><br><span class="line">18  ls</span><br><span class="line">19  userdel -r test</span><br><span class="line">20  history</span><br><span class="line">21  test</span><br><span class="line">22  ls</span><br><span class="line">23  cd &#x2F;home</span><br><span class="line">24  ls</span><br><span class="line">25  userdel -r test</span><br><span class="line">26  ls</span><br><span class="line">27  adduser test</span><br><span class="line">28  usermod -aG sudo test</span><br><span class="line">29  su test</span><br><span class="line">30  history</span><br></pre></td></tr></table></figure></li>
+<li><h1 id="lqr命令"><a href="#lqr命令" class="headerlink" title="lqr命令"></a>lqr命令</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br></pre></td><td class="code"><pre><span class="line">1  clear</span><br><span class="line">2  sudo apt install nginx</span><br><span class="line">3  sudo ufw allow 22</span><br><span class="line">4  sudo ufw allow 80</span><br><span class="line">5  sudo ufw allow 443</span><br><span class="line">6  sudo ufw enable</span><br><span class="line">7  sudo ufw state</span><br><span class="line">8  sudo ufw status</span><br><span class="line">9  sudo apt install python3-pip</span><br><span class="line">10  pip config set global.index-url https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple</span><br><span class="line">11  pip3 install pipenv</span><br><span class="line">12  flask init</span><br><span class="line">13  flask forge</span><br><span class="line">14  flask run</span><br><span class="line">15  exit</span><br><span class="line">16  flask init</span><br><span class="line">17  cd &#x2F;et</span><br><span class="line">18  cd &#x2F;etc</span><br><span class="line">19  cd supervisor&#x2F;</span><br><span class="line">20  ls</span><br><span class="line">21  cat supervisord.conf </span><br><span class="line">22  sudo service supervisor restart </span><br><span class="line">23  cd &#x2F;etc&#x2F;nginx</span><br><span class="line">24  ls</span><br><span class="line">25  cd sites-enabled&#x2F;</span><br><span class="line">26  ls</span><br><span class="line">27  cat record-it </span><br><span class="line">28  sudo ufw status</span><br><span class="line">29  sudo service nginx restart </span><br><span class="line">30  sudo supervisorctl update</span><br><span class="line">31  sudo supervisorctl record-it start</span><br><span class="line">32  sudo supervisorctl</span><br><span class="line">33  pip3 update</span><br><span class="line">34  sudo pip3 install --upgrade pip</span><br><span class="line">35  sudo nano &#x2F;usr&#x2F;bin&#x2F;pip3</span><br><span class="line">36  sudo pip3 install --upgrade pip</span><br><span class="line">37  pip3</span><br><span class="line">38  pip3 -V</span><br><span class="line">39  sudo service supervisor restart </span><br><span class="line">40  sudo service nginx restart </span><br><span class="line">41  sudo supervisorctl</span><br><span class="line">42  ls</span><br><span class="line">43  cd ..</span><br><span class="line">44  ls</span><br><span class="line">45  cd &#x2F;etc&#x2F;supervisor&#x2F;</span><br><span class="line">46  ls</span><br><span class="line">47  sudo nano supervisord.conf </span><br><span class="line">48  sudo ufw allow 9001</span><br><span class="line">49  ls</span><br><span class="line">50  sudo ufw status</span><br><span class="line">51  cd</span><br><span class="line">52  exit</span><br><span class="line">53  cd record-it</span><br><span class="line">54  ls</span><br><span class="line">55  pipenv install --dev</span><br><span class="line">56  pipenv shell</span><br><span class="line">57  cd ..</span><br><span class="line">58  sudo nginx -t</span><br><span class="line">59  cd &#x2F;etc&#x2F;nginx</span><br><span class="line">60  ls</span><br><span class="line">61  cd sites-enabled&#x2F;</span><br><span class="line">62  ls</span><br><span class="line">63  sudo nano record-it</span><br><span class="line">64  ls</span><br><span class="line">65  sudo mv default </span><br><span class="line">66  ls</span><br><span class="line">67  sudo mv default</span><br><span class="line">68  sudo mv --help</span><br><span class="line">69  ls</span><br><span class="line">70  cat default</span><br><span class="line">71  sudo mv --help</span><br><span class="line">72  sudo mv default</span><br><span class="line">73  cler</span><br><span class="line">74  clear</span><br><span class="line">75  ls</span><br><span class="line">76  cd ~</span><br><span class="line">77  sudo apt install supervisor</span><br><span class="line">78  cd &#x2F;etc&#x2F;supervisor&#x2F;</span><br><span class="line">79  ls</span><br><span class="line">80  cd conf.d</span><br><span class="line">81  ls</span><br><span class="line">82  sudo nano record-it.conf</span><br><span class="line">83  cd ..</span><br><span class="line">84  ls</span><br><span class="line">85  sudo nano supervisord.conf </span><br><span class="line">86  sudo supervisorctl </span><br><span class="line">87  sudo nano supervisord.conf </span><br><span class="line">88  sudo nano record-it.conf</span><br><span class="line">89  ls</span><br><span class="line">90  cd conf.d</span><br><span class="line">91  ls</span><br><span class="line">92  sudo nano record-it.conf</span><br><span class="line">93  cd ..</span><br><span class="line">94  ls</span><br><span class="line">95  sudo rm record-it.conf </span><br><span class="line">96  ls</span><br><span class="line">97  sudo supervisorctl </span><br><span class="line">98  sudo supervisorctl reread</span><br><span class="line">99  sudo supervisorctl update</span><br><span class="line">100  sudo supervisorctl </span><br><span class="line">101  sudo service nginx restart </span><br><span class="line">102  cd &#x2F;etc&#x2F;nginx</span><br><span class="line">103  ls</span><br><span class="line">104  cd conf.d</span><br><span class="line">105  ls</span><br><span class="line">106  cd ..</span><br><span class="line">107  cd sites-enabled&#x2F;</span><br><span class="line">108  ls</span><br><span class="line">109  sudo rm default</span><br><span class="line">110  ls</span><br><span class="line">111  cd ..</span><br><span class="line">112  cd &#x2F;etc&#x2F;supervisor&#x2F;</span><br><span class="line">113  ls</span><br><span class="line">114  sudo supervisorctl</span><br><span class="line">115  cd &#x2F;etc&#x2F;nginx</span><br><span class="line">116  cd sites-enabled&#x2F;</span><br><span class="line">117  ls</span><br><span class="line">118  cat record-it </span><br><span class="line">119  sudo nginx 0t</span><br><span class="line">120  sudo nginx -t</span><br><span class="line">121  sudo service nginx re</span><br><span class="line">122  sudo service nginx restart </span><br><span class="line">123  sudo nginx -t</span><br><span class="line">124  ls</span><br><span class="line">125  sudo service supervisor restart </span><br><span class="line">126  sudo supervisorctl</span><br><span class="line">127  cd ~</span><br><span class="line">128  cd record-it&#x2F;</span><br><span class="line">129  cd..</span><br><span class="line">130  cd ..</span><br><span class="line">131  sudo supervisorctl</span><br><span class="line">132  cd ~&#x2F;record-it&#x2F;</span><br><span class="line">133  ls</span><br><span class="line">134  cd server&#x2F;</span><br><span class="line">135  ls</span><br><span class="line">136  sudo vim nginx.config </span><br><span class="line">137  sudo vim supervisor.ini</span><br><span class="line">138  cd ~</span><br><span class="line">139  sudo supervisor</span><br><span class="line">140  sudo supervisorctl</span><br><span class="line">141  pip3 install pipenv</span><br><span class="line">142  cd record-i</span><br><span class="line">143  sudo service supervisor restart </span><br><span class="line">144  sudo supervisorctl</span><br><span class="line">145  cd record-it&#x2F;</span><br><span class="line">146  pip3 install pipenv</span><br><span class="line">147  pipenv shell</span><br><span class="line">148  sudo ufw status</span><br><span class="line">149  cd ~</span><br><span class="line">150  ls</span><br><span class="line">151  cd &#x2F;etc&#x2F;supervisor&#x2F;</span><br><span class="line">152  ls</span><br><span class="line">153  cat supervisord.conf </span><br><span class="line">154  sudo service supervisor res</span><br><span class="line">155  sudo service supervisor restart </span><br><span class="line">156  sudo service nginx restart </span><br><span class="line">157  sudo supervisorctl</span><br><span class="line">158  cd ~&#x2F;record-it&#x2F;</span><br><span class="line">159  ls</span><br><span class="line">160  pip3 install pipenv</span><br><span class="line">161  pipenv -V</span><br><span class="line">162  pipenv --version</span><br><span class="line">163  sudo supervisorctl</span><br><span class="line">164  cd ~</span><br><span class="line">165  sudo nano &#x2F;etc&#x2F;supervisor&#x2F;conf.d&#x2F;record-it.conf </span><br><span class="line">166  pip3 install uwsgi</span><br><span class="line">167  sudo pip3 install uwsgi</span><br><span class="line">168  sudo service supervisor restart </span><br><span class="line">169  sudo service nginx restart </span><br><span class="line">170  sudo nginx -t</span><br><span class="line">171  sudo supervisorctl</span><br><span class="line">172  cd &#x2F;etc&#x2F;nginx</span><br><span class="line">173  ls</span><br><span class="line">174  cd sites-enabled&#x2F;</span><br><span class="line">175  ls</span><br><span class="line">176  cd conf.s</span><br><span class="line">177  cd conf.d</span><br><span class="line">178  ls</span><br><span class="line">179  cd .. conf.d</span><br><span class="line">180  ls</span><br><span class="line">181  cd conf.d&#x2F;</span><br><span class="line">182  ls</span><br><span class="line">183  cd &#x2F;etc&#x2F;supervisor&#x2F;</span><br><span class="line">184  ls</span><br><span class="line">185  cd conf.d&#x2F;</span><br><span class="line">186  ls</span><br><span class="line">187  cat record-it.conf </span><br><span class="line">188  cd &#x2F;etc&#x2F;nginx&#x2F;</span><br><span class="line">189  ls</span><br><span class="line">190  cat nginx.conf </span><br><span class="line">191  cd sites-enabled&#x2F;</span><br><span class="line">192  ls</span><br><span class="line">193  cat record-it </span><br><span class="line">194  ls</span><br><span class="line">195  cd ..</span><br><span class="line">196  ls</span><br><span class="line">197  cd conf.d</span><br><span class="line">198  ls</span><br><span class="line">199  cd ..</span><br><span class="line">200  ls</span><br><span class="line">201  clear</span><br><span class="line">202  ls</span><br><span class="line">203  cd sites-enabled&#x2F;</span><br><span class="line">204  ls</span><br><span class="line">205  cat record-it </span><br><span class="line">206  cd &#x2F;etc&#x2F;nginx&#x2F;</span><br><span class="line">207  ls</span><br><span class="line">208  cd conf.d&#x2F;</span><br><span class="line">209  ls</span><br><span class="line">210  cd &#x2F;etc&#x2F;supervisor&#x2F;</span><br><span class="line">211  ls</span><br><span class="line">212  cd conf.d&#x2F;</span><br><span class="line">213  ls</span><br><span class="line">214  cat record-it.conf</span><br><span class="line">215  sudo nginx -t</span><br><span class="line">216  sudo service nginx restart </span><br><span class="line">217  sudo service supervisor restart </span><br><span class="line">218  sudo nginx -t</span><br><span class="line">219  ls</span><br><span class="line">220  sudo supervisorctl</span><br><span class="line">221  ls</span><br><span class="line">222  cd ..</span><br><span class="line">223  ls</span><br><span class="line">224  cat supervisord.conf </span><br><span class="line">225  cd .</span><br><span class="line">226  cd..</span><br><span class="line">227  cd ..</span><br><span class="line">228  ls</span><br><span class="line">229  cd nginx&#x2F;</span><br><span class="line">230  ls</span><br><span class="line">231  cd sites-enabled&#x2F;</span><br><span class="line">232  ls</span><br><span class="line">233  cat record-it </span><br><span class="line">234  uwsgi</span><br><span class="line">235  uwsgi -V</span><br><span class="line">236  uwsgi --version</span><br><span class="line">237  sudo nginx -t</span><br><span class="line">238  cd &#x2F;etc&#x2F;supervisor&#x2F;</span><br><span class="line">239  ls</span><br><span class="line">240  cd conf.d</span><br><span class="line">241  ls</span><br><span class="line">242  car record-it.conf </span><br><span class="line">243  cat record-it.conf </span><br><span class="line">244  clear</span><br><span class="line">245  cat sup</span><br><span class="line">246  cat record-it.conf </span><br><span class="line">247  sudo supervisorctl reread</span><br><span class="line">248  sudo supervisorctl update</span><br><span class="line">249  sudo supervisorctl record-it stop</span><br><span class="line">250  sudo supervisorctl record-it start</span><br><span class="line">251  cd ..</span><br><span class="line">252  cat supervisord.conf </span><br><span class="line">253  sudo supervisorctl</span><br><span class="line">254  su</span><br><span class="line">255  su root</span><br><span class="line">256  flask init</span><br><span class="line">257  flask forge</span><br><span class="line">258  flask run</span><br><span class="line">259  exit</span><br><span class="line">260  flask init</span><br><span class="line">261  clear</span><br><span class="line">262  flask init</span><br><span class="line">263  pip3 install pipenv</span><br><span class="line">264  pipenv --version</span><br><span class="line">265  pip uninstall pipenv</span><br><span class="line">266  pip3 install pipenv</span><br><span class="line">267  sudo pip3 install pipenv</span><br><span class="line">268  ls</span><br><span class="line">269  cd record-it&#x2F;</span><br><span class="line">270  ls</span><br><span class="line">271  pipenv install --dev</span><br><span class="line">272  ls</span><br><span class="line">273  pipenv install --dev</span><br><span class="line">274  sudo service nginx restart </span><br><span class="line">275  sudo nginx -y</span><br><span class="line">276  sudo nginx -t</span><br><span class="line">277  sudo service supervisor restart </span><br><span class="line">278  sudo supervisorctl </span><br><span class="line">279  cd ~</span><br><span class="line">280  sudo supervisorctl </span><br><span class="line">281  cd record-it&#x2F;</span><br><span class="line">282  ls</span><br><span class="line">283  pipenv install --dev</span><br><span class="line">284  pipenv shell</span><br><span class="line">285  ls</span><br><span class="line">286  pipenv shell</span><br><span class="line">287  pipenv rm</span><br><span class="line">288  pipenv shell</span><br><span class="line">289  pipenv init</span><br><span class="line">290  flask init</span><br><span class="line">291  flask forge</span><br><span class="line">292  flask run</span><br><span class="line">293  sudo service nginx restart </span><br><span class="line">294  sudo service supervisor restart </span><br><span class="line">295  sudo service nginx restart </span><br><span class="line">296  ls</span><br><span class="line">297  clar</span><br><span class="line">298  clear</span><br><span class="line">299  pip3 list</span><br><span class="line">300  cd record-it&#x2F;</span><br><span class="line">301  ls</span><br><span class="line">302  pipenv install --dev</span><br><span class="line">303  pipenv shell</span><br><span class="line">304  sudo service supervisor restart</span><br><span class="line">305  service nginx restart</span><br><span class="line">306  sudo service nginx restart</span><br><span class="line">307  cd &#x2F;etc&#x2F;nginx</span><br><span class="line">308  ls</span><br><span class="line">309  cd sites-</span><br><span class="line">310  cd sites-enabled&#x2F;</span><br><span class="line">311  ls</span><br><span class="line">312  cat record-it </span><br><span class="line">313  cd ~</span><br><span class="line">314  sudo supervisor</span><br><span class="line">315  sudo supervisorctl </span><br><span class="line">316  pip3 install dotenv</span><br><span class="line">317  sudo pip3 install dotenv</span><br><span class="line">318  sudo service nginx restart </span><br><span class="line">319  nginx error log</span><br><span class="line">320  sudo nginx error log</span><br><span class="line">321  sudo service supervisor restart </span><br><span class="line">322  sudo supervisorctl </span><br><span class="line">323  cd ..</span><br><span class="line">324  sudo pip3 install Jinja2</span><br><span class="line">325  sudo pip3 install flask</span><br><span class="line">326  sudo pip3 install flask-babel</span><br><span class="line">327  sudo pip3 install flask-apscheduler</span><br><span class="line">328  exit</span><br><span class="line">329  pip3 install uwsgi</span><br><span class="line">330  exit</span><br><span class="line">331  clear</span><br><span class="line">332  ping 39.105.48.114</span><br><span class="line">333  sudo supervisorctl </span><br><span class="line">334  python3</span><br><span class="line">335  pip3 uninstall dotenv</span><br><span class="line">336  sudo pip3 uninstall dotenv</span><br><span class="line">337  sudo pip3 install python-dotenv</span><br><span class="line">338  sudo service nginx restart </span><br><span class="line">339  sudo service supervisor restart </span><br><span class="line">340  sudo supervisorctl </span><br><span class="line">341  pip3 install python-click</span><br><span class="line">342  sudo pip3 install python-click</span><br><span class="line">343  sudo pip3 install click</span><br><span class="line">344  sudo service supervisor restart </span><br><span class="line">345  sudo service nginx restart </span><br><span class="line">346  sudo supervisorctl </span><br><span class="line">347  sudo pip3 install flask</span><br><span class="line">348  sudo service supervisor restart </span><br><span class="line">349  sudo service nginx restart </span><br><span class="line">350  sudo supervisorctl </span><br><span class="line">351  sudo pip3 uninstall flask</span><br><span class="line">352  sudo pip3 install python-flask</span><br><span class="line">353  pip3 install flask</span><br><span class="line">354  sudo pip3 install flask</span><br><span class="line">355  sudo pip3 install flask_babel</span><br><span class="line">356  sudo supervisorctl </span><br><span class="line">357  cd record-it&#x2F;</span><br><span class="line">358  ls</span><br><span class="line">359  pipenv shell</span><br><span class="line">360  pip3 list</span><br><span class="line">361  cd ..</span><br><span class="line">362  sudo pip3 install apscheduler</span><br><span class="line">363  sudo pip3 install flask-apscheduler</span><br><span class="line">364  sudo pip3 install flask-caching</span><br><span class="line">365  sudo pip3 install flask-login</span><br><span class="line">366  sudo pip3 install flask-sqlalchemy</span><br><span class="line">367  sudo pip3 install flask-wtf</span><br><span class="line">368  sudo pip3 install bootstrap-flask</span><br><span class="line">369  sudo pip3 install flask-ckeditor</span><br><span class="line">370  sudo pip3 install faker</span><br><span class="line">371  sudo pip3 install flask-moment</span><br><span class="line">372  sudo pip3 install pandas</span><br><span class="line">373  sudo pip3 install openpyxl</span><br><span class="line">374  sudo service supervisor restart </span><br><span class="line">375  sudo service nginx restart </span><br><span class="line">376  sudo supervisor</span><br><span class="line">377  sudo supervisorctl </span><br><span class="line">378  pip install dot-python</span><br><span class="line">379  sudo pip3 install dot-Ppython</span><br><span class="line">380  sudo pip3 install dot-Python</span><br><span class="line">381  sudo pip3 install dotenv-Python</span><br><span class="line">382  sudo pip3 install dot-python</span><br><span class="line">383  cd record-it&#x2F;</span><br><span class="line">384  ls</span><br><span class="line">385  sudo nano .env</span><br><span class="line">386  ls</span><br><span class="line">387  sudo vim .env</span><br><span class="line">388  ls</span><br><span class="line">389  sudo vim .env</span><br><span class="line">390  ls</span><br><span class="line">391  sudo vim .env</span><br><span class="line">392  ls</span><br><span class="line">393  sudo vim .env</span><br><span class="line">394  sudo service nginx restart </span><br><span class="line">395  sudo service supervisor restart </span><br><span class="line">396  cd ..</span><br><span class="line">397  cd record-it&#x2F;</span><br><span class="line">398  nano .env</span><br><span class="line">399  sudo vim .env</span><br><span class="line">400  sudo service supervisor restart </span><br><span class="line">401  sudo service nginx restart </span><br><span class="line">402  sudo supervisorctl </span><br><span class="line">403  whereis uwsgi</span><br><span class="line">404  cd &#x2F;usr&#x2F;local&#x2F;bin&#x2F;uwsgi</span><br><span class="line">405  ls</span><br><span class="line">406  cd &#x2F;usr&#x2F;local&#x2F;bin&#x2F;uwsgi</span><br><span class="line">407  cd &#x2F;usr&#x2F;local</span><br><span class="line">408  ls</span><br><span class="line">409  cd bin</span><br><span class="line">410  ls</span><br><span class="line">411  cd uwsgi</span><br><span class="line">412  sudo cd uwsgi</span><br><span class="line">413  cd ~&#39;</span><br><span class="line">414  cd ~</span><br><span class="line">415  cd ~</span><br><span class="line">416  uwsgi -s &#x2F;tmp&#x2F;uwsgi.sock -M -p 4 -t 30 --limit-as 128 -R 10000 -d &#x2F;var&#x2F;log&#x2F;uwsgi.log --vhost --uid www --gid www --python-autoreload 1</span><br><span class="line">417  tail -f &#x2F;tmp&#x2F;uwsgi.log</span><br><span class="line">418  tail -f &#x2F;usr&#x2F;local&#x2F;bin&#x2F;uwsgi&#x2F;uwsgi.log</span><br><span class="line">419  pip3 uninstall uwsgi</span><br><span class="line">420  sudo pip3 uninstall uwsgi</span><br><span class="line">421  ls</span><br><span class="line">422  pip3 list</span><br><span class="line">423  apt-get install build-essential python-dev</span><br><span class="line">424  sudo apt-get install build-essential python-dev</span><br><span class="line">425  pip3</span><br><span class="line">426  pip3 -V</span><br><span class="line">427  pip3 install uwsgi</span><br><span class="line">428  sudo pip3 install uwsgi</span><br><span class="line">429  mkdir test</span><br><span class="line">430  ls</span><br><span class="line">431  cd test</span><br><span class="line">432  nano foobar.py</span><br><span class="line">433  uwsgi --http :9090 --wsgi-file foobar.py</span><br><span class="line">434  cd </span><br><span class="line">435  sudo service nginx restart </span><br><span class="line">436  sudo service supervisor restart </span><br><span class="line">437  sudo supervisorctl </span><br><span class="line">438  cd record-it&#x2F;</span><br><span class="line">439  ls</span><br><span class="line">440  pipenv shell</span><br><span class="line">441  sudo service supervisor restart </span><br><span class="line">442  sudo service nginx restart </span><br><span class="line">443  sudo supervisorctl </span><br><span class="line">444  flask init</span><br><span class="line">445  flask forge</span><br><span class="line">446  flask run</span><br><span class="line">447  exit</span><br><span class="line">448  sudo nginx -t</span><br><span class="line">449  sudo service nginx restart &#39;</span><br><span class="line">450  sudo service nginx restart</span><br><span class="line">451  sudo service supervisor restart</span><br><span class="line">452  sudo nginx -t</span><br><span class="line">453  cd record-it</span><br><span class="line">454  pipenv shell</span><br><span class="line">455  l</span><br><span class="line">456  ls</span><br><span class="line">457  sudo service nginx restart</span><br><span class="line">458  sudo service supervisor restart</span><br><span class="line">459  clear</span><br><span class="line">460  cd ..</span><br><span class="line">461  ls</span><br><span class="line">462  cd record-it</span><br><span class="line">463  ls</span><br><span class="line">464  cd record-it</span><br><span class="line">465  ls</span><br><span class="line">466  sudo nano .env</span><br><span class="line">467  pipenv shell</span><br><span class="line">468  flask init</span><br><span class="line">469  flask forge</span><br><span class="line">470  flask run</span><br><span class="line">471  sudo service nginx restart</span><br><span class="line">472  sudo service supervisor restart</span><br><span class="line">473  history</span><br></pre></td></tr></table></figure>
+</li>
+<li><h1 id="test-命令"><a href="#test-命令" class="headerlink" title="test 命令"></a>test 命令</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">1  ls</span><br><span class="line">2  cd test</span><br><span class="line">3  clearclear</span><br><span class="line">4  clear</span><br><span class="line">5  wget http:&#x2F;&#x2F;xael.org&#x2F;norman&#x2F;python&#x2F;python-nmap&#x2F;python-nmap-0.1.4.tar.gz -o nmap.tar.gz</span><br><span class="line">6  ls</span><br><span class="line">7  tar</span><br><span class="line">8  tar --version</span><br><span class="line">9  tar -xzf nmap.tar.gz </span><br><span class="line">10  ls</span><br><span class="line">11  sudo apt install tar</span><br><span class="line">12  ls</span><br><span class="line">13  tar -xzf nmap.tar.gz </span><br><span class="line">14  ls</span><br><span class="line">15  tar -zxvf nmap.tar.gz </span><br><span class="line">16  ls</span><br><span class="line">17  tar --V</span><br><span class="line">18  tar -V</span><br><span class="line">19  tar --version</span><br><span class="line">20  tar -zxvf nmap.tar.gz </span><br><span class="line">21  tar -xvf nmap.tar.gz </span><br><span class="line">22  tar zxvf nmap.tar.gz </span><br><span class="line">23  tar -xvf nmap.tar.gz</span><br><span class="line">24  tar xvf nmap.tar.gz </span><br><span class="line">25  ls</span><br><span class="line">26  tar xvf python-nmap-0.1.4.tar.gz </span><br><span class="line">27  ls</span><br><span class="line">28  cd python-nmap-0.1.4&#x2F;</span><br><span class="line">29  ls</span><br><span class="line">30  python setup.py in</span><br><span class="line">31  python setup.py install</span><br><span class="line">32  sudo python setup.py install</span><br><span class="line">33  ls</span><br><span class="line">34  easy_install python-nmap</span><br><span class="line">35  sudo easy_install python-nmap</span><br><span class="line">36  cd ..</span><br><span class="line">37  ls</span><br><span class="line">38  sudo easy_install pyPdf python-nmap pygeoip mechanize BeautifulSoup4</span><br><span class="line">39  sudo apt-get install python-bluez bluetooth python-obexftp</span><br><span class="line">40  ls</span><br><span class="line">41  mkdir demo</span><br><span class="line">42  ls</span><br><span class="line">43  cd demo</span><br><span class="line">44  echo print \&quot;Hello world\&quot; &gt; hello.py</span><br><span class="line">45  l</span><br><span class="line">46  python hello.py </span><br><span class="line">47  python</span><br><span class="line">48  import socket</span><br><span class="line">49  python</span><br><span class="line">50  ls</span><br><span class="line">51  nano hello.py </span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-22-54/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-22-54/" class="post-title-link" itemprop="url">54. 树</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h1><ol>
+<li>树（Tree）是n(n &gt;= 0 )个结点的有限集。n = 0时称为空树。在任意一棵非空树中：（1）有且仅有一个特定的称为根（root）的结点；（2）在 n &gt; 1 时，其余结点可分为m（m &gt; 0）个互不相交的有限集 $T_1、T_2、T_3 …… T_m$，其中每一个集合本身又是一颗树，并且称为根的子树（SubTree）。</li>
+<li>n &gt; 0时根结点是唯一的，不可能存在多个根结点。</li>
+<li>m &gt; 0时，子树的个数没有限制，但他们一定是互不相交的。</li>
+<li>结点用用改的子树数称为结点的度。</li>
+<li>度为0的结点称为叶子结点或终端结点；度不为0的结点称为非终端结点或分支结点。</li>
+<li>除根结点之外，分支结点称为内部节点。</li>
+<li>树的度是树内各结点度的最大值。<h1 id="2-为什么-n-个结点的树，有-n-1-条边"><a href="#2-为什么-n-个结点的树，有-n-1-条边" class="headerlink" title="2. 为什么$n$个结点的树，有$n - 1$条边"></a>2. 为什么$n$个结点的树，有$n - 1$条边</h1></li>
+<li>假设有1个结点时，则有0条边</li>
+<li>有2个结点时，若是连通的且不能为环，所以就得有$1$条边将这两个结点连接在一起</li>
+<li>若有3个结点时，将前两个看为一个整体，则必须有$1$条边，将这两个部分连接在一起</li>
+<li>以此类推<h3 id="【释】：整体化一思想"><a href="#【释】：整体化一思想" class="headerlink" title="【释】：整体化一思想"></a>【释】：整体化一思想</h3><h1 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h1></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-10-53/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-10-53/" class="post-title-link" itemprop="url">53. 关系数据库标准语言SQL</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><p>基本表的定义、删除与修改</p>
+<ol>
+<li>定义基本表<br><img src="/source/imagess/posts/database/1.png"></li>
+<li>数据类型<br><img src="/source/imagess/posts/database/2.png">（不同的RDBMS支持的数据类型不同）</li>
+<li>模式与表<br><img src="/source/imagess/posts/database/3.png"></li>
+<li>修改基本表<br><img src="/source/imagess/posts/database/4.png"></li>
+<li>删除基本表<br><img src="/source/imagess/posts/database/5.png"></li>
+<li>建立索引<br><img src="/source/imagess/posts/database/6.png"></li>
+<li>删除索引<br><img src="/source/imagess/posts/database/7.png"></li>
+</ol>
+</li>
+<li><p>数据查询</p>
+<ol>
+<li><p>select<br><img src="/source/imagess/posts/database/8.png"></p>
+</li>
+<li><p>单表查询</p>
+<ol>
+<li><p>选择表中的若干列</p>
+<ol>
+<li>查询指定列<br><img src="/source/imagess/posts/database/9.png"></li>
+<li>查询全部列<br><img src="/source/imagess/posts/database/10.png"></li>
+<li>查询经过计算的列<br><img src="/source/imagess/posts/database/11.png"></li>
+<li>消除取值重复的行<br><img src="/source/imagess/posts/database/12.png"></li>
+</ol>
+</li>
+<li><p>选择表中的若干元组</p>
+<ol>
+<li><p>查询条件<br><img src="/source/imagess/posts/database/13.png"></p>
+</li>
+<li><p>通过 <code>where</code>子句实现<br><img src="/source/imagess/posts/database/14.png"></p>
+</li>
+<li><p>谓词<code>BETWEEN…AND</code>和<code>NOT BETWEEN…AND</code>用来查找属性值在(或不在)指定范围内的元组（包含AND关键词两侧的范围）<br><img src="/source/imagess/posts/database/15.png"></p>
+</li>
+<li><p>谓词<code>IN</code>用来查找属性值属于指定集合的元组<br><img src="/source/imagess/posts/database/16.png"></p>
+</li>
+<li><p>谓词 <code>LIKE</code> 用来进行字符串的匹配</p>
+<blockquote>
+<p>格式： <code>[NOT] LIKE &#39;&lt;匹配串&gt;&#39; [ESCAPE &#39;&lt;换码字符&gt;&#39;]</code></p>
+</blockquote>
+<p><img src="/source/imagess/posts/database/17.png"><br><img src="/source/imagess/posts/database/18.png"><br><img src="/source/imagess/posts/database/19.png"></p>
+</li>
+<li><p>IS<br><img src="/source/imagess/posts/database/20.png"></p>
+</li>
+<li><p>NOT, AND, OR<br><img src="/source/imagess/posts/database/21.png"></p>
+</li>
+</ol>
+</li>
+<li><p>ORDER BY子句</p>
+<ol>
+<li>可以用ORDER BY子句对查询结果按一个或多个属性列排序<br><img src="/source/imagess/posts/database/22.png"><br><img src="/source/imagess/posts/database/23.png"></li>
+</ol>
+</li>
+<li><p>聚集函数<br><img src="/source/imagess/posts/database/24.png"><br><img src="/source/imagess/posts/database/25.png"></p>
+</li>
+<li><p>GROUP BY子句</p>
+<ol>
+<li>GROUP BY子句将查询结果按某一列或多列的值分组，值相等的为一组<br><img src="/source/imagess/posts/database/26.png">      </li>
+<li>查询结果分组的目的：细化聚集函数的作用对象<br><img src="/source/imagess/posts/database/27.png"></li>
+<li>HAVING<br><img src="/source/imagess/posts/database/28.png"><br><img src="/source/imagess/posts/database/29.png"></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>连接查询</p>
+<ol>
+<li>定义：若一个查询同时涉及两个以上的表，则称之为连接查询</li>
+<li>等值与非等值连接查询<br><img src="/source/imagess/posts/database/30.png"></li>
+<li>自身连接<br><img src="/source/imagess/posts/database/31.png"></li>
+<li>外连接<br><img src="/source/imagess/posts/database/32.png"></li>
+<li>复合条件连接<br><img src="/source/imagess/posts/database/33.png"><br><img src="/source/imagess/posts/database/34.png"><br><img src="/source/imagess/posts/database/35.png"></li>
+</ol>
+</li>
+<li><p>嵌套查询</p>
+<ol>
+<li>定义：在SQL语言中，一个SELECT-FROM-WHERE语句称为一个查询块。将一个查询块嵌套在另一个查询块的WHERE子句或HAVING短语的条件中的查询称为嵌套查询。<br><img src="/source/imagess/posts/database/36.png"></li>
+<li>带有IN谓词的子查询<br><img src="/source/imagess/posts/database/37.png"><br><img src="/source/imagess/posts/database/38.png"></li>
+<li>带有比较运算符的子查询<br><img src="/source/imagess/posts/database/39.png"></li>
+<li>带有ANY或ALL谓词的子查询<br><img src="/source/imagess/posts/database/40.png"><br><img src="/source/imagess/posts/database/41.png"><br><img src="/source/imagess/posts/database/42.png"></li>
+<li>带有EXISTS谓词的子查询<br><img src="/source/imagess/posts/database/43.png"></li>
+<li>集合查询<br><img src="/source/imagess/posts/database/44.png"><br><img src="/source/imagess/posts/database/45.png"><br><img src="/source/imagess/posts/database/46.png"></li>
+<li>select语句的一般格式<br><img src="/source/imagess/posts/database/47.png"></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>数据更新</p>
+<ol>
+<li>插入数据<ol>
+<li>插入元组<br><img src="/source/imagess/posts/database/48.png"><br><img src="/source/imagess/posts/database/49.png"></li>
+<li>插入子查询结果<br><img src="/source/imagess/posts/database/50.png"></li>
+<li>修改数据<br><img src="/source/imagess/posts/database/51.png"></li>
+<li>删除数据<br><img src="/source/imagess/posts/database/52.png"></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>视图<br><img src="/source/imagess/posts/database/53.png"></p>
+<ol>
+<li>定义视图<ol>
+<li>建立视图<br><img src="/source/imagess/posts/database/54.png"><br><img src="/source/imagess/posts/database/55.png"><br><img src="/source/imagess/posts/database/56.png"><br><img src="/source/imagess/posts/database/57.png"></li>
+<li>删除视图<br><img src="/source/imagess/posts/database/58.png"></li>
+</ol>
+</li>
+<li>查询视图<br><img src="/source/imagess/posts/database/59.png"><br><img src="/source/imagess/posts/database/60.png"></li>
+<li>更新视图<br><img src="/source/imagess/posts/database/61.png"><br><img src="/source/imagess/posts/database/62.png"><br><img src="/source/imagess/posts/database/63.png"></li>
+<li>视图的作用<br/><br><img src="/source/imagess/posts/database/64.png"></li>
+</ol>
+</li>
+<li><p>小结<br><img src="/source/imagess/posts/database/65.png"></p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-9-52/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-9-52/" class="post-title-link" itemprop="url">52. 串</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="串的定义"><a href="#串的定义" class="headerlink" title="串的定义"></a>串的定义</h1><ol>
+<li>定义：由零个或多个字符组成的有限序列，又名叫字符串</li>
+<li>所谓的序列，说明串的相邻字符之间具有前驱和后继的关系</li>
+<li>子串在主串中的位置就是子串的第一个字符在主串种的序号</li>
+</ol>
+</li>
+<li><h1 id="串的比较"><a href="#串的比较" class="headerlink" title="串的比较"></a>串的比较</h1><ol>
+<li>串的比较是通过组成串的字符之间的编码来进行的</li>
+<li>字符的编码指的是字符再对应字符集中的序号</li>
+<li>类似于：查字典就是在比较字符串大小的过程</li>
+</ol>
+</li>
+<li><h1 id="串的抽象数据类型"><a href="#串的抽象数据类型" class="headerlink" title="串的抽象数据类型"></a>串的抽象数据类型</h1><ol>
+<li>字符串与线性表的差别：<ol>
+<li>线性表更关注的是单个元素的操作，比如查找一个元素，插入或删除一个元素</li>
+<li>串中更多的是查找子串的位置、得到指定位置子串、替换子串等操作</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><h1 id="朴素的模式匹配算法"><a href="#朴素的模式匹配算法" class="headerlink" title="朴素的模式匹配算法"></a>朴素的模式匹配算法</h1><ol>
+<li>子串的定位操作通常称作串的模式匹配</li>
+<li>简单的说，就是对主串的每一个字符作为子串开头，与要匹配的字符串进行匹配。对主串做大循环，每个字符开头做T长度的小循环，指导匹配成功或全部遍历完成为止。</li>
+<li>S的长度放在S[0]中，T的长度放在T[0]中</li>
+<li>代码<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Index</span><span class="params">(<span class="built_in">string</span> S, <span class="built_in">string</span> T, <span class="keyword">int</span> pos)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     <span class="keyword">int</span> i = pos;</span><br><span class="line">     <span class="keyword">int</span> j = <span class="number">1</span>;</span><br><span class="line">     <span class="keyword">while</span> (i &lt;= S[<span class="number">0</span>] &amp;&amp; j &lt;= T[<span class="number">0</span>]) &#123;</span><br><span class="line">          <span class="keyword">if</span> (S[i] == T[j]) &#123;</span><br><span class="line">               i++;</span><br><span class="line">               j++;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">else</span> &#123;</span><br><span class="line">               i = i - j + <span class="number">2</span>;</span><br><span class="line">               j = <span class="number">1</span>;</span><br><span class="line">          &#125;</span><br><span class="line"></span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">if</span> (j &gt; T[<span class="number">0</span>]) <span class="keyword">return</span> i - T[<span class="number">0</span>];</span><br><span class="line">     <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><h1 id="KMP模式匹配算法"><a href="#KMP模式匹配算法" class="headerlink" title="KMP模式匹配算法"></a>KMP模式匹配算法</h1></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-9-51/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-9-51/" class="post-title-link" itemprop="url">51. 算法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="数据结构与算法关系"><a href="#数据结构与算法关系" class="headerlink" title="数据结构与算法关系"></a>数据结构与算法关系</h1><blockquote>
+<p>数据结构与算法之间的关系类似于：梁山伯与祝英台或者说是罗密欧与朱丽叶</p>
+</blockquote>
+</li>
+<li><h1 id="算法定义"><a href="#算法定义" class="headerlink" title="算法定义"></a>算法定义</h1>算法：解决特定问题求解步骤的描述，在计算机中变现为指令的有限序列，并且每条指令表示一个或多个操作。</li>
+<li><h1 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h1><ol>
+<li>输入</li>
+<li>输出</li>
+<li>有穷性</li>
+<li>确定性</li>
+<li>可行性</li>
+</ol>
+</li>
+<li><h1 id="算法设计的要求"><a href="#算法设计的要求" class="headerlink" title="算法设计的要求"></a>算法设计的要求</h1><ol>
+<li>正确性：<ol>
+<li>层次：<ol>
+<li>算法程序没有语法错误</li>
+<li>算法程序对于合法的输入数据能够产生满足要求的输出结果</li>
+<li>算法程序对于非法的输入数据能够得出满足规格说明的结果</li>
+<li>算法程序对于精心选择的，甚至刁难的测试数据都有满足要求的输出结果</li>
+</ol>
+</li>
+<li>算法的正确性在大部分情况下都不可能用程序来证明，而是用数学方法证明的</li>
+<li>一般情况下，我们把<code>层次3</code>作为一个算法是否正确的标准</li>
+</ol>
+</li>
+<li>可读性<ol>
+<li>算法设计的另一个目的是为了便于阅读、理解和交流</li>
+</ol>
+</li>
+<li>健壮性<ol>
+<li>当输入数据不合法时，算法也能做出相关处理，而不是产生异常或莫名其妙的结果</li>
+</ol>
+</li>
+<li>时间效率高和存储量低<ol>
+<li>时间效率：算法的执行时间</li>
+<li>存储量需求：算法在执行过程中需要的最大存储空间，主要指算法程序运行时所占用的内存或外部硬盘存储空间</li>
+<li>设计算法应该尽量满足时间效率高和存储量低的需求</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><h1 id="算法效率的度量方法"><a href="#算法效率的度量方法" class="headerlink" title="算法效率的度量方法"></a>算法效率的度量方法</h1><ol>
+<li>事后统计方法<ol>
+<li>存在各种各样的缺陷，一般不予考虑</li>
+</ol>
+</li>
+<li>事前分析估算方法<ol>
+<li>时间取决因素：<ol>
+<li>算法采用的策略、方法</li>
+<li>编译产生的代码质量</li>
+<li>问题的输入规模</li>
+<li>机器执行指令的速度<h3 id="其中：第1条是算法好坏的根本；第2条由软件来支持；第3条看硬件性能。"><a href="#其中：第1条是算法好坏的根本；第2条由软件来支持；第3条看硬件性能。" class="headerlink" title="其中：第1条是算法好坏的根本；第2条由软件来支持；第3条看硬件性能。"></a>其中：第1条是算法好坏的根本；第2条由软件来支持；第3条看硬件性能。</h3><h3 id="抛开这些与计算机硬件软件有关的因素，一个程序的运行时间，依赖于算法的好坏和问题的输入规模。所谓-问题输入规模是指输入量的多少"><a href="#抛开这些与计算机硬件软件有关的因素，一个程序的运行时间，依赖于算法的好坏和问题的输入规模。所谓-问题输入规模是指输入量的多少" class="headerlink" title="抛开这些与计算机硬件软件有关的因素，一个程序的运行时间，依赖于算法的好坏和问题的输入规模。所谓 问题输入规模是指输入量的多少"></a>抛开这些与计算机硬件软件有关的因素，一个程序的运行时间，依赖于<code>算法的好坏和问题的输入规模</code>。所谓 <code>问题输入规模是指输入量的多少</code></h3></li>
+</ol>
+</li>
+<li>最终，再分析程序的运行时间时，最重要的是把程序看成是独立于程序设计语言的算法或一系列步骤</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><h1 id="函数的渐近增长"><a href="#函数的渐近增长" class="headerlink" title="函数的渐近增长"></a>函数的渐近增长</h1><ol>
+<li>给定两个函数$f(n)$ 和 $g(n)$，如果存在一个整数N，使得对于所有的 <code>n &gt; N</code>，$f(n)$ 总是比 $g(n)$大，那么我们说 $f(n)$的增长渐近快于 $g(n)$</li>
+<li>与最高次相乘的常数并不重要</li>
+<li>判断一个算法的效率时，函数中的常数和其他次要项常常可以忽略，<code>而应该关注主项（最高阶项）的阶数</code></li>
+</ol>
+</li>
+<li><h1 id="算法时间复杂度"><a href="#算法时间复杂度" class="headerlink" title="算法时间复杂度"></a>算法时间复杂度</h1><ol>
+<li>算法时间复杂度定义：<br><br/>在进行算法分析时，语句总的执行次数 $T(n)$是关于问题规模n的函数，进而分析 $T(n)$随n的变化情况并确定 $T(n)$的数量级。算法的时间复杂度，也就是算法的时间量度，记作：$T(n)$=$O(f(n))$。它表示岁问题规模n的增大，算法执行时间的增长率和$f(n)$的增长率相同，称作算法的渐近时间复杂度，简称为时间复杂度。其中$f(n)$是问题规模n的某个函数。</li>
+<li>一般情况下，随着n的增大，$T(n)$增长最慢的算法为最优算法。 </li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><h1 id="常见的时间复杂度"><a href="#常见的时间复杂度" class="headerlink" title="常见的时间复杂度"></a>常见的时间复杂度</h1>$O(1) &lt; O(logn) &lt; O(n) &lt; O(nlogn) &lt; O(n ^ 2) &lt; O(n ^ 3) &lt; O(2 ^ n) &lt; O(n!) &lt; O(n ^ n)$</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-9-50/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-9-50/" class="post-title-link" itemprop="url">50. 免费馅饼</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p><img src="/source/imagess/posts/acwing/19.png"></p>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><ol>
+<li>类似于 <code>30. 三角形最小路径和</code></li>
+<li>不同点：比 <code>30. 三角形最小路径和</code>难，**<em>难于：**</em> 都是一排排的数，而不是三角形，但是思路是一样的，最后看dp[0][6]的值（整体向右挪了一位，并且删除边缘效应，且从上到下，第0秒是最终结果）</li>
+</ol>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">100010</span>;</span><br><span class="line"><span class="keyword">int</span> dp[N][<span class="number">13</span>];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n)) &#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">int</span> maxt = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="keyword">sizeof</span>(dp)); <span class="comment">// 为什么不加这个会报错????</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> x, t;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;x, &amp;t);</span><br><span class="line">            dp[t][x + <span class="number">1</span>]++;</span><br><span class="line">            maxt = max(maxt, t);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = maxt - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; <span class="number">12</span>; j++) &#123;</span><br><span class="line">                dp[i][j] += max(dp[i + <span class="number">1</span>][j - <span class="number">1</span>], max(dp[i + <span class="number">1</span>][j], dp[i + <span class="number">1</span>][j + <span class="number">1</span>]));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; dp[<span class="number">0</span>][<span class="number">6</span>] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-8-49/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-8-49/" class="post-title-link" itemprop="url">49. 单词拆分</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p><img src="/source/imagess/posts/acwing/18.png"></p>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><ol>
+<li>从第一个到最后一个字母进行遍历，父循环循环变量(i)决定子串的右端</li>
+<li>其次，子循环循环变量(j)决定子串的左端</li>
+<li>然后，若是j左侧不可拆分，那么就跳过（因为左边无法拆分，即便右边可以拆分也没有意义）</li>
+<li>输出dp<a href="%E5%85%B6%E4%B8%AD%EF%BC%9An%E4%B8%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E9%95%BF%E5%A4%84">n</a></li>
+</ol>
+<h3 id="【释】：-dp-负责记录-第n个之前（包括第n个）能否拆分"><a href="#【释】：-dp-负责记录-第n个之前（包括第n个）能否拆分" class="headerlink" title="【释】：**dp** 负责记录 第n个之前（包括第n个）能否拆分"></a>【释】：**<em>dp**</em> 负责记录 第n个之前（包括第n个）能否拆分</h3><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s;</span><br><span class="line">    <span class="keyword">int</span> n, nn;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; s &gt;&gt; nn;</span><br><span class="line">    n = s.size();</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt; <span class="title">dp</span><span class="params">(n + <span class="number">1</span>, <span class="literal">false</span>)</span></span>;</span><br><span class="line">    <span class="built_in">set</span>&lt;<span class="built_in">string</span>&gt; ss;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nn; i++) &#123;</span><br><span class="line">        <span class="built_in">string</span> t;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line">        ss.insert(t);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    dp[<span class="number">0</span>] = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &gt; <span class="number">0</span>; j--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!dp[j - <span class="number">1</span>])</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">if</span> (ss.find(s.substr(j - <span class="number">1</span>, i - j + <span class="number">1</span>)) != ss.end()) &#123;</span><br><span class="line">                dp[i] = <span class="literal">true</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; boolalpha &lt;&lt; dp[n];</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-8-48/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-8-48/" class="post-title-link" itemprop="url">48. github不显示图片的问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="github网站的文件夹名是区分大小写的"><a href="#github网站的文件夹名是区分大小写的" class="headerlink" title="github网站的文件夹名是区分大小写的"></a>github网站的文件夹名是区分大小写的</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-7-47/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-7-47/" class="post-title-link" itemprop="url">47. 树</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-基本术语"><a href="#1-基本术语" class="headerlink" title="1. 基本术语"></a>1. 基本术语</h1><p>   <img src="/source/imagess/posts/data/1.png"><br>   <img src="/source/imagess/posts/data/2.png"></p>
+<h1 id="2-二叉树性质"><a href="#2-二叉树性质" class="headerlink" title="2. 二叉树性质"></a>2. 二叉树性质</h1><ol>
+<li>在二叉树得第i(i &gt;= 1)层最多有$2^{i-1}$个节点</li>
+<li>深度为k(k&gt;=1)的二叉树上至多含$2^k-1$个节点</li>
+<li>对任何一颗二叉树，若它含有$n_0$个叶子节点、$n_2$个度为2得节点，则必存在关系式：$n_0=n_2+1$</li>
+<li>具有n个节点的完全二叉树的深度为$\lfloor{\log{_2n}+1} \rfloor$</li>
+<li>若对含n个节点的完全二叉树从上到下且从左到右进行1至n的编号，则对完全二叉树中任意一个编号为i的结点（简称为结点i），有以下关系：<ol>
+<li>若i=1，则结点i是二叉树的根，无双亲节点；若i&gt;1,则结点$\lfloor{i/2} \rfloor $为其双亲结点</li>
+<li>若2i&gt;n，则节点i无左孩子;否则结点2i为其左孩子；</li>
+<li>若2i+1&gt;n，则结点i无右孩子；否则，结点2i+1为其右孩子。</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-5-2-46/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-5-2-46/" class="post-title-link" itemprop="url">46. 决策树</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="1-节点"><a href="#1-节点" class="headerlink" title="1. 节点"></a>1. 节点</h2><ol>
+<li>增加节点相当于在数据中切一刀</li>
+<li>特征就相当于节点，越多的特征相当于越多的节点</li>
+<li>根节点：可以把数据的分类分的更好（多）</li>
+<li>次节点：类似于在其余的节点当中选择根节点，以此类推</li>
+</ol>
+<h2 id="2-衡量标准-熵值"><a href="#2-衡量标准-熵值" class="headerlink" title="2. 衡量标准-熵值"></a>2. 衡量标准-熵值</h2><ol>
+<li>熵：表示随机变量不确定性的量度（说白了就是物体内部的混乱程度，比如：杂货市场里面什么都有那肯定混乱呀，专卖店里面只卖一个牌子的那就稳定多了）</li>
+<li>公式: $H(x)=-\sum{p_i * \log{p_i}},i = 1, 2, 3, ……, n$</li>
+<li></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

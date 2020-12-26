@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="你有灵魂吗">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QeuroIzoのBlog">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="你有灵魂吗">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="Python, Rust, C++, Go, 爬虫, 深度学习, 服务研发, 对象存储">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/page/2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-6-6-105/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-6-6-105/" class="post-title-link" itemprop="url">105. UEFI引导修复</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:40" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="PE：微PE工具箱"><a href="#PE：微PE工具箱" class="headerlink" title="PE：微PE工具箱"></a>PE：<a target="_blank" rel="noopener" href="http://www.wepe.com.cn/">微PE工具箱</a></h1></li>
+<li><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1></li>
+</ul>
+<ol>
+<li>使用U盘启动快捷项，启动PE</li>
+<li>在分区大师工具看下自己ESP在哪个盘符，就在UEFI引导修复里面选择哪个盘符。<br><img src="/source/imagess/posts/computer/10.png"></li>
+<li>开UEFI引导修复，在ESP里面选择H盘符（若没有则点击 <code>挂载</code>）<br><img src="/source/imagess/posts/computer/11.png"></li>
+<li>选择根目录：windows目录（例：<code>C:\Windows</code>）</li>
+<li>点击开始修复，点击确定</li>
+<li>最后重新开机，就可以进入系统了</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-6-5-104/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-6-5-104/" class="post-title-link" itemprop="url">104. 随身携带的系统U盘/硬盘</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul>
+<li><h2 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h2><ol>
+<li>一台装有windows系统的电脑（推荐win10）</li>
+<li>一个32G以上的U盘（推荐固态硬盘）</li>
+</ol>
+</li>
+<li><h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">win10系统镜像</a></li>
+<li><a target="_blank" rel="noopener" href="https://bbs.luobotou.org/thread-761-1-1.html">WTG辅助工具</a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1></li>
+</ul>
+<ol>
+<li><p><code>右击系统镜像</code> - <code>挂载</code> </p>
+</li>
+<li><p>将下载的WTG解压出来，然后运行</p>
+</li>
+<li><p>按照下图进行设置</p>
+<p><img src="/source/imagess/posts/computer/12.png"></p>
+<ul>
+<li>点击 <code>浏览...</code> ，选择挂载的 <code>系统镜像的目录</code> -&gt; <code>sources</code> -&gt; <code>install.wim</code></li>
+<li>选择安装的系统的U盘，即 <code>浏览...</code> 下面一栏（左面第二栏）</li>
+<li>再下面一栏（左面第三栏），选择要安装系统的版本（推荐：专业版或企业版）</li>
+<li><code>高级选项</code>（右面）- <code>常用</code>：选择： <code>UEFI+MBR</code>，其他的根据自己的需求来选择</li>
+</ul>
+</li>
+<li><p>然后，使用U盘快捷启动进入系统就可以了</p>
+</li>
+</ol>
+<h3 id="【Note】-如果原来系统的打不开了，即引导出了问题，见下一篇文章-UEFI引导修复"><a href="#【Note】-如果原来系统的打不开了，即引导出了问题，见下一篇文章-UEFI引导修复" class="headerlink" title="【Note】:如果原来系统的打不开了，即引导出了问题，见下一篇文章(UEFI引导修复)"></a>【Note】:如果原来系统的打不开了，即引导出了问题，见下一篇文章(UEFI引导修复)</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-5-26-103/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-5-26-103/" class="post-title-link" itemprop="url">103. tmux操作</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="进入tmux翻屏模式"><a href="#进入tmux翻屏模式" class="headerlink" title="进入tmux翻屏模式"></a>进入tmux翻屏模式</h1><ul>
+<li>先按 <code>ctrl+b</code>，松开，然后再按 <code>[</code></li>
+<li>实现上下翻页: 进入翻屏模式后，<code>PgUp</code>, <code>PgDn</code> 实现上下翻页</li>
+<li>退出: <code>q</code></li>
+</ul>
+<blockquote>
+<p>ps:  <code>ctrl + b + [</code>，很多人会以为是同时按三个键，但是这样是不行的。</p>
+</blockquote>
+<h1 id="简单介绍下tmux的其他功能"><a href="#简单介绍下tmux的其他功能" class="headerlink" title="简单介绍下tmux的其他功能"></a>简单介绍下tmux的其他功能</h1><h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><table>
+<thead>
+<tr>
+<th align="center">快捷键</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>Ctrl-B %</code></td>
+<td align="center">竖直拆分屏幕（两个 Shell 分别位于左右）</td>
+</tr>
+<tr>
+<td align="center"><code>Ctrl-B &quot;</code></td>
+<td align="center">水平拆分屏幕（两个 Shell 分别位于上下）</td>
+</tr>
+<tr>
+<td align="center"><code>Ctrl-B O</code></td>
+<td align="center">切换到另一个 Shell</td>
+</tr>
+<tr>
+<td align="center"><code>Ctrl-B ?</code></td>
+<td align="center">查看帮助</td>
+</tr>
+<tr>
+<td align="center"><code>Ctrl-B d</code></td>
+<td align="center">断开 tmux 并让其在后台运行（可以使用 tmux attach 重新进入）</td>
+</tr>
+</tbody></table>
+<h2 id="创建tmux"><a href="#创建tmux" class="headerlink" title="创建tmux"></a>创建tmux</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux new -s 名字</span><br></pre></td></tr></table></figure>
+<h2 id="进入已创建的tmux"><a href="#进入已创建的tmux" class="headerlink" title="进入已创建的tmux"></a>进入已创建的tmux</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux a -t 名字</span><br></pre></td></tr></table></figure>
+<h2 id="临时退出tmux"><a href="#临时退出tmux" class="headerlink" title="临时退出tmux"></a>临时退出tmux</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ctrl + b + d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="杀死tmux"><a href="#杀死tmux" class="headerlink" title="杀死tmux"></a>杀死tmux</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tmux外：tmux kill-session -t 名字</span><br><span class="line">tmux内：ctrl + d</span><br></pre></td></tr></table></figure>
+<h2 id="列出已有的tmux列表"><a href="#列出已有的tmux列表" class="headerlink" title="列出已有的tmux列表"></a>列出已有的tmux列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux ls</span><br></pre></td></tr></table></figure>
+<h1 id="删除所有tmux"><a href="#删除所有tmux" class="headerlink" title="删除所有tmux"></a>删除所有tmux</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tmux kill-server</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-4-14-102/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-4-14-102/" class="post-title-link" itemprop="url">102. VsCode-Terminal 设置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li>部分设置</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;workbench.colorCustomizations&quot; : &#123;</span><br><span class="line">  &quot;terminal.foreground&quot; : &quot;#00FD61&quot;,</span><br><span class="line">  &quot;terminal.background&quot; : &quot;#383737&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>完整设置</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&quot;workbench.colorCustomizations&quot;: &#123;</span><br><span class="line">    &quot;terminal.background&quot;: &quot;#181818&quot;,</span><br><span class="line">    &quot;terminal.foreground&quot;: &quot;#D8D8D8&quot;,</span><br><span class="line">    &quot;terminalCursor.background&quot;: &quot;#D8D8D8&quot;,</span><br><span class="line">    &quot;terminalCursor.foreground&quot;: &quot;#D8D8D8&quot;,</span><br><span class="line">    &quot;terminal.ansiBlack&quot;: &quot;#181818&quot;,</span><br><span class="line">    &quot;terminal.ansiBlue&quot;: &quot;#7CAFC2&quot;,</span><br><span class="line">    &quot;terminal.ansiBrightBlack&quot;: &quot;#585858&quot;,</span><br><span class="line">    &quot;terminal.ansiBrightBlue&quot;: &quot;#7CAFC2&quot;,</span><br><span class="line">    &quot;terminal.ansiBrightCyan&quot;: &quot;#86C1B9&quot;,</span><br><span class="line">    &quot;terminal.ansiBrightGreen&quot;: &quot;#A1B56C&quot;,</span><br><span class="line">    &quot;terminal.ansiBrightMagenta&quot;: &quot;#BA8BAF&quot;,</span><br><span class="line">    &quot;terminal.ansiBrightRed&quot;: &quot;#AB4642&quot;,</span><br><span class="line">    &quot;terminal.ansiBrightWhite&quot;: &quot;#F8F8F8&quot;,</span><br><span class="line">    &quot;terminal.ansiBrightYellow&quot;: &quot;#F7CA88&quot;,</span><br><span class="line">    &quot;terminal.ansiCyan&quot;: &quot;#86C1B9&quot;,</span><br><span class="line">    &quot;terminal.ansiGreen&quot;: &quot;#A1B56C&quot;,</span><br><span class="line">    &quot;terminal.ansiMagenta&quot;: &quot;#BA8BAF&quot;,</span><br><span class="line">    &quot;terminal.ansiRed&quot;: &quot;#AB4642&quot;,</span><br><span class="line">    &quot;terminal.ansiWhite&quot;: &quot;#D8D8D8&quot;,</span><br><span class="line">    &quot;terminal.ansiYellow&quot;: &quot;#F7CA88&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-4-14-101/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-4-14-101/" class="post-title-link" itemprop="url">101. Win10 Git配置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><p>更改Git的样式</p>
+<ol>
+<li>更改主题透明度和光标<br><img src="/source/imagess/posts/github/16.png"></li>
+<li>更改字体<br><img src="/source/imagess/posts/github/17.png"></li>
+<li>更改中文<br><img src="/source/imagess/posts/github/18.png"></li>
+</ol>
+</li>
+<li><p>美化</p>
+<ol>
+<li><p>基本配置</p>
+<blockquote>
+<p>在用户根目录下新建一个名为 .minttyrc 的文件，写入以下内容，然后重启 git bash，就能看到美化后的样子了。</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> touch .minttyrc</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> vi .minttyrc</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>复制以下代码到 <code>.minttyrc</code>： </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">FontHeight&#x3D;11</span><br><span class="line">Font&#x3D;Consolas</span><br><span class="line">Transparency&#x3D;low</span><br><span class="line">FontSmoothing&#x3D;full</span><br><span class="line">Locale&#x3D;zh_CN</span><br><span class="line">Charset&#x3D;GBK</span><br><span class="line">Columns&#x3D;88</span><br><span class="line">Rows&#x3D;26</span><br><span class="line">OpaqueWhenFocused&#x3D;no</span><br><span class="line">Scrollbar&#x3D;none</span><br><span class="line">Language&#x3D;zh_CN</span><br><span class="line"></span><br><span class="line">ForegroundColour&#x3D;131,148,150</span><br><span class="line">BackgroundColour&#x3D;0,43,54</span><br><span class="line">CursorColour&#x3D;220,130,71</span><br><span class="line"></span><br><span class="line">BoldBlack&#x3D;128,128,128</span><br><span class="line">Red&#x3D;255,64,40</span><br><span class="line">BoldRed&#x3D;255,128,64</span><br><span class="line">Green&#x3D;64,200,64</span><br><span class="line">BoldGreen&#x3D;64,255,64</span><br><span class="line">Yellow&#x3D;190,190,0</span><br><span class="line">BoldYellow&#x3D;255,255,64</span><br><span class="line">Blue&#x3D;0,128,255</span><br><span class="line">BoldBlue&#x3D;128,160,255</span><br><span class="line">Magenta&#x3D;211,54,130</span><br><span class="line">BoldMagenta&#x3D;255,128,255</span><br><span class="line">Cyan&#x3D;64,190,190</span><br><span class="line">BoldCyan&#x3D;128,255,255</span><br><span class="line">White&#x3D;200,200,200</span><br><span class="line">BoldWhite&#x3D;255,255,255</span><br><span class="line">CursorType&#x3D;block</span><br><span class="line">CursorBlinks&#x3D;no</span><br></pre></td></tr></table></figure></li>
+<li><p>更新 <code>git-prompt.d</code></p>
+<blockquote>
+<p>仅仅是换了一个主题还不够，还需要更改终端提示符，更改 git 安装目录下 etc 目录里面的一个文件即可，这个文件也可以通过绝对路径访问到。</p>
+</blockquote>
+<blockquote>
+<p>进入</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> /etc/profile.d/git-prompt.sh</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>复制代码到 <code>git-prompt.sh</code></p>
+</blockquote>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> -f /etc/profile.d/git-sdk.sh</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">	TITLEPREFIX=SDK-<span class="variable">$&#123;MSYSTEM#MINGW&#125;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	TITLEPREFIX=<span class="variable">$MSYSTEM</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> -f ~/.config/git/git-prompt.sh</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">	. ~/.config/git/git-prompt.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	PS1=<span class="string">&#x27;\[\033]0;Bash In $PWD\007\]&#x27;</span> <span class="comment"># 窗口标题</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\n&#x27;</span>                                <span class="comment"># 换行</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\[\033[32m\]&#x27;</span>               <span class="comment"># 绿色</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\u &#x27;</span>            	                <span class="comment"># 用户名</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\[\033[0m\]&#x27;</span>                <span class="comment"># 灰色</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;at &#x27;</span>			       <span class="comment"># 自定义内容</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\[\033[35m\]&#x27;</span>             <span class="comment"># 粉红色</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\t &#x27;</span>			       <span class="comment"># 时间</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\[\033[33m\]&#x27;</span>             <span class="comment"># 黄色</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\W &#x27;</span>                            <span class="comment"># 当前目录</span></span><br><span class="line">	<span class="keyword">if</span> <span class="built_in">test</span> -z <span class="string">&quot;<span class="variable">$WINELOADERNOEXEC</span>&quot;</span></span><br><span class="line">	<span class="keyword">then</span></span><br><span class="line">		GIT_EXEC_PATH=<span class="string">&quot;<span class="subst">$(git --exec-path 2&gt;/dev/null)</span>&quot;</span></span><br><span class="line">		COMPLETION_PATH=<span class="string">&quot;<span class="variable">$&#123;GIT_EXEC_PATH%/libexec/git-core&#125;</span>&quot;</span></span><br><span class="line">		COMPLETION_PATH=<span class="string">&quot;<span class="variable">$&#123;COMPLETION_PATH%/lib/git-core&#125;</span>&quot;</span></span><br><span class="line">		COMPLETION_PATH=<span class="string">&quot;<span class="variable">$COMPLETION_PATH</span>/share/git/completion&quot;</span></span><br><span class="line">		<span class="keyword">if</span> <span class="built_in">test</span> -f <span class="string">&quot;<span class="variable">$COMPLETION_PATH</span>/git-prompt.sh&quot;</span></span><br><span class="line">		<span class="keyword">then</span></span><br><span class="line">			. <span class="string">&quot;<span class="variable">$COMPLETION_PATH</span>/git-completion.bash&quot;</span></span><br><span class="line">			. <span class="string">&quot;<span class="variable">$COMPLETION_PATH</span>/git-prompt.sh&quot;</span></span><br><span class="line">			PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\[\033[36m\]&#x27;</span>  <span class="comment"># change color to cyan</span></span><br><span class="line">			PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;`__git_ps1`&#x27;</span>   <span class="comment"># bash function</span></span><br><span class="line">		<span class="keyword">fi</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;\[\033[0m\]&#x27;</span>        <span class="comment"># 灰色</span></span><br><span class="line">	PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span><span class="string">&#x27;$ &#x27;</span>                       <span class="comment"># 命令提示符</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">MSYS2_PS1=<span class="string">&quot;<span class="variable">$PS1</span>&quot;</span>               <span class="comment"># for detection by MSYS2 SDK&#x27;s bash.basrc</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-4-1-100/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-4-1-100/" class="post-title-link" itemprop="url">100. Clion中使用头文件和源文件坑</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>愚人节 <br/><br>100篇 <br/><br>谨以此篇纪念我逝去的半天</p>
+</blockquote>
+<hr>
+<ul>
+<li><h1 id="Clion-中使用头文件定义类，源文件实现"><a href="#Clion-中使用头文件定义类，源文件实现" class="headerlink" title="Clion 中使用头文件定义类，源文件实现"></a><code>Clion</code> 中使用头文件定义类，源文件实现</h1></li>
+</ul>
+<ol>
+<li><p>include什么</p>
+<blockquote>
+<p>导入头文件(<code>.h</code>)和源文件(<code>.cpp</code>)</p>
+</blockquote>
+<blockquote>
+<p>Note: 只导入 源文件（<code>.cpp</code>） 也可以</p>
+</blockquote>
+</li>
+<li><p>CMakeLists.txt</p>
+<ol>
+<li><p>手动添加</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION <span class="number">3.15</span>)</span><br><span class="line">project(HCpp)</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span>(CMAKE_CXX_STANDARD <span class="number">11</span>)</span><br><span class="line"></span><br><span class="line">add_executable(HCpp main.cpp)</span><br><span class="line">add_executable(ElemType ElemType.cpp ElemType.h)</span><br></pre></td></tr></table></figure></li>
+<li><p>自动添加 </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">if</span> ($HEADER_COMMENTS)</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Author: $&#123;USER_NAME&#125;</span></span><br><span class="line"><span class="comment">* Date: $&#123;DATE&#125;</span></span><br><span class="line"><span class="comment">* <span class="doctag">TODO:</span> </span></span><br><span class="line"><span class="comment">* Describe: </span></span><br><span class="line"><span class="comment">#if ($ORGANIZATION_NAME &amp;&amp; $ORGANIZATION_NAME != &quot;&quot;)</span></span><br><span class="line"><span class="comment">* Copyright (c) $YEAR $&#123;ORGANIZATION_NAME&#125;#if (!$ORGANIZATION_NAME.endsWith(&quot;.&quot;)).#end All rights reserved.</span></span><br><span class="line"><span class="comment">#end</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#end</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1></li>
+</ul>
+<ol>
+<li><p><code>ElemType.h</code></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Author: Dgimo</span></span><br><span class="line"><span class="comment"> * Date: 2020/4/1</span></span><br><span class="line"><span class="comment"> * <span class="doctag">TODO:</span> </span></span><br><span class="line"><span class="comment"> * Describe: </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> HCPP_ELEMTYPE_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> HCPP_ELEMTYPE_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ElemType</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line"></span><br><span class="line">    ElemType();</span><br><span class="line">    ElemType(<span class="keyword">int</span>);</span><br><span class="line">    <span class="keyword">friend</span> <span class="built_in">std</span>::ostream &amp;<span class="keyword">operator</span> &lt;&lt;(<span class="built_in">std</span>::ostream &amp;, <span class="keyword">const</span> ElemType &amp;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">//HCPP_ELEMTYPE_H</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>ElemType.cpp</code></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Author: Dgimo</span></span><br><span class="line"><span class="comment"> * Date: 2020/4/1</span></span><br><span class="line"><span class="comment"> * <span class="doctag">TODO:</span> </span></span><br><span class="line"><span class="comment"> * Describe: </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;ElemType.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">ElemType::ElemType() &#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;data = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ElemType::ElemType(<span class="keyword">int</span> data) &#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;data = data;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">std</span>::ostream&amp; <span class="keyword">operator</span> &lt;&lt;(<span class="built_in">std</span>::ostream &amp;out, <span class="keyword">const</span> ElemType &amp;e)</span><br><span class="line">&#123;</span><br><span class="line">    out &lt;&lt; e.data;</span><br><span class="line">    <span class="keyword">return</span> out;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>main.cpp</code></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;ElemType.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;ElemType.cpp&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span>  <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ElemType e = ElemType(<span class="number">10</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; e &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>运算符重载：详见 <a href="/2020/03/99">运算符重载</a></p>
+</blockquote>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-3-29-99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-3-29-99/" class="post-title-link" itemprop="url">99. C++运算符重载</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:56:14" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="重载运算符规则"><a href="#重载运算符规则" class="headerlink" title="重载运算符规则"></a>重载运算符规则</h1></li>
+</ul>
+<ol>
+<li><p>重载意义</p>
+<blockquote>
+<p>函数重载（Function Overloading）可以让一个函数名有多种功能，在不同情况下进行不同的操作；<br/><br>运算符重载（Operator Overloading）也是一个道理，同一个运算符可以有不同的功能；</p>
+</blockquote>
+<blockquote>
+<p>C++中预定义的运算符的操作对象只能是基本数据类型。但实际上，对于许多用户自定义类型（例如类），也需要类似的运算操作。这时就必须在C++中重新定义这些运算符，赋予已有运算符新的功能，使它能够用于特定类型执行特定的操作。运算符重载的实质是函数重载，它提供了C++的可扩展性，也是C++最吸引人的特性之一。</p>
+</blockquote>
+<blockquote>
+<p>比如,我们定义两个string类对象a,b后我们之所以可以使用+运算，是因为string类重载了+运算符。</p>
+</blockquote>
+</li>
+<li><p>语法</p>
+ <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;返回类型说明符&gt; <span class="keyword">operator</span> &lt;运算符符号&gt;(&lt;参数表&gt;)</span><br><span class="line">&#123;</span><br><span class="line">&lt;函数体&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>哪些运算符可以被重载，哪些运算符不能被重载</p>
+<ul>
+<li><p>可以被重载的运算符：</p>
+<blockquote>
+<p>算术运算符：<code>+ , - , * , / , % , ++ , --</code> <br/><br>位操作运算符：<code>&amp; , | , ~ , ^ , &lt;&lt; , &gt;&gt;</code> <br/><br>逻辑运算符：<code>! , &amp;&amp; , ||</code> <br/><br>比较运算符：<code>&lt; , &gt; , &gt;= , &lt;= , == , != </code> <br/><br>赋值运算符：<code>= , += , -= , *= , /= , %= , &amp;= , |= , ^= , &lt;&lt;= , &gt;&gt;= </code> <br/><br>其他运算符：<code>[] , () , -&gt; , ,(逗号运算符) , new , delete , new[] , delete[] , -&gt;*</code> <br/></p>
+</blockquote>
+</li>
+<li><p>不允许的运算符重载：</p>
+<blockquote>
+<p><code>. , .* , :: , ?: ，siezof</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><h1 id="重载运算符函数在类内部"><a href="#重载运算符函数在类内部" class="headerlink" title="重载运算符函数在类内部"></a>重载运算符函数在类内部</h1></li>
+</ul>
+<ol>
+<li><p>Notes:</p>
+<ol>
+<li><p><code>运算符重载函数是类的成员函数时</code>&gt;</p>
+<ol>
+<li>注意<blockquote>
+<p>要是内部的，必须得是<code>&lt;=1</code>个参数，不需要加 <code>friend</code>（友元函数）</p>
+</blockquote>
+</li>
+<li>语法(在类内声明，在类外实现时的代码)<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;返回类型说明符&gt; &lt;类名&gt;::<span class="keyword">operator</span> &lt;运算符符号&gt;(&lt;参数表&gt;)</span><br><span class="line">&#123;</span><br><span class="line">   &lt;函数体&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><p><code>运算符重载函数不是类的成员函数时</code>（或者说<code>当运算符函数是非成员函数时</code>）</p>
+<ol>
+<li>函数在类中声明的时候需要在前面加上 <code>friend</code>（友元函数），不管参数是不是类的对象</li>
+<li>函数的参数与该运算符作用的运算对象数量一样多</li>
+</ol>
+</li>
+<li><p>为什么用 <code>const</code> 和 <code>&amp;</code>:</p>
+<ol>
+<li><p><code>const</code>：</p>
+<ol>
+<li>我们不希望在这个函数中对用来进行赋值的“原版”做任何修改。函数加上const后缀的作用是表明函数本身不会修改类成员变量。</li>
+<li>加上const，对于const的和非const的实参，函数就能接受；如果不加，就只能接受非const的实参。</li>
+</ol>
+</li>
+<li><p><code>&amp;</code>（引用）：</p>
+<blockquote>
+<p>这样可以避免在函数调用时对实参的一次拷贝，提高了效率。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li><p>代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Author: Dgimo</span></span><br><span class="line"><span class="comment"> * Date: 2020/3/30</span></span><br><span class="line"><span class="comment"> * <span class="doctag">TODO:</span> 类运算符重载</span></span><br><span class="line"><span class="comment"> * Describe: </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> first;</span><br><span class="line">    <span class="keyword">int</span> second;</span><br><span class="line">&#125; TestStuct;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 类运算符重载</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestClass</span> &#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">int</span> first;</span><br><span class="line">    <span class="keyword">int</span> second;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    TestClass(<span class="keyword">int</span>, <span class="keyword">int</span>);</span><br><span class="line">    TestClass();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">(<span class="built_in">string</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">    TestClass <span class="keyword">operator</span>+(<span class="keyword">const</span> TestClass &amp;);</span><br><span class="line">    TestClass <span class="keyword">operator</span>+(<span class="keyword">const</span> TestStuct &amp;);</span><br><span class="line">    <span class="keyword">friend</span> TestClass <span class="keyword">operator</span>+(<span class="keyword">const</span> TestClass &amp;, <span class="keyword">const</span> TestClass &amp;); <span class="comment">// 如果不是内部的，得加friend 声明不是内部的，如果不是两个会怎样？见下面！！！</span></span><br><span class="line">    <span class="keyword">friend</span> TestClass <span class="keyword">operator</span>+(<span class="keyword">const</span> TestStuct &amp;, <span class="keyword">const</span> TestStuct &amp;); <span class="comment">// 只要在类内部定义的运算符重载，就需要加上friend</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//    TestClass operator+(const TestClass &amp;, const TestClass &amp;); // 要是内部的，必须得是&lt;=1个参数，不需要加 friend</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">TestClass::TestClass(<span class="keyword">int</span> first, <span class="keyword">int</span> second) &#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;first = first;</span><br><span class="line">    <span class="keyword">this</span>-&gt;second = second;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TestClass::TestClass()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;first = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">this</span>-&gt;second = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TestClass TestClass::<span class="keyword">operator</span>+(<span class="keyword">const</span> TestClass &amp;tc) &#123; <span class="comment">// TestClass + TestClass</span></span><br><span class="line">    <span class="keyword">return</span> TestClass(first + tc.first, second + tc.second);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TestClass TestClass::<span class="keyword">operator</span>+(<span class="keyword">const</span> TestStuct &amp; ts) &#123; <span class="comment">// TestClass + TestStruct</span></span><br><span class="line">    <span class="keyword">return</span> TestClass(first + ts.first, second + ts.second);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TestClass <span class="keyword">operator</span>+(<span class="keyword">const</span> TestClass &amp;fir, <span class="keyword">const</span> TestClass &amp;sec) &#123; <span class="comment">// 全局：TestClass + TestCLass 实际上和 TestClass TestClass::operator+(const TestClass &amp;tc)</span></span><br><span class="line">    <span class="keyword">return</span> TestClass(fir.first + sec.first, fir.second + sec.second);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TestClass <span class="keyword">operator</span>+(<span class="keyword">const</span> TestStuct &amp;fir, <span class="keyword">const</span> TestStuct &amp;sec) &#123;</span><br><span class="line">    <span class="keyword">return</span> TestClass(fir.first + sec.first, fir.second + sec.second);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">TestClass::show</span><span class="params">(<span class="built_in">string</span> str)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; str &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; <span class="string">&quot;first: &quot;</span> &lt;&lt; <span class="keyword">this</span>-&gt;first &lt;&lt; <span class="string">&quot;, second: &quot;</span> &lt;&lt; <span class="keyword">this</span>-&gt;second &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    TestClass tc1, add_tc, add_tc1, add_ts;</span><br><span class="line">    TestClass tc2 = TestClass(<span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line">    TestStuct ts1, ts2;</span><br><span class="line">    ts1.first = <span class="number">1</span>, ts1.second = <span class="number">2</span>;</span><br><span class="line">    ts2.first = <span class="number">10</span>, ts2.second = <span class="number">20</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    tc1.show(<span class="string">&quot;tc1&quot;</span>);</span><br><span class="line">    tc2.show(<span class="string">&quot;tc2&quot;</span>);</span><br><span class="line"></span><br><span class="line">    add_tc = tc1 + tc2; <span class="comment">// TestClass + TestClass </span></span><br><span class="line">    add_tc.show(<span class="string">&quot;add_tc&quot;</span>);</span><br><span class="line"></span><br><span class="line">    add_tc1 = add_tc + ts1; <span class="comment">// TestClass + TestStruct</span></span><br><span class="line">    add_tc1.show(<span class="string">&quot;add_tc1&quot;</span>);</span><br><span class="line"></span><br><span class="line">    add_ts = ts1 + ts2; <span class="comment">// TestStrcut + TestStrcut</span></span><br><span class="line">    add_ts.show(<span class="string">&quot;add_ts&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li><h1 id="重载运算符在函数外部"><a href="#重载运算符在函数外部" class="headerlink" title="重载运算符在函数外部"></a>重载运算符在函数外部</h1></li>
+</ul>
+<ol>
+<li><p>暂时未发现 <code>Bug</code></p>
+</li>
+<li><p>代码</p>
+ <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Author: Dgimo</span></span><br><span class="line"><span class="comment">* Date: 2020/3/31</span></span><br><span class="line"><span class="comment">* <span class="doctag">TODO:</span> 结构体运算符重载</span></span><br><span class="line"><span class="comment">* Describe: </span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 结构体运算符重载</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> first;</span><br><span class="line">    <span class="keyword">int</span> second;</span><br><span class="line">&#125; TestStuct;</span><br><span class="line"></span><br><span class="line">TestStuct <span class="keyword">operator</span>+(TestStuct ts1, TestStuct ts2)</span><br><span class="line">&#123;</span><br><span class="line">    TestStuct res;</span><br><span class="line">    res.first = ts1.first + ts2.first;</span><br><span class="line">    res.second = ts1.second + ts2.second;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">show</span><span class="params">(TestStuct ts)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;first: &quot;</span> &lt;&lt; ts.first &lt;&lt; <span class="string">&quot;, second: &quot;</span> &lt;&lt; ts.second &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    TestStuct ts1;</span><br><span class="line">    ts1.first = <span class="number">1</span>;</span><br><span class="line">    ts1.second = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    TestStuct ts2;</span><br><span class="line">    ts2.first = <span class="number">2</span>;</span><br><span class="line">    ts2.second = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">    TestStuct <span class="keyword">res_t</span> = ts1 + ts2;</span><br><span class="line">    show(<span class="keyword">res_t</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><h1 id="lt-lt-和-gt-gt-只能定义友元函数"><a href="#lt-lt-和-gt-gt-只能定义友元函数" class="headerlink" title="&lt;&lt; 和 &gt;&gt; 只能定义友元函数"></a><code>&lt;&lt;</code> 和 <code>&gt;&gt;</code> 只能定义友元函数</h1></li>
+</ul>
+<ol>
+<li><p>原因</p>
+<blockquote>
+<p>定义为成员函数，那么就隐含this指针了对吧，你要知道重载其实也是一种函数，那么函数就有调用他的对象，如果是成员函数，那么调用他的对象就肯定是想对应的类对象了对吧，但是&lt;&lt;和&gt;&gt;调用的对象肯定只能是cout或者cin对吧，那么久不能定义为成员函数了，只有定义成友元，那么就可以把cin,cout作为一个参数传进你重载的操作符函数里面去了</p>
+</blockquote>
+</li>
+<li><p>语法：</p>
+<ol>
+<li><p>在类中：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">friend</span> ostream &amp;<span class="keyword">operator</span> &lt;&lt;(ostream &amp;out, <span class="keyword">const</span> ElemType &amp;e);</span><br></pre></td></tr></table></figure></li>
+<li><p>在外面： </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ostream &amp;oprator &lt;&lt;(ostream &amp;out, <span class="keyword">const</span> ElemType &amp;e);</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><p>代码</p>
+<ol>
+<li><p>头文件(<code>.h</code>)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> ELEMTYPE_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ELEMTYPE_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ElemType</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="keyword">int</span> data;</span><br><span class="line">        ElemType();</span><br><span class="line">        ElemType(<span class="keyword">int</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">friend</span> ostream &amp;<span class="keyword">operator</span> &lt;&lt;(ostream &amp;out, <span class="keyword">const</span> ElemType &amp;e); <span class="comment">// Success</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">protected</span>:</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">// ELEMTYPE_H</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>源文件(<code>.cpp</code>)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;ElemType.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">ElemType::ElemType()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//ctor</span></span><br><span class="line">    <span class="keyword">this</span>-&gt;data = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ElemType::ElemType(<span class="keyword">int</span> data)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">this</span>-&gt;data = data;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ostream&amp; <span class="keyword">operator</span> &lt;&lt;(ostream &amp;out, <span class="keyword">const</span> ElemType &amp;e)</span><br><span class="line">&#123;</span><br><span class="line">    out &lt;&lt; e.data;</span><br><span class="line">    <span class="keyword">return</span> out;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-3-29-98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-3-29-98/" class="post-title-link" itemprop="url">98. JetBrains家族之Clion配置、汉化及快捷键</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：22:35:39" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="JetBrains-家族其他软件的手法相似，按需使用即可，此路不通，找度娘"><a href="#JetBrains-家族其他软件的手法相似，按需使用即可，此路不通，找度娘" class="headerlink" title="JetBrains 家族其他软件的手法相似，按需使用即可，此路不通，找度娘"></a>JetBrains 家族其他软件的手法相似，按需使用即可，此路不通，找度娘</h3><ul>
+<li><h1 id="Win10"><a href="#Win10" class="headerlink" title="Win10"></a>Win10</h1></li>
+</ul>
+<ol>
+<li><p>配置</p>
+<ol>
+<li><p>下载 <a href="/files/win_settings_3.zip">setting_3.zip</a>, <a href="/files/win_settings_4.zip">setting_4.zip</a>, <a href="/files/win_settings_5.zip">setting_5.zip</a>, <a href="/files/win_settings_6.zip">setting_6.zip</a>, <a href="/files/win_settings_7.zip">setting_7.zip</a>, <a href="/files/win_settings_8.zip">setting_8.zip</a></p>
+<blockquote>
+<p>数字越大，版本越新</p>
+</blockquote>
+</li>
+<li><p>打开 <code>Clion</code></p>
+</li>
+<li><p>选择： <code>File</code> - <code>Import setting</code></p>
+</li>
+<li><p>选择这个 <code>setting</code> 文件即可（一般全部导入，看个人）</p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li>取消开始界面打开默认项目配置<ol>
+<li>打开：<code>File</code> - <code>Settings</code> - <code>Appearance &amp; Behavior</code> - <code>System Settings</code></li>
+<li>取消勾选 <code>Reopen last project on startup</code></li>
+</ol>
+</li>
+</ol>
+<ol start="3">
+<li><p>更改模板注释：</p>
+<ol>
+<li><p>打开：<code>File</code> - <code>Settings</code> - <code>Editor</code> - <code>File and Code Templates</code> - <code>Includes</code></p>
+</li>
+<li><p>下面有一个面板，在面板输入</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">if</span> ($HEADER_COMMENTS)</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Author: $&#123;USER_NAME&#125;</span></span><br><span class="line"><span class="comment">* Date: $&#123;DATE&#125;</span></span><br><span class="line"><span class="comment">* <span class="doctag">TODO:</span></span></span><br><span class="line"><span class="comment">* Describe:</span></span><br><span class="line"><span class="comment">#if ($ORGANIZATION_NAME &amp;&amp; $ORGANIZATION_NAME != &quot;&quot;)</span></span><br><span class="line"><span class="comment">* Copyright (c) $YEAR $&#123;ORGANIZATION_NAME&#125;#if (!$ORGANIZATION_NAME.endsWith(&quot;.&quot;)).#end All rights reserved.</span></span><br><span class="line"><span class="comment">#end</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#end</span></span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://blog.cugxuan.cn/2019/11/01/Software/multi-main-func-run-in-clion/">参考文档</a></p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="4">
+<li><p>Clion 多个 <code>main</code> 函数存在</p>
+<ol>
+<li><p>在 <code>CMakeLists.txt</code> 中加入</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 遍历项目根目录下所有的 .cpp 文件</span><br><span class="line">file (GLOB files *.cpp)</span><br><span class="line">foreach (file $&#123;files&#125;)</span><br><span class="line">    <span class="built_in">string</span>(REGEX REPLACE <span class="string">&quot;.+/(.+)\\..*&quot;</span> <span class="string">&quot;\\1&quot;</span> exe $&#123;file&#125;)</span><br><span class="line">    add_executable ($&#123;exe&#125; $&#123;file&#125;)</span><br><span class="line">    message (\ \ \ \ --\ src/$&#123;exe&#125;.cpp\ will\ be\ compiled\ to\ bin/$&#123;exe&#125;)</span><br><span class="line">endforeach ()</span><br></pre></td></tr></table></figure></li>
+<li><p>为了方便可以自己定义快捷键：（个人用的是： <code>Alt-Shift+R</code>）</p>
+<ol>
+<li><code>File</code> - <code>Settings</code> - <code>Keymap</code></li>
+<li>搜索 <code>Reload cmake project</code> 即可</li>
+</ol>
+</li>
+<li><p>参考：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION <span class="number">3.15</span>)</span><br><span class="line">project(DataStruct)</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span>(CMAKE_CXX_STANDARD <span class="number">11</span>)</span><br><span class="line"></span><br><span class="line"># 遍历项目根目录下所有的 .cpp 文件</span><br><span class="line">file (GLOB files *.cpp)</span><br><span class="line">foreach (file $&#123;files&#125;)</span><br><span class="line">    <span class="built_in">string</span>(REGEX REPLACE <span class="string">&quot;.+/(.+)\\..*&quot;</span> <span class="string">&quot;\\1&quot;</span> exe $&#123;file&#125;)</span><br><span class="line">    add_executable ($&#123;exe&#125; $&#123;file&#125;)</span><br><span class="line">    message (\ \ \ \ --\ src/$&#123;exe&#125;.cpp\ will\ be\ compiled\ to\ bin/$&#123;exe&#125;)</span><br><span class="line">endforeach ()</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p><code>CMakeLists</code> 自动加载</p>
+<ol>
+<li>打开 <code>Files</code> - <code>settings</code> - <code>Build, Execution, Deployment</code> - <code>CMake</code></li>
+<li>选择 <code>Automatically reload CMake project on editing</code></li>
+</ol>
+</li>
+</ol>
+<ol start="6">
+<li>侧边栏无焦点自动隐藏<ol>
+<li>选择侧边栏的 <code>扳手</code></li>
+<li>选择 <code>View Mode</code> - <code>Dock Unpinned</code></li>
+</ol>
+</li>
+</ol>
+<ol start="7">
+<li><p>汉化步骤</p>
+<ol>
+<li>下载 <a href="./files/resources_cn.jar">resources-cn.jar</a></li>
+<li>将 <code>resources-cn.jar</code> 复制到 <code>安装目录下lib文件夹下</code></li>
+<li>结束</li>
+</ol>
+</li>
+<li><p>快捷键</p>
+<table>
+<thead>
+<tr>
+<th align="center">快捷键</th>
+<th align="center">含义</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Ctrl + Shift + U</td>
+<td align="center">大小写切换</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + Shift + Space</td>
+<td align="center">补全单词</td>
+<td align="center">new后直接键入构造器、构造器内提供构造信息</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Alt + L</td>
+<td align="center">格式化代码</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + Shift + Backspace</td>
+<td align="center">回到最后编辑的地方</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + N</td>
+<td align="center">查找类</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + F12</td>
+<td align="center">快速查看类成员</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + P</td>
+<td align="center">提示参数信息</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + Alt + B</td>
+<td align="center">查看接口、抽象类的实现类</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + F7</td>
+<td align="center">找到某个类、变量、函数等在文中被使用到的的地方</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">连续点击Shift</td>
+<td align="center">全局搜索</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Shift + F6</td>
+<td align="center">重新命名变量</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">连续按两次Esc</td>
+<td align="center">搜索框就会消失</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Alt + insert</td>
+<td align="center">添加自动代码生成信息</td>
+<td align="center">新建新的文件</td>
+</tr>
+<tr>
+<td align="center">Ctrl + j</td>
+<td align="center">插入完整的代码块</td>
+<td align="center">默认只有 <code>for</code>, <code>iter</code>, <code>itit</code>，也可以自己在 <code>Setting—&gt;Live Templates</code> 里添加自定义的代码块</td>
+</tr>
+<tr>
+<td align="center">Ctrl + Alt + -/+</td>
+<td align="center">展开折叠当前函数、类</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + Shift + -/+</td>
+<td align="center">展开折叠所有函数、类</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Ctrl + Alt + T</td>
+<td align="center">就可以选择给这些代码包裹上 <code>if</code>, <code>for</code> 等(surround with)</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+</li>
+<li><p>自动换行</p>
+<blockquote>
+<p>idea设置自动换行其实很简单，只需要进行一步操作就可以了。<br/><br>看下图：我们只需要在相应的位置加上文件的类型就可以了，比如我们写的类都是.java文件，那么我们只需要加上 *.java就可以实现自动换行了。</p>
+</blockquote>
+<p><img src="/source/imagess/posts/jetbrains/1.png"></p>
+</li>
+</ol>
+<ol start="10">
+<li><p><code>JetBrains</code>学生认证：自行百度</p>
+</li>
+<li><p><code>JetBrains</code> sync配置同步：</p>
+<p><code>Files</code> - <code>Sync ……</code></p>
+</li>
+<li><p><code>Clion</code> 输出乱码   </p>
+<ol>
+<li>在设置里将编码都设置为UTF8，并点击OK保存设置;<br> <img src="/source/imagess/posts/jetbrains/2.jpg"></li>
+<li>按住<code>Ctrl+Shift+Alt+/</code>选中<code>Registry..</code>.，然后取消掉 <code>run.processes.with.pty</code> 后面的 <code>√</code></li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-3-25-97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-3-25-97/" class="post-title-link" itemprop="url">97. 双系统安装之后必做的事</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="双系统时间不一致"><a href="#双系统时间不一致" class="headerlink" title="双系统时间不一致"></a>双系统时间不一致</h1></li>
+</ul>
+<h3 id="在Ubuntu的命令行使用"><a href="#在Ubuntu的命令行使用" class="headerlink" title="在Ubuntu的命令行使用"></a>在Ubuntu的命令行使用</h3><ol>
+<li><p>首先我们把硬件时间（BIOS时间）将默认的UTC改为CST，然后重启，使得两个系统的时间保持一致</p>
+<blockquote>
+<p><code>sudo timedatectl set-local-rtc 1kv</code><br/><br>#上述代码中的1改为0即可将硬件时间修改为默认的UTC时间 <br/><br><code>sudo reboot</code> <br/><br>#重启系统使改动生效 <br/></p>
+</blockquote>
+</li>
+<li><p>接着我们更新一下系统时间</p>
+<blockquote>
+<p><code>sudo apt-get install ntpdate</code> <br/><br>#这里的操作是安装ntpdate工具 <br/><br><code>sudo ntpdate time.windows.com</code> <br/><br>#使用ntpdate工具从time.windows.com上面同步时间 <br/></p>
+</blockquote>
+</li>
+<li><p>最后我们将时间更新到硬件上，以保证重启后改动不会被还原</p>
+<blockquote>
+<p><code>sudo hwclock --localtime --systohc</code> <br/><br>#这里的代码意思是使用hwclock命令将本地时间localtime从sysclock同步到hwclock <br/></p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li><h1 id="Ubuntu-安装-翻墙"><a href="#Ubuntu-安装-翻墙" class="headerlink" title="Ubuntu 安装 翻墙"></a>Ubuntu 安装 翻墙</h1><p><a href="/files/ssr-linux.AppImage">点击这里下载AppImage</a> <br/><br><a href="/files/electron-ssr-0.2.6.deb">点击这里下载deb</a> <br/></p>
+<blockquote>
+<p>注意：必须要安装 Python2、Python3，才可以使用 <br/><br>deb安装： <code>sudo dpkg -i &lt;deb文件&gt;</code></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><h1 id="Windows-Defender关闭"><a href="#Windows-Defender关闭" class="headerlink" title="Windows Defender关闭"></a>Windows Defender关闭</h1><ol>
+<li><code>cmd</code> 运行 <code>regedit</code></li>
+<li>定位到： <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService</code></li>
+<li>在右侧找到 <code>DWORD（32位）</code> 值，名为 <code>Start</code></li>
+<li>修改数值数据为4(十六进制)</li>
+<li>重启文件资源管理器，或注销再登录/重启系统</li>
+</ol>
+<blockquote>
+<p>注意:</p>
+<ol>
+<li>如果你安装第三方杀软或安全软件，Windows Defender会自动被关闭。</li>
+<li>start的默认值为 <code>3</code></li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><h1 id="Ubuntu-安装字体"><a href="#Ubuntu-安装字体" class="headerlink" title="Ubuntu 安装字体"></a>Ubuntu 安装字体</h1>详见<a href="2020-1-7-85.md">Ubuntu配置Win10字体</a></li>
+</ul>
+<ul>
+<li><h1 id="Ubuntu-安装zsh"><a href="#Ubuntu-安装zsh" class="headerlink" title="Ubuntu 安装zsh"></a>Ubuntu 安装zsh</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Jinxiaoyu886/article/details/88974811">git、vim、oh-my-zsh 的安装和配置</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/1df9df37ef34">Linux 安装 oh-my-zsh</a></p>
+</li>
+</ul>
+<ul>
+<li><h1 id="Ubuntu不能访问Windows下的磁盘"><a href="#Ubuntu不能访问Windows下的磁盘" class="headerlink" title="Ubuntu不能访问Windows下的磁盘"></a>Ubuntu不能访问Windows下的磁盘</h1><ol>
+<li>控制面板—系统和安全—电源选项—选择电源按钮的功能</li>
+<li>首先点击上部分的 <code>更改当前不可用的设置</code></li>
+<li>然后去掉 <code>启用快速启动（推荐）</code> 前面的勾即可</li>
+<li>这个时候再选择Windows关机后，就是完全关机了</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><h1 id="不能读取exfat格式的u盘问题"><a href="#不能读取exfat格式的u盘问题" class="headerlink" title="不能读取exfat格式的u盘问题"></a>不能读取exfat格式的u盘问题</h1><ol>
+<li>Ubuntu默认不支持exfat格式的U盘，只需要运行如下的命令：<code>sudo apt-get install exfat-utils</code></li>
+<li>安装完成后重启即可</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><h1 id="不能挂载移动硬盘问题"><a href="#不能挂载移动硬盘问题" class="headerlink" title="不能挂载移动硬盘问题"></a>不能挂载移动硬盘问题</h1><ol>
+<li>在终端输入如下命令，查看分区挂载情况： <code>sudo fdisk -l</code></li>
+<li>输入下面的命令： <code>sudo ntfsfix /dev/sdb1</code><blockquote>
+<p>注意：/dev/sdb1 为移动硬盘的设备名，找到硬盘size对应的设备名</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><h1 id="Ubuntu-查找文件"><a href="#Ubuntu-查找文件" class="headerlink" title="Ubuntu 查找文件"></a>Ubuntu 查找文件</h1><ol>
+<li>命令：<code>locate &lt;文件名&gt;</code></li>
+<li>网址：<a target="_blank" rel="noopener" href="https://blog.csdn.net/dcrmg/article/details/78000961">在ubuntu中搜索文件或文件夹的方法</a></li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><h1 id="Ubuntu-更新慢"><a href="#Ubuntu-更新慢" class="headerlink" title="Ubuntu 更新慢"></a>Ubuntu 更新慢</h1><ol>
+<li><p>步骤:</p>
+<ol>
+<li>选择 <code>软件和更新</code></li>
+<li>打开 <code>软件和更新窗口</code></li>
+<li>我们点击 <code>Ubuntu软件</code> 选项卡下的 <code>其他站点</code></li>
+<li>这里有好多国外的源及我们国内的源，我也试了不少，我目前使用的是aliyun的源，感觉速度还不错，其他国内的速度也都不可以，大家也可以试试。不要怕麻烦，就是要折腾</li>
+<li>我们选择 <code>mirrors.aliyun.com</code>，然后点击 选择服务器</li>
+<li>同样需要我们密码认证</li>
+<li>修改成功</li>
+<li>等待系统更新完毕,源更新成功后，会自动关闭窗口。此时，我们安装软件或更新软件（系统）就是用的我们选择的源啦。</li>
+</ol>
+</li>
+<li><p>网址：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_22122811/article/details/52741428">Ubuntu加快软件安装更新速度方法</a></p>
+</li>
+</ol>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-3-16-96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-3-16-96/" class="post-title-link" itemprop="url">96. Sublime 配置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="Sublime快捷键"><a href="#Sublime快捷键" class="headerlink" title="Sublime快捷键"></a>Sublime快捷键</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">	&#123; &quot;keys&quot;: [&quot;ctrl+enter&quot;], &quot;command&quot;: &quot;move_to&quot;, &quot;args&quot;: &#123;&quot;to&quot;: &quot;eol&quot;, &quot;extend&quot;: false&#125; &#125;,</span><br><span class="line">	&#123; &quot;keys&quot;: [&quot;shift+enter&quot;], &quot;command&quot;: &quot;run_macro_file&quot;, &quot;args&quot;: &#123;&quot;file&quot;: &quot;res:&#x2F;&#x2F;Packages&#x2F;Default&#x2F;Add Line.sublime-macro&quot;&#125; &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure></li>
+<li><h1 id="主题、配色"><a href="#主题、配色" class="headerlink" title="主题、配色"></a>主题、配色</h1></li>
+</ul>
+<ol>
+<li>主题： <code>Ayu</code></li>
+<li>配色： <code>Ayu-light</code></li>
+<li>配置文件（首选项-设置）：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;color_scheme&quot;: &quot;Packages&#x2F;ayu&#x2F;ayu-light.sublime-color-scheme&quot;,</span><br><span class="line">	&quot;ignored_packages&quot;:</span><br><span class="line">	[</span><br><span class="line">		&quot;Vintage&quot;</span><br><span class="line">	],</span><br><span class="line">	&quot;theme&quot;: &quot;ayu-light.sublime-theme&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

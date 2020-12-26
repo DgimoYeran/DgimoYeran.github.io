@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/source/imagess/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/source/imagess/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/source/imagess/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/source/imagess/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="你有灵魂吗">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QeuroIzoのBlog">
+<meta property="og:url" content="http://example.com/page/11/index.html">
+<meta property="og:site_name" content="QeuroIzoのBlog">
+<meta property="og:description" content="你有灵魂吗">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="QeuroIzo">
+<meta property="article:tag" content="Python, Rust, C++, Go, 爬虫, 深度学习, 服务研发, 对象存储">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/page/11/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>QeuroIzoのBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">QeuroIzoのBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">hello world</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-1-23-16/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-1-23-16/" class="post-title-link" itemprop="url">16. 电脑常用快捷键</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Win10系统："><a href="#Win10系统：" class="headerlink" title="Win10系统："></a>Win10系统：</h1><h3 id="新增："><a href="#新增：" class="headerlink" title="新增："></a>新增：</h3><ol>
+<li>贴靠窗口：<br>Win + 左/右 &gt;  Win + 上/下 &gt; 窗口可以变为 1/4 大小放置在屏幕 4 个角落。  </li>
+<li>切换窗口：<br>Alt + Tab（不是新的，但任务切换界面改进）。  </li>
+<li>任务视图：<br>Win + Tab（松开键盘界面不会消失）。</li>
+<li>创建新的虚拟桌面：<br>Win + Ctrl + D。  </li>
+<li>关闭当前虚拟桌面：<br>Win + Ctrl + F4。</li>
+<li>切换虚拟桌面：<br>Win + Ctrl + 左/右。</li>
+</ol>
+<h3 id="常用："><a href="#常用：" class="headerlink" title="常用："></a>常用：</h3><ol>
+<li> Win键 &emsp; 桌面与开始菜单切换按键  </li>
+<li> Win + R &emsp;打开运行对话框  </li>
+<li> Win + Q &emsp;快速打开搜索   </li>
+<li> Win + I &emsp;快速打开Win10设置栏  </li>
+<li> Ctrl+Alt+Del &emsp;快速打开任务管理器  </li>
+<li> Alt+F4 &emsp;关机快捷键  </li>
+</ol>
+<h3 id="Windows键组合快捷键"><a href="#Windows键组合快捷键" class="headerlink" title="Windows键组合快捷键"></a>Windows键组合快捷键</h3><ol>
+<li> Win + ←：最大化窗口到左侧的屏幕上（与开始屏幕应用无关）</li>
+<li> Win + →：最大化窗口到右侧的屏幕上（与开始屏幕应用无关）1.  Win+ ↑：最大化窗口（与开始屏幕应用无关）</li>
+<li> Win+ ↓：最小化窗口（与开始屏幕应用无关）</li>
+<li> Win+ SHIFT +↑：垂直拉伸窗口，宽度不变（与开始屏幕应用无关）</li>
+<li> Win+ SHIFT +↓：垂直缩小窗口，宽度不变（与开始屏幕应用无关）</li>
+<li> Win+SHIFT+←：将活动窗口移至左侧显示器 （与开始屏幕应用无关）</li>
+<li> Win+SHIFT+→：将活动窗口移至右侧显示器（与开始屏幕应用无关）</li>
+<li> Win+ P：演示设置</li>
+<li> Win+ Home：最小化所有窗口，第二次键击恢复窗口（不恢复开始屏幕应用）</li>
+<li> Win+ 数字键：打开或切换位于任务栏指定位置的程序</li>
+<li> Win+Shift+数字键：打开位于任务栏指定位置程序的新实例</li>
+<li> Win+B：光标移至通知区域</li>
+<li> Win+Break：显示“系统属性”对话框</li>
+<li> Win+D：显示桌面，第二次键击恢复桌面 （不恢复开始屏幕应用）</li>
+<li> Win+E：打开我的电脑</li>
+<li> Win+Ctrl+F：搜索计算机（如果你在网络上）</li>
+<li> Win+G：循环切换侧边栏小工具</li>
+<li> Win+L：锁住电脑或切换用户</li>
+<li> Win+M：最小化所有窗口</li>
+<li> Win+Shift+M：在桌面恢复所有最小化窗口（不恢复开始屏幕应用）</li>
+<li> Win+R：打开“运行”对话框</li>
+<li> Win+T：切换任务栏上的程序</li>
+<li> Win+Alt+回车：打开Windows媒体中心</li>
+<li> Win+U：打开轻松访问中心</li>
+<li> Win+F1：打开Windows帮助和支持</li>
+<li> Win+N：插件新笔记（OneNote）</li>
+<li> Win+S：打开屏幕截图工具（OneNote）</li>
+<li> Win+Q：打开Lync，Windows 8搜索功能移除了该快捷键</li>
+<li> Win+A：接受所有来电 （在microsoft Lync中）</li>
+<li> Win+X：拒绝来电（在microsoft Lync中），如果Windows移动中心存在，该快捷键不起作用</li>
+<li> Win+减号：缩小（放大镜）</li>
+<li> Win+加号：放大（放大镜）</li>
+<li> Win+Esc：关闭放大镜</li>
+<li> Win+空格键：切换输入语言和键盘布局</li>
+<li> Win+O：禁用屏幕翻转</li>
+<li> Win+，：临时查看桌面</li>
+<li> Win+V：切换系统通知信息</li>
+<li> Win+Shift+V：反向切换系统通知信息</li>
+<li> Win+回车：打开“讲述人”</li>
+<li> Win+PgUp：将开始屏幕或开始屏幕应用移至左侧显示器</li>
+<li> Win+PgDown：将开始屏幕或开始屏幕应用移至右侧显示器</li>
+<li> Win+Shift+.：将应用移至左侧</li>
+<li> Win+.：将应用移至右侧</li>
+<li> Win+C：打开Charms栏（提供设置、设备、共享和搜索等选项）</li>
+<li> Win+I：打开设置栏</li>
+<li> Win+K：打开连接显示屏</li>
+<li> Win+H：打开共享栏</li>
+<li> Win+Q：打开应用搜索面板</li>
+<li> Win+W：打开“设置搜索”应用</li>
+<li> Win+F：打开“文件搜索”应用</li>
+<li> Win+Tab：循环切换应用</li>
+<li> Win+Shift+Tab：反向循环切换应用</li>
+<li> Win+Ctrl+Tab：循环切换应用，切换时手动选择应用</li>
+<li> Win+Z：打开“应用栏”</li>
+<li> Win+/：恢复默认输入法</li>
+<li> Win+J：显示之前操作的应用</li>
+<li> Win+X：快捷菜单</li>
+</ol>
+<h3 id="常规-通用-的键盘快捷方式："><a href="#常规-通用-的键盘快捷方式：" class="headerlink" title="常规(通用)的键盘快捷方式："></a>常规(通用)的键盘快捷方式：</h3><ol>
+<li> F1 显示帮助</li>
+<li> Ctrl+Shift+Esc 打开任务管理器</li>
+<li> Ctrl+A 全选</li>
+<li> Ctrl+C 复制选择的项目</li>
+<li> Ctrl+X 剪切选择的项目</li>
+<li> Ctrl+V(或 Shift+Insert) 粘贴选择的项目</li>
+<li> Ctrl+Z 撤消操作</li>
+<li> Ctrl+Y 重新执行某项操作</li>
+<li> Delete(或 Ctrl+D) 删除所选项目并将其移动到“回收站”</li>
+<li> Shift+Delete 不先将所选项目移动到“回收站”而直接将其删除</li>
+<li> F2 重命名选定项目</li>
+<li> Ctrl+向右键 将光标移动到下一个字词的起始处</li>
+<li> Ctrl+向左键 将光标移动到上一个字词的起始处</li>
+<li> Ctrl+向下键 将光标移动到下一个段落的起始处</li>
+<li> Ctrl+向上键 将光标移动到上一个段落的起始处</li>
+<li> Ctrl+Shift 加某个箭头键 选择一块文本</li>
+<li> Shift 加任意箭头键 在窗口中或桌面上选择多个项目，或者在文档中选择文本</li>
+<li> Ctrl 加任意箭头键+空格键 选择窗口中或桌面上的多个单个项目</li>
+<li> Ctrl+A 选择文档或窗口中的所有项目</li>
+<li> F3 搜索文件或文件夹</li>
+<li> Alt+Enter 显示所选项的属性</li>
+<li> Alt+F4 关闭活动项目或者退出活动程序</li>
+<li> Alt+空格键 为活动窗口打开快捷方式菜单</li>
+<li> Ctrl+F4 关闭活动文档(在允许同时打开多个文档的程序中)</li>
+<li> Ctrl+ Alt+Tab 使用箭头键在打开的项目之间切换</li>
+<li> Ctrl+鼠标滚轮 更改桌面上的图标大小</li>
+<li> Win键 + Tab 使用 Aero Flip 31. D 循环切换任务栏上的程序</li>
+<li> Ctrl + Win键 + Tab 通过 Aero Flip 31. D 使用箭头键循环切换任务栏上的程序</li>
+<li> Alt+Esc 以项目打开的顺序循环切换项目</li>
+<li> F6 在窗口中或桌面上循环切换屏幕元素</li>
+<li> F4 在 Win资源管理器中显示地址栏列表</li>
+<li> Shift+F10 显示选定项目的快捷菜单</li>
+<li> Ctrl+Esc 打开“开始”菜单</li>
+<li> Alt+加下划线的字母 显示相应的菜单</li>
+<li> Alt+加下划线的字母 执行菜单命令(或其他有下划线的命令)</li>
+<li> F10 激活活动程序中的菜单栏</li>
+<li> 向右键 打开右侧的下一个菜单或者打开子菜单</li>
+<li> 向左键 打开左侧的下一个菜单或者关闭子菜单</li>
+<li> F5(或 Ctrl+R) 刷新活动窗口</li>
+<li> Alt+向上键 在 Win资源管理器中查看上一级文件夹</li>
+<li> Esc 取消当前任务</li>
+<li> 插入 CD 时按住 Shift 阻止 CD 自动播放</li>
+<li> 左 Alt+Shift 在启用多种输入语言时切换输入语言</li>
+<li> Ctrl+Shift 在启用多个键盘布局时切换键盘布局</li>
+<li>  右或左 Ctrl+Shift 更改从右到左阅读语言的文本阅读方向</li>
+<li> Win资源管理器中的快捷键</li>
+<li> Ctrl+N 打开新窗口</li>
+<li> Ctrl+W 关闭当前窗口</li>
+<li> Ctrl+Shift+N 新建文件夹</li>
+<li> End 显示活动窗口的底端</li>
+<li> Home 显示活动窗口的顶端</li>
+<li> F11 最大化或最小化活动窗口</li>
+<li> Ctrl+句点 顺时针旋转图片</li>
+<li> Ctrl+逗号 逆时针旋转图片</li>
+<li> Num Lock+数字键盘上的星号 (*) 显示所选文件夹下的所有子文件夹</li>
+<li> Num Lock+数字键盘上的加号 (+) 显示所选文件夹的内容</li>
+<li> Num Lock+数字键盘上的减号 (1. ) 折叠选定的文件夹</li>
+<li> 向左键折叠当前选项(如果它处于展开状态)，或者选择其父文件夹</li>
+<li> Alt+Enter 打开所选项目的“属性”对话框</li>
+<li> Alt+P 显示预览窗格</li>
+<li> Alt+向左键 &emsp; 查看上一个文件夹</li>
+<li> Backspace(退格键)向上 返回父文件夹</li>
+<li> 向右键显示当前选项(如果它处于折叠状态)，或者选择第一个子文件夹</li>
+<li> Alt+向右键 查看下一个文件夹</li>
+<li> Alt+向上键 查看父文件夹</li>
+<li> Ctrl+Shift+E 显示所选文件夹上面的所有文件夹</li>
+<li> Ctrl+鼠标滚轮 更改文件和文件夹图标的大小和外观</li>
+<li> Alt+D 选择地址栏</li>
+<li> Ctrl+E 选择搜索框</li>
+<li> Ctrl+F 选择搜索框</li>
+</ol>
+<h3 id="在对话框中使用的快捷键"><a href="#在对话框中使用的快捷键" class="headerlink" title="在对话框中使用的快捷键"></a>在对话框中使用的快捷键</h3><ol>
+<li> Ctrl+Tab 在选项卡上向前移动</li>
+<li> Ctrl+Shift+Tab 在选项卡上向后移动</li>
+<li> Tab 在选项上向前移动</li>
+<li> Shift+Tab 在选项上向后移动</li>
+<li> Alt+加下划线的字母 执行与该字母匹配的命令(或选择选项)</li>
+<li> Enter 对于许多选定命令代替单击鼠标</li>
+<li> 空格键 如果活动选项是复选框，则选中或清除该复选框</li>
+<li> 箭头键 如果活动选项是一组选项按钮，则选择某个按钮</li>
+<li> F1 显示帮助</li>
+<li> F4 显示活动列表中的项目</li>
+<li> Backspace 如果在“另存为”或“打开”对话框中选中了某个文件夹，则打开上一级文件夹</li>
+</ol>
+<h1 id="Word"><a href="#Word" class="headerlink" title="Word"></a>Word</h1><h1 id="Excel"><a href="#Excel" class="headerlink" title="Excel"></a>Excel</h1><h1 id="PPT"><a href="#PPT" class="headerlink" title="PPT"></a>PPT</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-1-23-15/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-1-23-15/" class="post-title-link" itemprop="url">15. 只出现一次的数字 II</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="题目："><a href="#题目：" class="headerlink" title="题目："></a><strong>题目</strong>：</h1><blockquote>
+<p>给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现了三次。找出那个只出现了一次的元素。</p>
+</blockquote>
+<h3 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h3><blockquote>
+<p>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？</p>
+</blockquote>
+<h3 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: [2,2,3,2]</span><br><span class="line">输出: 3</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h1><h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">singleNum</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">32</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; nums.size(); j++) &#123;</span><br><span class="line">            count += (nums[j] &gt;&gt; i) &amp; <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        res += (count % <span class="number">3</span>) &lt;&lt; i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="解析："><a href="#解析：" class="headerlink" title="解析："></a>解析：</h2><ol>
+<li>首先：为什么<code>i &lt; 32</code>?<br>int型占4个字节，即32位，所以int的大小为 int$\in$ [$-2^{31}$, $2 ^ {31} -1$]</li>
+<li>时间复杂度为：O(32n) <code>&lt;===&gt;</code> O(n)；</li>
+<li>虽然是二进制，但是运算法则和十进制并无差异，变的只是进制而已；</li>
+<li>因为要确定一个数字，所以$<code>\%3</code>$会让那个数字显示出来在<strong>二进制</strong>形式下，那个位置有1。</li>
+</ol>
+<h1 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h1><h2 id="代码：-1"><a href="#代码：-1" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">singleNum</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ones = <span class="number">0</span>, twos = <span class="number">0</span>;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">auto</span> x : nums) &#123;</span><br><span class="line">         ones = (ones ^ x) &amp; ~twos;</span><br><span class="line">         twos = (twos ^ x) &amp; ~ones;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> ones;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="解析：-1"><a href="#解析：-1" class="headerlink" title="解析："></a>解析：</h2><ol>
+<li><p>从 <code>自动机</code> 的角度出发；</p>
+</li>
+<li><p>状态机：（举例：）</p>
+<table>
+<thead>
+<tr>
+<th>状态量</th>
+<th>ones</th>
+<th>twos</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>初始状态</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>一个1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>两个1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>三个1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>三个状态一循环，比如有6个1， 则进行两轮循环，状态量为0 &emsp; 0 </p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-1-22-14/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-1-22-14/" class="post-title-link" itemprop="url">14. 质数</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="质数"><a href="#质数" class="headerlink" title="质数"></a>质数</h1><p>1——20：<code>2、3、5、7、9、11、13、17、19</code></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-1-22-13/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-1-22-13/" class="post-title-link" itemprop="url">13. unordered_map(哈希表)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>unordered_map是C++中的哈希表，可以在任意类型与类型之间做映射。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/12/26/2019-1-22-13/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-1-22-12/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-1-22-12/" class="post-title-link" itemprop="url">12. 二进制中，全为1的数字大小</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1 : 1 <br/><br>2 : 3 <br/><br>3 : 7 <br/><br><code>4 : 15</code> <br/><br>5 : 31 <br/><br>6 : 63 <br/><br><code>7 : 127</code> <br/><br>8 : 255 <br/><br>9 : 511 <br/><br><code>10 : 1023</code> <br/><br>11 : 2047 <br/><br>12 : 4095 <br/><br>13 : 8191 <br/><br><code>14 : 16383</code> <br/><br>15 : 32767 <br/><br>16 : 65535 <br/><br><code>17 : 131071</code> <br/><br>18 : 262143 <br/><br>19 : 524287 <br/><br><code>20 : 1048575</code> <br/><br>21 : 2097151 <br/><br>22 : 4194303 <br/><br>23 : 8388607 <br/><br><code>24 : 16777215</code> <br/><br>25 : 33554431 <br/><br>26 : 67108863 <br/><br><code>27 : 134217727</code> <br/><br>28 : 268435455 <br/><br>29 : 536870911 <br/><br><code>30 : 1073741823</code> <br/><br>31 : 2147483647 <br/><br>32 : 4294967295 <br/><br>33 : 8589934591 <br/><br><code>34 : 17179869183</code> <br/><br>35 : 34359738367 <br/><br>36 : 68719476735 <br/><br><code>37 : 137438953471</code> <br/><br>38 : 274877906943 <br/><br>39 : 549755813887 <br/><br><code>40 : 1099511627775</code> <br/><br>41 : 2199023255551 <br/><br>42 : 4398046511103 <br/><br>43 : 8796093022207 <br/><br><code>44 : 17592186044415</code> <br/><br>45 : 35184372088831 <br/><br>46 : 70368744177663 <br/><br><code>47 : 140737488355327</code> <br/><br>48 : 281474976710655 <br/><br>49 : 562949953421311 <br/><br><code>50 : 1125899906842623</code> <br/><br>51 : 2251799813685247 <br/><br>52 : 4503599627370495 <br/><br>53 : 9007199254740991 <br/><br><code>54 : 18014398509481983</code> <br/><br>55 : 36028797018963967 <br/><br>56 : 72057594037927935 <br/><br><code>57 : 144115188075855871</code> <br/><br>58 : 288230376151711743 <br/><br>59 : 576460752303423487 <br/><br><code>60 : 1152921504606846975</code> <br/><br>61 : 2305843009213693951 <br/><br>62 : 4611686018427387903 <br/><br>63 : 9223372036854775807 <br/><br><code>64 : 18446744073709551615</code> <br/><br>65 : 36893488147419103231 <br/><br>66 : 73786976294838206463 <br/><br><code>67 : 147573952589676412927</code> <br/><br>68 : 295147905179352825855 <br/><br>69 : 590295810358705651711 <br/><br><code>70 : 1180591620717411303423</code> <br/><br>71 : 2361183241434822606847 <br/><br>72 : 4722366482869645213695 <br/><br>73 : 9444732965739290427391 <br/><br><code>74 : 18889465931478580854783</code> <br/><br>75 : 37778931862957161709567 <br/><br>76 : 75557863725914323419135 <br/><br><code>77 : 151115727451828646838271</code> <br/><br>78 : 302231454903657293676543 <br/><br>79 : 604462909807314587353087 <br/><br><code>80 : 1208925819614629174706175</code> <br/><br>81 : 2417851639229258349412351 <br/><br>82 : 4835703278458516698824703 <br/><br>83 : 9671406556917033397649407 <br/><br><code>84 : 19342813113834066795298815</code> <br/><br>85 : 38685626227668133590597631 <br/><br>86 : 77371252455336267181195263 <br/><br><code>87 : 154742504910672534362390527</code> <br/><br>88 : 309485009821345068724781055 <br/><br>89 : 618970019642690137449562111 <br/><br><code>90 : 1237940039285380274899124223</code> <br/><br>91 : 2475880078570760549798248447 <br/><br>92 : 4951760157141521099596496895 <br/><br>93 : 9903520314283042199192993791 <br/><br><code>94 : 19807040628566084398385987583</code> <br/><br>95 : 39614081257132168796771975167 <br/><br>96 : 79228162514264337593543950335 <br/><br><code>97 : 158456325028528675187087900671</code> <br/><br>98 : 316912650057057350374175801343 <br/><br>99 : 633825300114114700748351602687 <br/><br><code>100 : 1267650600228229401496703205375</code> <br/></p>
+<h2 id="可以看出："><a href="#可以看出：" class="headerlink" title="可以看出："></a>可以看出：</h2><blockquote>
+<p>个位数字为4 7 10分别差了一个<code>数量级</code></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-1-19-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-1-19-4/" class="post-title-link" itemprop="url">4. 程序设计比赛-常用技巧</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:34 / 修改时间：21:58:11" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:34+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><p>无穷大表示：0x3f3f3f3f</p>
+</li>
+<li><p>freopen()</p>
+<ol>
+<li><p>头文件: <code>stdio.h</code> 或者 <code>cstdio</code> (如果是C11，iostream似乎已经包含了，若是C98需要加上 <code>#include &lt;cstdio&gt;</code>)</p>
+</li>
+<li><p>声明</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">FILE *<span class="title">freopen</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *filename, <span class="keyword">const</span> <span class="keyword">char</span> *mode, FILE *stream)</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>参数</p>
+<ul>
+<li>filename – 文件名，用于存储输入输出的自定义文件名。</li>
+<li>mode – 文件打开的模式。和fopen中的模式（如: <code>r</code> – “只读访问”、<code>w</code> – “只写访问”、<code>a</code> – “追加写入”）相同。</li>
+<li>stream – 一个文件，通常使用标准流文件。如：<code>stdin</code> – 标准输入、<code>stdout</code> – 标准输出、<code>stderr</code>(一般不用) – 标准错误</li>
+</ul>
+</li>
+<li><p>模式</p>
+</li>
+<li><p>功能：实现重定向，把预定义的标准流文件定向到由path指定的文件中。标准流文件具体是指stdin、stdout和stderr。其中stdin是标准输入流，默认为键盘；stdout是标准输出流，默认为屏幕；stderr是标准错误流，一般把屏幕设为默认。</p>
+</li>
+<li><p>实例</p>
+<ol>
+<li><p><code>stdout</code> 到一个文本文件的重定向，即：把输出到屏幕的文本输出到一个文本文件中</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">if</span>(freopen(<span class="string">&quot;./output.txt&quot;</span>,<span class="string">&quot;r&quot;</span>,<span class="built_in">stdout</span>)==<span class="literal">NULL</span>)</span><br><span class="line">       <span class="built_in">fprintf</span>(<span class="built_in">stderr</span>,<span class="string">&quot;error redirecting stdout\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">   <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">&quot;%3d&quot;</span>,i);</span><br><span class="line"></span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">   fclose(<span class="built_in">stdout</span>);</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>从文件 <code>in.txt</code> 中读入数据，打印到屏幕上</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a, b;</span><br><span class="line">    freopen(<span class="string">&quot;./in.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    <span class="comment">// freopen(&quot;out.txt&quot;, &quot;a&quot;, stdout);</span></span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b)</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; a + b &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    fclose(<span class="built_in">stdin</span>);</span><br><span class="line">    fclose(<span class="built_in">stdout</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>从文件 <code>in.txt</code> 中读入数据，计算加和输出到 <code>out.txt</code> 中</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a, b;</span><br><span class="line">    freopen(<span class="string">&quot;./in.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, <span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">&quot;out.txt&quot;</span>, <span class="string">&quot;a&quot;</span>, <span class="built_in">stdout</span>);</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b)</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; a + b &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    fclose(<span class="built_in">stdin</span>);</span><br><span class="line">    fclose(<span class="built_in">stdout</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Note: 一般常用的是 <code>6.2</code>，因为有些比赛的命令行不能粘贴，一个个的打又太麻烦了，这样就会方便很多</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>导入全部头文件</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2019-1-19-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2019-1-19-1/" class="post-title-link" itemprop="url">1. 比特位计数 + n&(n-1)的妙用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 21:52:33 / 修改时间：22:37:42" itemprop="dateCreated datePublished" datetime="2020-12-26T21:52:33+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a><strong>题目</strong></h1><p><img src="/images/posts/acwing/17.png"></p>
+</li>
+<li><h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a><strong>解析</strong></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">0   0000</span><br><span class="line">1   0001</span><br><span class="line">2   0010 </span><br><span class="line">3   0011</span><br><span class="line">4   0100</span><br><span class="line">5   0101</span><br><span class="line">6   0110</span><br><span class="line">7   0111</span><br><span class="line">8   1000</span><br><span class="line">9   1001</span><br><span class="line">10  1010</span><br><span class="line">11  1011</span><br><span class="line">12  1100</span><br><span class="line">13  1101</span><br><span class="line">14  1110</span><br><span class="line">15  1111</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li>假设求r[i]</li>
+<li><code>r[i - 1] + 1</code> ，如果进位，那么<code>r[i]</code>就和<code>r[i - 1]</code> 没有关系了，如果没有进位，那么，<code>r[i] = r[i - 1] + 1</code></li>
+<li>接着，看进位的情况：如果 <code>i &amp; (i - 1)</code> ，那么就会把i和 <code>i - 1</code> 的最低位去掉，即变为0；<br/> <blockquote>
+<p><strong><em>Ps:</em></strong> 最低位是指，从左面第0位开始，一直往右数，直到遇到两个数不一样的位置，那么后面的数（包括不一样的数）不管相不相同，都为最低位（例：9 和 10：从左面第0位开始，到第2位不同，那么第2、3位即为最低位）</p>
+</blockquote>
+</li>
+<li>显而易见，<code>i &amp; (i - 1)</code>得到的数就是去掉最低位之后的数，那么，由于进位了，所以，<code>r[i] = r[i &amp; (i - 1)] + 1</code></li>
+</ol>
+<ul>
+<li><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a><strong>代码</strong></h1></li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">countBits</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">r</span><span class="params">(num + <span class="number">1</span>)</span></span>;</span><br><span class="line">    r[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= num; i++) &#123;</span><br><span class="line">        r[i] = r[i &amp; (i - <span class="number">1</span>)] + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+<ul>
+<li><h1 id="n-amp-n-1-的妙用"><a href="#n-amp-n-1-的妙用" class="headerlink" title="n&amp;(n-1)的妙用"></a><strong>n&amp;(n-1)的妙用</strong></h1></li>
+</ul>
+<h2 id="1-判断一个数是否是2的方幂"><a href="#1-判断一个数是否是2的方幂" class="headerlink" title="1. 判断一个数是否是2的方幂"></a>1. 判断一个数是否是2的方幂</h2><ol>
+<li><p>方法：n &gt; 0 &amp;&amp; ((n &amp; (n - 1)) == 0 )</p>
+</li>
+<li><p>解释：<br>  ((n &amp; (n-1)) == 0)：</p>
+<p>  如果A&amp;B==0，表示A与B的二进制形式没有在同一个位置都为1的时候。</p>
+<p>  不妨先看下n-1是什么意思。</p>
+<p>  令:n=1101011000(二进制,十进制也一样)，则</p>
+<p>   n-1=1101010111。</p>
+<p>  n&amp;(n-1)=1101010000</p>
+<p>  由此可以得出，n和n-1的低位不一样，直到有个转折点，就是借位的那个点，从这个点开始的高位，n和n-1都一样，如果高位一样这就造成一个问题，就是n和n-1在相同的位上可能会有同一个1，从而使((n &amp; (n-1)) != 0),如果想要((n &amp; (n-1)) == 0)，则高位必须全为0，这样就没有相同的1。</p>
+<p>  所以n是2的幂或0</p>
+</li>
+</ol>
+<h2 id="2-求某一个数的二进制表示中1的个数"><a href="#2-求某一个数的二进制表示中1的个数" class="headerlink" title="2. 求某一个数的二进制表示中1的个数"></a>2. 求某一个数的二进制表示中1的个数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (n &gt;<span class="number">0</span> ) &#123;</span><br><span class="line">      count ++;</span><br><span class="line">      n &amp;= (n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="3-计算N-的质因数2的个数"><a href="#3-计算N-的质因数2的个数" class="headerlink" title="3. 计算N!的质因数2的个数"></a>3. 计算N!的质因数2的个数</h2><ol>
+<li><p>N!质因数2的个数 = [N / 2] + [N / 4] + [N / 8] + ….</p>
+</li>
+<li><p>过程：<br>下面通过一个简单的例子来推导一下过程：N = 10101(二进制表示）</p>
+<p>现在我们跟踪最高位的1，不考虑其他位假定为0，</p>
+<p>则在</p>
+<p>[N / 2]    01000 <br/><br>[N / 4]    00100 <br/><br>[N / 8]    00010 <br/><br>[N / 8]    00001 <br/><br>则所有相加等于01111 = 10000 - 1</p>
+<p>由此推及其他位可得：(10101)!的质因数2的个数为10000 - 1 + 00100 - 1 + 00001 - 1 = 10101 - 3(二进制表示中1的个数)</p>
+<p>推及一般N!的质因数2的个数为N - （N二进制表示中1的个数）</p>
+<p>n&amp;(-n)在树状数组中lowbit出现   用来求 t 中的因子中形如2^k的数为多少     用来取得n最右边的1，可以知道其因子中有几个2</p>
+<p>10:  0000 1010</p>
+<p>-10: 1111 0110</p>
+<p>10&amp;(-10)为 0010  =  2  所以10的因子中为2的有一个，2^k的形式的为2^1</p>
+<p>8&amp;(-8) = [1000] = 8   所以8的因子中为2的有3个，2^k的形式为2^3</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/26/2020-12-23-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/26/2020-12-23-1/" class="post-title-link" itemprop="url">2020-12-23-1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-26 00:00:00 / 修改时间：22:49:26" itemprop="dateCreated datePublished" datetime="2020-12-26T00:00:00+08:00">2020-12-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="/images/posts/acwing/10.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2019/01/21/2019-1-21-10/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/01/21/2019-1-21-10/" class="post-title-link" itemprop="url">10. 搭建本地测试jekyll，使用“jekyll server”</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-21 00:00:00" itemprop="dateCreated datePublished" datetime="2019-01-21T00:00:00+08:00">2019-01-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-12-26 21:58:11" itemprop="dateModified" datetime="2020-12-26T21:58:11+08:00">2020-12-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li>下载ruby，<a target="_blank" rel="noopener" href="https://rubyinstaller.org/downloads/">请点击这里</a>；</li>
+<li>下载 rubyinstaller 之后，解压到新创建的目录下；</li>
+<li>点击 Next，继续向导，记得勾选 Add Ruby executables to your PATH，直到 Ruby 安装程序完成 Ruby 安装为止。<strong>如果您的安装没有适当地配置环境变量，接下来您可能需要进行环境变量的配置</strong>。</li>
+<li>安装后，通过在命令行中输入以下命令来确保一切工作正常：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; $ ruby -v</span><br><span class="line">ruby 2.6.0</span><br></pre></td></tr></table></figure></li>
+<li>输入一下代码：(可以直接到第六步，如果出现错误，再来做第5步)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gem install pygments.rb</span><br><span class="line">gem install redcarpet</span><br></pre></td></tr></table></figure></li>
+<li>在<code>_config.yml</code>,将<code>gems:</code>的这一行注释掉。</li>
+</ol>
+<h6 id="【释】：详情请见这里。"><a href="#【释】：详情请见这里。" class="headerlink" title="【释】：详情请见这里。"></a>【释】：详情请见<a target="_blank" rel="noopener" href="http://www.runoob.com/ruby/ruby-installation-windows.html">这里</a>。</h6>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2019/01/21/2019-1-21-11/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="QeuroIzo">
+      <meta itemprop="description" content="你有灵魂吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QeuroIzoのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/01/21/2019-1-21-11/" class="post-title-link" itemprop="url">11. markdown写作</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-21 00:00:00" itemprop="dateCreated datePublished" datetime="2019-01-21T00:00:00+08:00">2019-01-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-12-26 22:35:39" itemprop="dateModified" datetime="2020-12-26T22:35:39+08:00">2020-12-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>如果你想创建格式美美的，且包含文字，表格，图片，公式，甚至是不同型号标题的笔记，那么推荐你使用Markdown,用简单的语法就可以写出赏心悦目的笔记。</p>
+</blockquote>
+<h2 id="简单介绍几种常用语法"><a href="#简单介绍几种常用语法" class="headerlink" title="简单介绍几种常用语法"></a>简单介绍几种常用语法</h2><h5 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h5><p>在行首插入 1 到 6个#，分别表示标题 1 到标题 6</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">##### 这是标题5</span><br><span class="line">###### 这是标题6</span><br></pre></td></tr></table></figure>
+<h5 id="这是标题5"><a href="#这是标题5" class="headerlink" title="这是标题5"></a>这是标题5</h5><h6 id="这是标题6"><a href="#这是标题6" class="headerlink" title="这是标题6"></a>这是标题6</h6><h5 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h5><h6 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h6><p>有序列表则使用数字加一个英文句点，并加空格，再输入文字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 你好</span><br><span class="line">1. 加油！</span><br></pre></td></tr></table></figure>
+<ol>
+<li>你好</li>
+<li>加油！</li>
+</ol>
+<h6 id="无序序列表"><a href="#无序序列表" class="headerlink" title="无序序列表"></a>无序序列表</h6><p>无序列表使用星号、加号或是减号作为列表标记，并加一个空格，再输入文字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+ Android</span><br><span class="line">+ iPhone</span><br><span class="line">+ iPad</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Android</li>
+<li>iPhone</li>
+<li>iPad</li>
+</ul>
+<h5 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h5><p>[描述]（链接地址）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[QeuroIzo](https:&#x2F;&#x2F;QeuroIzo.top)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://qeuroizo.top/">QeuroIzo</a></p>
+<h5 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 表格|如此  | 创建 |</span><br><span class="line">|-|-|-|</span><br><span class="line">| this | is | so easy |</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<br/>
+
+<table>
+<thead>
+<tr>
+<th align="left">表格</th>
+<th align="left">如此</th>
+<th align="left">创建</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">this</td>
+<td align="left">is</td>
+<td align="left">so easy</td>
+</tr>
+</tbody></table>
+<h5 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](&#x2F;source&#x2F;imagess&#x2F;posts&#x2F;github&#x2F;markdown.jpg)</span><br></pre></td></tr></table></figure>
+<p><img src="/source/imagess/posts/github/markdown.jpg"></p>
+<h5 id="添加-Mathjax-公式"><a href="#添加-Mathjax-公式" class="headerlink" title="添加 Mathjax 公式"></a>添加 Mathjax 公式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">行内公式：</span><br><span class="line">两个 $ 之间输入公式，即，$ mathjax公式 $</span><br><span class="line">独占一行公式：</span><br><span class="line">两两 $$ 间输入公式，即，$$ mathjax公式 $$</span><br></pre></td></tr></table></figure>
+
+<p>$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$</p>
+<p>以上就是 Markdown 中一般用到的基本语法，非常简单，但可以创建出非常易读的笔记哦。此篇笔记就是一篇 Markdown 笔记！另外，直接新建普通的笔记，在标题加 .md 后缀也是可以直接渲染的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/10/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/12/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">QeuroIzo</p>
+  <div class="site-description" itemprop="description">你有灵魂吗</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QeuroIzo</span>
+</div>
+
+<!----
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
